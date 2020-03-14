@@ -1,0 +1,3 @@
+[submodule "CVPR2020-Code"]
+	path = CVPR2020-Code
+	url = https://github.com/amusi/CVPR2020-Code
