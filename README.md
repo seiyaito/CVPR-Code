@@ -27,6 +27,7 @@ CVPR 2020の論文およびオープンソースプロジェクトのコレク�
 - [視覚言語ナビゲーション](#VLN)
 - [動画圧縮](#Video-Compression)
 - [動画補間](#Video-Frame-Interpolation)
+- [Human-Object Interaction (HOI)検出](#HOI)
 - [行動軌跡予測](#HTP)
 - [データセット](#Datasets)
 - [その他](#Others)
@@ -380,7 +381,22 @@ CVPR 2020の論文およびオープンソースプロジェクトのコレク�
 
 - ホームページ：http://sniklaus.com/papers/softsplat
 - 論文：https://arxiv.org/abs/2003.05534
-- コード：https://github.com/sniklaus/softmax-splatting 
+- コード：https://github.com/sniklaus/softmax-splatting
+
+<a name="HOI"></a>
+
+# "人-物"交互(HOT)検出
+
+**Cascaded Human-Object Interaction Recognition**
+
+- 論文：https://arxiv.org/abs/2003.04262
+
+- コード：https://github.com/tfzhou/C-HOI
+
+**VSGNet: Spatial Attention Network for Detecting Human Object Interactions Using Graph Convolutions**
+
+- 論文：https://arxiv.org/abs/2003.05541
+- コード：https://github.com/ASMIftekhar/VSGNet
 
 <a name="HTP"></a>
 
