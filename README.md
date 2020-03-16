@@ -1,6 +1,6 @@
 # CVPR2020-Code
 
-CVPR 2020の論文およびオープンソースプロジェクトのコレクションです.そして,もし問題があればissueに提出して,CVPR 2020のオープンソースプロジェクトを共有することも歓迎します
+CVPR 2020の論文及びオープンソースプロジェクトのコレクションです.そして,もし問題があればissueに提出して,CVPR 2020のオープンソースプロジェクトを共有することも歓迎します
 
 - [画像分類](#Image-Classification)
 - [物体検出](#Object-Detection)
@@ -55,7 +55,12 @@ CVPR 2020の論文およびオープンソースプロジェクトのコレク�
 **BiDet: An Efficient Binarized Object Detector**
 
 - 論文：https://arxiv.org/abs/2003.03961 
-- コード：https://github.com/ZiweiWangTHU/BiDet 
+- コード：https://github.com/ZiweiWangTHU/BiDet
+
+**Harmonizing Transferability and Discriminability for Adapting Object Detectors**
+
+- 論文：https://arxiv.org/abs/2003.06297
+- コード：https://github.com/chaoqichen/HTCN
 
 <a name="3D-Object-Detection"></a>
 
@@ -188,7 +193,7 @@ CVPR 2020の論文およびオープンソースプロジェクトのコレク�
 
 **RPM-Net: Robust Point Matching using Learned Features**
 
-- 論文：未放出
+- 論文：未公開
 
 - コード：https://github.com/yewzijian/RPMNet 
 
@@ -385,7 +390,7 @@ CVPR 2020の論文およびオープンソースプロジェクトのコレク�
 
 <a name="HOI"></a>
 
-# "人-物"交互(HOT)検出
+# Human-Object Interaction (HOT)検出
 
 **Cascaded Human-Object Interaction Recognition**
 
@@ -400,7 +405,7 @@ CVPR 2020の論文およびオープンソースプロジェクトのコレク�
 
 <a name="HTP"></a>
 
-# 行人軌跡予測
+# 歩行者軌跡予測
 
 **Social-STGCNN: A Social Spatio-Temporal Graph Convolutional Neural Network for Human Trajectory Prediction**
 
@@ -410,6 +415,12 @@ CVPR 2020の論文およびオープンソースプロジェクトのコレク�
 <a name="Datasets"></a>
 
 # データセット
+
+**PANDA: A Gigapixel-level Human-centric Video Dataset**
+
+- 論文：https://arxiv.org/abs/2003.04852
+
+- データセット：http://www.panda-dataset.com/
 
 **IntrA: 3D Intracranial Aneurysm Dataset for Deep Learning**
 
@@ -509,35 +520,35 @@ https://github.com/bermanmaxim/AOWS
 - 論文：未公開
 - コード：https://github.com/HKBU-HPML/FADNet
 
-https://github.com/rFID-submit/RandomFID：採択されたか不明
+https://github.com/rFID-submit/RandomFID
 
-https://github.com/JackSyu/AE-MSR：採択されたか不明
+https://github.com/JackSyu/AE-MSR
 
-https://github.com/fastconvnets/cvpr2020：採択されたか不明
+https://github.com/fastconvnets/cvpr2020
 
-https://github.com/aimagelab/meshed-memory-transformer：採択されたか不明
+https://github.com/aimagelab/meshed-memory-transformer
 
-https://github.com/TWSFar/CRGNet：採択されたか不明
+https://github.com/TWSFar/CRGNet
 
-https://github.com/CVPR-2020/CDARTS：採択されたか不明
+https://github.com/CVPR-2020/CDARTS
 
-https://github.com/anucvml/ddn-cvprw2020：採択されたか不明
+https://github.com/anucvml/ddn-cvprw2020
 
-https://github.com/dl-model-recommend/model-trust：採択されたか不明
+https://github.com/dl-model-recommend/model-trust
 
-https://github.com/apratimbhattacharyya18/CVPR-2020-Corr-Prior：採択されたか不明
+https://github.com/apratimbhattacharyya18/CVPR-2020-Corr-Prior
 
-https://github.com/onetcvpr/O-Net：採択されたか不明
+https://github.com/onetcvpr/O-Net
 
-https://github.com/502463708/Microcalcification_Detection：採択されたか不明
+https://github.com/502463708/Microcalcification_Detection
 
-https://github.com/anonymous-for-review/cvpr-2020-deep-smoke-machine：採択されたか不明
+https://github.com/anonymous-for-review/cvpr-2020-deep-smoke-machine
 
-https://github.com/anonymous-for-review/cvpr-2020-smoke-recognition-dataset：採択されたか不明
+https://github.com/anonymous-for-review/cvpr-2020-smoke-recognition-dataset
 
-https://github.com/cvpr-nonrigid/dataset：採択されたか不明
+https://github.com/cvpr-nonrigid/dataset
 
-https://github.com/theFool32/PPBA：採択されたか不明
+https://github.com/theFool32/PPBA
 
 https://github.com/Realtime-Action-Recognition/Realtime-Action-Recognition
 
