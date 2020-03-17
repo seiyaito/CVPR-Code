@@ -453,6 +453,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # その他
 
+**On Translation Invariance in CNNs: Convolutional Layers can Exploit Absolute Spatial Location**
+
+- 論文：https://arxiv.org/abs/2003.07064
+
+- コード：https://github.com/oskyhn/CNNs-Without-Borders
+
 **GhostNet: More Features from Cheap Operations**
 
 - 論文：https://arxiv.org/abs/1911.11907
