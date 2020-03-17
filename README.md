@@ -66,6 +66,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 3D物体検出
 
+**PV-RCNN: Point-Voxel Feature Set Abstraction for 3D Object Detection**
+
+- 論文：https://arxiv.org/abs/1912.13192
+
+- コード：https://github.com/sshaoshuai/PV-RCNN
+
 **Point-GNN: Graph Neural Network for 3D Object Detection in a Point Cloud**
 
 - 論文：https://arxiv.org/abs/2003.01251 
