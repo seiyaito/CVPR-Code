@@ -297,7 +297,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **ABCNet: Real-time Scene Text Spotting with Adaptive Bezier-Curve Network**
 
 - 論文：https://arxiv.org/abs/2002.10200 
-- コード（公開前）：https://github.com/aim-uofa/adet 
+- コード（公開前）：https://github.com/aim-uofa/adet
+
+**Learn to Augment: Joint Data Augmentation and Network Optimization for Text Recognition**
+
+- 論文：https://arxiv.org/abs/2003.06606
+
+- コード：https://github.com/Canjie-Luo/Text-Image-Augmentation
 
 <a name="Super-Resolution"></a>
 
