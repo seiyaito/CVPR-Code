@@ -14,8 +14,9 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [Re-ID](#Re-ID)
 - [3D点群（セマンティックセグメンテーション等）](#3D-PointCloud)
 - [顔検出](#Face-Detection)
-- [Face Anti-spoofing](#FAS)
+- [顔Face Anti-spoofing](#FAS)
 - [顔表情識別](#Facial-Expression-Recognition)
+- [顔转正](#Face-Rotation)
 - [人体姿勢推定](#Human-Pose-Estimation)
 - [シーンテキスト検出](#Scene-Text-Detection)
 - [シーンテキスト識別](#Scene-Text-Recognition)
@@ -215,7 +216,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="FAS"></a>
 
-# Face Anti-spoofing
+# 顔Face Anti-spoofing
 
 **Searching Central Difference Convolutional Networks for Face Anti-Spoofing**
 
@@ -232,6 +233,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：https://arxiv.org/abs/2002.10392 
 
 - コード（公開前）：https://github.com/kaiwang960112/Self-Cure-Network 
+
+<a name="Face-Rotation"></a>
+
+# 顔转正
+
+**Rotate-and-Render: Unsupervised Photorealistic Face Rotation from Single-View Images**
+
+- 論文：https://arxiv.org/abs/2003.08124
+
+- コード：https://github.com/Hangz-nju-cuhk/Rotate-and-Render
 
 <a name="Human-Pose-Estimation"></a>
 
