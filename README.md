@@ -85,8 +85,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **MAST: A Memory-Augmented Self-supervised Tracker**
 
 - 論文：https://arxiv.org/abs/2002.07793
-
 - コード：https://github.com/zlai0/MAST
+
+**Siamese Box Adaptive Network for Visual Tracking**
+
+- 論文：https://arxiv.org/abs/2003.06761
+
+- コード：https://github.com/hqucv/siamban
 
 <a name="Semantic-Segmentation"></a>
 
@@ -288,7 +293,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - 論文：https://arxiv.org/abs/2002.10200 
 - コード（公開前）：https://github.com/Yuliang-Liu/bezier_curve_text_spotting
-- コード（公開前）：https://github.com/aim-uofa/adet 
+- コード（公開前）：https://github.com/aim-uofa/adet
+
+**Deep Relational Reasoning Graph Network for Arbitrary Shape Text Detection**
+
+- 論文：https://arxiv.org/abs/2003.07493
+
+- コード：https://github.com/GXYM/DRRG
 
 <a name="Scene-Text-Recognition"></a>
 
