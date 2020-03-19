@@ -29,7 +29,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [動画補間](#Video-Frame-Interpolation)
 - [Human-Object Interaction (HOI)検出](#HOI)
 - [行動軌跡予測](#HTP)
-- [运动予測](#Motion-Predication)
+- [モーション予測](#Motion-Predication)
 - [データセット](#Datasets)
 - [その他](#Others)
 - [採択されたか不明](#Not-Sure)
@@ -427,7 +427,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="Motion-Predication"></a>
 
-# 运动予測
+# モーション予測
 
 **Collaborative Motion Prediction via Neural Motion Message Passing**
 
