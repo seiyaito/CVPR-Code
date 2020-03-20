@@ -20,6 +20,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [人体姿勢推定](#Human-Pose-Estimation)
 - [シーンテキスト検出](#Scene-Text-Detection)
 - [シーンテキスト識別](#Scene-Text-Recognition)
+- [モデル圧縮](#Model-Compression)
 - [モデル枝刈り](#Model-Pruning)
 - [行動識別](#Action-Recognition)
 - [群衆カウント](#Crowd-Counting)
@@ -163,6 +164,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="GAN"></a>
 
 # GAN
+
+**GAN Compression: Efficient Architectures for Interactive Conditional GANs**
+
+- 論文：https://arxiv.org/abs/2003.08936
+
+- コード：https://github.com/mit-han-lab/gan-compression
 
 **Watch your Up-Convolution: CNN Based Generative Deep Neural Networks are Failing to Reproduce Spectral Distributions**
 
@@ -337,6 +344,22 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - 論文：https://arxiv.org/abs/2002.11616 
 - コード：https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020 
+
+<a name="Model-Compression"></a>
+
+# モデル圧縮
+
+**GAN Compression: Efficient Architectures for Interactive Conditional GANs**
+
+- 論文：https://arxiv.org/abs/2003.08936
+
+- コード：https://github.com/mit-han-lab/gan-compression
+
+**Group Sparsity: The Hinge Between Filter Pruning and Decomposition for Network Compression**
+
+- 論文：https://arxiv.org/abs/2003.08935
+
+- コード：https://github.com/ofsoundof/group_sparsity
 
 <a name="Model-Pruning"></a>
 
