@@ -25,6 +25,8 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [行動識別](#Action-Recognition)
 - [群衆カウント](#Crowd-Counting)
 - [深度推定](#Depth-Estimation)
+- [去噪](#Denoising)
+- [デブラー](#Deblurring)
 - [VQA](#VQA)
 - [視覚言語ナビゲーション](#VLN)
 - [動画圧縮](#Video-Compression)
@@ -401,6 +403,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：https://arxiv.org/abs/2002.12114
 
 - コード：https://github.com/yzhao520/ARC
+
+<a name="Denoising"></a>
+
+# 去噪
+
+**CycleISP: Real Image Restoration via Improved Data Synthesis**
+
+- 論文：https://arxiv.org/abs/2003.07761
+
+- コード：https://github.com/swz30/CycleISP
 
 <a name="Deblurring"></a>
 
