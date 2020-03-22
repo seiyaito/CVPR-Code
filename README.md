@@ -29,6 +29,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [視覚言語ナビゲーション](#VLN)
 - [動画圧縮](#Video-Compression)
 - [動画補間](#Video-Frame-Interpolation)
+- [风格迁移](#Style-Transfer)
 - [Human-Object Interaction (HOI)検出](#HOI)
 - [行動軌跡予測](#HTP)
 - [モーション予測](#Motion-Predication)
@@ -190,6 +191,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 # 3D点群（セマンティックセグメンテーション等）
 
 ## 3D点群畳み込み
+
+**Grid-GCN for Fast and Scalable Point Cloud Learning**
+
+- 論文：https://arxiv.org/abs/1912.02984
+
+- コード：https://github.com/Xharlie/Grid-GCN
 
 **FPConv: Learning Local Flattening for Point Convolution**
 
@@ -445,6 +452,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - ホームページ：http://sniklaus.com/papers/softsplat
 - 論文：https://arxiv.org/abs/2003.05534
 - コード：https://github.com/sniklaus/softmax-splatting
+
+<a name="Style-Transfer"></a>
+
+# 风格迁移
+
+**Collaborative Distillation for Ultra-Resolution Universal Style Transfer**
+
+- 論文：https://arxiv.org/abs/2003.08436
+
+- コード：https://github.com/mingsun-tse/collaborative-distillation
 
 <a name="HOI"></a>
 
