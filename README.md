@@ -14,9 +14,9 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [Re-ID](#Re-ID)
 - [3D点群（セマンティックセグメンテーション等）](#3D-PointCloud)
 - [顔検出](#Face-Detection)
-- [顔Face Anti-spoofing](#FAS)
+- [Face Anti-spoofing](#FAS)
 - [顔表情識別](#Facial-Expression-Recognition)
-- [顔转正](#Face-Rotation)
+- [Face Rotation](#Face-Rotation)
 - [人体姿勢推定](#Human-Pose-Estimation)
 - [シーンテキスト検出](#Scene-Text-Detection)
 - [シーンテキスト識別](#Scene-Text-Recognition)
@@ -25,13 +25,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [行動識別](#Action-Recognition)
 - [群衆カウント](#Crowd-Counting)
 - [深度推定](#Depth-Estimation)
-- [去噪](#Denoising)
+- [画像修復](#Denoising)
 - [デブラー](#Deblurring)
 - [VQA](#VQA)
 - [視覚言語ナビゲーション](#VLN)
 - [動画圧縮](#Video-Compression)
 - [動画補間](#Video-Frame-Interpolation)
-- [风格迁移](#Style-Transfer)
+- [スタイル変換](#Style-Transfer)
 - [Human-Object Interaction (HOI)検出](#HOI)
 - [行動軌跡予測](#HTP)
 - [モーション予測](#Motion-Predication)
@@ -238,7 +238,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="FAS"></a>
 
-# 顔Face Anti-spoofing
+# Face Anti-spoofing
 
 **Searching Central Difference Convolutional Networks for Face Anti-Spoofing**
 
@@ -258,7 +258,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="Face-Rotation"></a>
 
-# 顔转正
+# Face Rotation
 
 **Rotate-and-Render: Unsupervised Photorealistic Face Rotation from Single-View Images**
 
@@ -412,7 +412,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="Denoising"></a>
 
-# 去噪
+# 画像修復
 
 **CycleISP: Real Image Restoration via Improved Data Synthesis**
 
@@ -473,7 +473,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="Style-Transfer"></a>
 
-# 风格迁移
+# スタイル変換
 
 **Collaborative Distillation for Ultra-Resolution Universal Style Transfer**
 
@@ -512,8 +512,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **Collaborative Motion Prediction via Neural Motion Message Passing**
 
 - 論文：https://arxiv.org/abs/2003.06594
-
 - コード：https://github.com/PhyllisH/NMMP
+
+**MotionNet: Joint Perception and Motion Prediction for Autonomous Driving Based on Bird's Eye View Maps**
+
+- 論文：https://arxiv.org/abs/2003.06754
+
+- コード：https://github.com/pxiangwu/MotionNet
 
 <a name="Datasets"></a>
 
