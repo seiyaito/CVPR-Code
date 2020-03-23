@@ -68,6 +68,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：https://arxiv.org/abs/2003.06297
 - コード：https://github.com/chaoqichen/HTCN
 
+**CentripetalNet: Pursuing High-quality Keypoint Pairs for Object Detection**
+
+- 論文：https://arxiv.org/abs/2003.09119
+
+- コード：https://github.com/KiveeDong/CentripetalNet
+
 <a name="3D-Object-Detection"></a>
 
 # 3D物体検出
