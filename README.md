@@ -111,8 +111,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **Cars Can't Fly up in the Sky: Improving Urban-Scene Segmentation via Height-driven Attention Networks**
 
 - 論文：https://arxiv.org/abs/2003.05128
-
 - コード：https://github.com/shachoi/HANet
+
+**Learning Dynamic Routing for Semantic Segmentation**
+
+- 論文：https://arxiv.org/abs/2003.10401
+
+- コード：https://github.com/yanwei-li/DynamicRouting
 
 <a name="Instance-Segmentation"></a>
 
