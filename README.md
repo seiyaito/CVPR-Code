@@ -559,6 +559,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # その他
 
+SDFDiff: Differentiable Rendering of Signed Distance Fields for 3D Shape Optimization
+
+- 論文：http://www.cs.umd.edu/~yuejiang/papers/SDFDiff.pdf
+- コード：https://github.com/YueJiang-nj/CVPR2020-SDFDiff 
+
 **On Translation Invariance in CNNs: Convolutional Layers can Exploit Absolute Spatial Location**
 
 - 論文：https://arxiv.org/abs/2003.07064
