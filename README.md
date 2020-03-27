@@ -5,6 +5,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [画像分類](#Image-Classification)
 - [物体検出](#Object-Detection)
 - [3D物体検出](#3D-Object-Detection)
+- [動画物体検出](#Video-Object-Detection)
 - [物体追跡](#Object-Tracking)
 - [セマンティックセグメンテーション](#Semantic-Segmentation)
 - [インスタンスセグメンテーション](#Instance-Segmentation)
@@ -71,8 +72,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **CentripetalNet: Pursuing High-quality Keypoint Pairs for Object Detection**
 
 - 論文：https://arxiv.org/abs/2003.09119
-
 - コード：https://github.com/KiveeDong/CentripetalNet
+
+**Hit-Detector: Hierarchical Trinity Architecture Search for Object Detection**
+
+- 論文：https://arxiv.org/abs/2003.11818
+
+- コード：https://github.com/ggjy/HitDet.pytorch
 
 <a name="3D-Object-Detection"></a>
 
@@ -88,6 +94,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - 論文：https://arxiv.org/abs/2003.01251 
 - コード：https://github.com/WeijingShi/Point-GNN 
+
+<a name="Video-Object-Detection"></a>
+
+# 動画物体検出
+
+**Memory Enhanced Global-Local Aggregation for Video Object Detection**
+
+論文：https://arxiv.org/abs/2003.12063
+
+コード：https://github.com/Scalsol/mega.pytorch
 
 <a name="Object-Tracking"></a>
 
