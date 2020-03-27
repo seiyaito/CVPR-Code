@@ -14,6 +14,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [GAN](#GAN)
 - [Re-ID](#Re-ID)
 - [3D点群（セマンティックセグメンテーション等）](#3D-PointCloud)
+- [顔識別](#Face-Recognition)
 - [顔検出](#Face-Detection)
 - [Face Anti-spoofing](#FAS)
 - [顔表情識別](#Facial-Expression-Recognition)
@@ -153,8 +154,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **Deep Snake for Real-Time Instance Segmentation**
 
 - 論文：https://arxiv.org/abs/2001.01629
+- コード：https://github.com/zju3dv/snake
 
-- コード：https://github.com/zju3dv/snake 
+**Mask Encoding for Single Shot Instance Segmentation**
+
+- 論文：https://arxiv.org/abs/2003.11712
+
+- コード：https://github.com/aim-uofa/AdelaiDet
 
 <a name="VOS"></a>
 
@@ -252,6 +258,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：未公開
 
 - コード：https://github.com/yewzijian/RPMNet 
+
+<a name="Face-Recognition"></a>
+
+# 顔識別
+
+**Learning Meta Face Recognition in Unseen Domains**
+
+- 論文：https://arxiv.org/abs/2003.07733
+- コード：https://github.com/cleardusk/MFR
+- 解説：https://mp.weixin.qq.com/s/YZoEnjpnlvb90qSI3xdJqQ 
 
 <a name="Face-Detection"></a>
 
@@ -575,7 +591,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # その他
 
-SDFDiff: Differentiable Rendering of Signed Distance Fields for 3D Shape Optimization
+**Dynamic Hierarchical Mimicking Towards Consistent Optimization Objectives**
+論文：https://arxiv.org/abs/2003.10739
+コード：https://github.com/d-li14/DHM 
+
+**SDFDiff: Differentiable Rendering of Signed Distance Fields for 3D Shape Optimization**
 
 - 論文：http://www.cs.umd.edu/~yuejiang/papers/SDFDiff.pdf
 - コード：https://github.com/YueJiang-nj/CVPR2020-SDFDiff 
