@@ -29,6 +29,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [深度推定](#Depth-Estimation)
 - [画像修復](#Denoising)
 - [デブラー](#Deblurring)
+- [特征点検出与描述](#Feature)
 - [VQA](#VQA)
 - [視覚言語ナビゲーション](#VLN)
 - [動画圧縮](#Video-Compression)
@@ -479,7 +480,15 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：準備中
 - コード：https://github.com/csbhr/CDVD-TSP
 
-# VQA
+<a name="Feature"></a>
+
+# 特征点検出与描述
+
+**ASLFeat: Learning Local Features of Accurate Shape and Localization**
+
+- 論文：https://arxiv.org/abs/2003.10071
+
+- コード：https://github.com/lzx551402/aslfeat
 
 <a name="VQA"></a>
 
