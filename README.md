@@ -600,9 +600,20 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # その他
 
+**Look-into-Object: Self-supervised Structure Modeling for Object Recognition**
+
+- 論文：なし
+- コード：https://github.com/JDAI-CV/LIO 
+
+ **Video Object Grounding using Semantic Roles in Language Description**
+
+- 論文：https://arxiv.org/abs/2003.10606
+- コード：https://github.com/TheShadow29/vognet-pytorch 
+
 **Dynamic Hierarchical Mimicking Towards Consistent Optimization Objectives**
-論文：https://arxiv.org/abs/2003.10739
-コード：https://github.com/d-li14/DHM 
+
+- 論文：https://arxiv.org/abs/2003.10739
+- コード：https://github.com/d-li14/DHM 
 
 **SDFDiff: Differentiable Rendering of Signed Distance Fields for 3D Shape Optimization**
 
