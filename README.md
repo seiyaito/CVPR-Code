@@ -27,6 +27,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [行動識別](#Action-Recognition)
 - [群衆カウント](#Crowd-Counting)
 - [深度推定](#Depth-Estimation)
+- [6D物体姿勢推定](#6DOF)
 - [画像修復](#Denoising)
 - [デブラー](#Deblurring)
 - [特征点検出与描述](#Feature)
@@ -79,8 +80,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **Hit-Detector: Hierarchical Trinity Architecture Search for Object Detection**
 
 - 論文：https://arxiv.org/abs/2003.11818
-
 - コード：https://github.com/ggjy/HitDet.pytorch
+
+**EfficientDet: Scalable and Efficient Object Detection**
+
+- 論文：https://arxiv.org/abs/1911.09070
+- コード：https://github.com/google/automl/tree/master/efficientdet 
 
 <a name="3D-Object-Detection"></a>
 
@@ -445,8 +450,17 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **Domain Decluttering: Simplifying Images to Mitigate Synthetic-Real Domain Shift and Improve Depth Estimation**
 
 - 論文：https://arxiv.org/abs/2002.12114
-
 - コード：https://github.com/yzhao520/ARC
+
+<a name="6DOF"></a>
+
+# 6D物体姿勢推定
+
+**G2L-Net: Global to Local Network for Real-time 6D Pose Estimation with Embedding Vector Features**
+
+- 論文：https://arxiv.org/abs/2003.11089
+
+- コード：https://github.com/DC1991/G2L_Net
 
 <a name="Denoising"></a>
 
@@ -599,6 +613,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Others"></a>
 
 # その他
+
+**What Deep CNNs Benefit from Global Covariance Pooling: An Optimization Perspective**
+
+- 論文：https://arxiv.org/abs/2003.11241
+
+- コード：https://github.com/ZhangLi-CS/GCP_Optimization
 
 **Look-into-Object: Self-supervised Structure Modeling for Object Recognition**
 
