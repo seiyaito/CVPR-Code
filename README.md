@@ -28,6 +28,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [群衆カウント](#Crowd-Counting)
 - [深度推定](#Depth-Estimation)
 - [6D物体姿勢推定](#6DOF)
+- [手势推定](#Hand-Pose)
 - [画像修復](#Denoising)
 - [デブラー](#Deblurring)
 - [特征点検出与描述](#Feature)
@@ -115,6 +116,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Object-Tracking"></a>
 
 # 物体追跡
+
+**Probabilistic Regression for Visual Tracking**
+
+- 論文：https://arxiv.org/abs/2003.12565
+- コード：https://github.com/visionml/pytracking
 
 **MAST: A Memory-Augmented Self-supervised Tracker**
 
@@ -206,6 +212,15 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="GAN"></a>
 
 # GAN
+
+**Learning to Cartoonize Using White-box Cartoon Representations**
+
+- 論文：https://github.com/SystemErrorWang/White-box-Cartoonization/blob/master/paper/06791.pdf
+
+- ホームページ：https://systemerrorwang.github.io/White-box-Cartoonization/
+- コード：https://github.com/SystemErrorWang/White-box-Cartoonization
+- 解説：https://zhuanlan.zhihu.com/p/117422157
+- Demo動画：https://www.bilibili.com/video/av56708333
 
 **GAN Compression: Efficient Architectures for Interactive Conditional GANs**
 
@@ -365,6 +380,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # シーンテキスト検出
 
+**UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
+
+- 論文：https://arxiv.org/abs/2003.10608
+- コード和データセット：https://github.com/Jyouhou/UnrealText/
+
 **ABCNet: Real-time Scene Text Spotting with Adaptive Bezier-Curve Network**
 
 - 論文：https://arxiv.org/abs/2002.10200 
@@ -380,6 +400,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Scene-Text-Recognition"></a>
 
 # シーンテキスト識別
+
+**UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
+
+- 論文：https://arxiv.org/abs/2003.10608
+- コード和データセット：https://github.com/Jyouhou/UnrealText/
 
 **ABCNet: Real-time Scene Text Spotting with Adaptive Bezier-Curve Network**
 
@@ -461,6 +486,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：https://arxiv.org/abs/2003.11089
 
 - コード：https://github.com/DC1991/G2L_Net
+
+<a name="Hand-Pose"></a>
+
+# 手势推定
+
+**Monocular Real-time Hand Shape and Motion Capture using Multi-modal Data**
+
+- 論文：https://arxiv.org/abs/2003.09572
+
+- コード：https://github.com/CalciferZh/minimal-hand
 
 <a name="Denoising"></a>
 
@@ -593,6 +628,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Datasets"></a>
 
 # データセット
+
+**UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
+
+- 論文：https://arxiv.org/abs/2003.10608
+- コード和データセット：https://github.com/Jyouhou/UnrealText/
 
 **PANDA: A Gigapixel-level Human-centric Video Dataset**
 
