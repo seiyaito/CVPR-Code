@@ -2,6 +2,7 @@
 
 CVPR 2020の論文及びオープンソースプロジェクトのコレクションです.そして,もし問題があればissueに提出して,CVPR 2020のオープンソースプロジェクトを共有することも歓迎します
 
+- [CNN](#CNN)
 - [画像分類](#Image-Classification)
 - [物体検出](#Object-Detection)
 - [3D物体検出](#3D-Object-Detection)
@@ -43,6 +44,15 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [データセット](#Datasets)
 - [その他](#Others)
 - [採択されたか不明](#Not-Sure)
+
+<a name="CNN"></a>
+
+# CNN
+
+**Rethinking Depthwise Separable Convolutions: How Intra-Kernel Correlations Lead to Improved MobileNets**
+
+- 論文：https://arxiv.org/abs/2003.13549
+- コード：https://github.com/zeiss-microscopy/BSConv
 
 <a name="Image-Classification"></a>
 
@@ -117,6 +127,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体追跡
 
+**AutoTrack: Towards High-Performance Visual Tracking for UAV with Automatic Spatio-Temporal Regularization**
+
+- 論文：https://arxiv.org/abs/2003.12949
+
+- コード：https://github.com/vision4robotics/AutoTrack
+
 **Probabilistic Regression for Visual Tracking**
 
 - 論文：https://arxiv.org/abs/2003.12565
@@ -136,6 +152,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Semantic-Segmentation"></a>
 
 # セマンティックセグメンテーション
+
+**Strip Pooling: Rethinking Spatial Pooling for Scene Parsing**
+
+- 論文：https://arxiv.org/abs/2003.13328
+
+- コード：https://github.com/Andrew-Qibin/SPNet
 
 **Cars Can't Fly up in the Sky: Improving Urban-Scene Segmentation via Height-driven Attention Networks**
 
@@ -276,7 +298,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 **RPM-Net: Robust Point Matching using Learned Features**
 
-- 論文：未公開
+- 論文：https://arxiv.org/abs/2003.13479
 
 - コード：https://github.com/yewzijian/RPMNet 
 
