@@ -11,6 +11,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [セマンティックセグメンテーション](#Semantic-Segmentation)
 - [インスタンスセグメンテーション](#Instance-Segmentation)
 - [動画物体分割](#VOS)
+- [超像素分割](#Superpixel)
 - [NAS](#NAS)
 - [GAN](#GAN)
 - [Re-ID](#Re-ID)
@@ -215,6 +216,15 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - 論文：https://arxiv.org/abs/2003.05020
 - コード：https://github.com/carrierlxk/MuG
+
+<a name="Superpixel"></a>
+
+# 超像素分割
+
+**Superpixel Segmentation with Fully Convolutional Networks**
+
+- 論文：https://arxiv.org/abs/2003.12929
+- コード：https://github.com/fuy34/superpixel_fcn
 
 <a name="NAS"></a>
 
@@ -522,6 +532,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Denoising"></a>
 
 # 画像修復
+
+**A Physics-based Noise Formation Model for Extreme Low-light Raw Denoising**
+
+- 論文：https://arxiv.org/abs/2003.12751
+
+- コード：https://github.com/Vandermode/NoiseModel
 
 **CycleISP: Real Image Restoration via Improved Data Synthesis**
 
