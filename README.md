@@ -10,6 +10,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [物体追跡](#Object-Tracking)
 - [セマンティックセグメンテーション](#Semantic-Segmentation)
 - [インスタンスセグメンテーション](#Instance-Segmentation)
+- [全景分割](#Panoptic-Segmentation)
 - [動画物体分割](#VOS)
 - [スーパーピクセルセグメンテーション](#Superpixel)
 - [NAS](#NAS)
@@ -196,6 +197,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：https://arxiv.org/abs/2003.11712
 
 - コード：https://github.com/aim-uofa/AdelaiDet
+
+<a name="Panoptic-Segmentation"></a>
+
+# 全景分割
+
+**BANet: Bidirectional Aggregation Network with Occlusion Handling for Panoptic Segmentation**
+
+論文：https://arxiv.org/abs/2003.14031
+
+コード：https://github.com/Mooonside/BANet
 
 <a name="VOS"></a>
 
