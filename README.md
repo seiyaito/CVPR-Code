@@ -11,7 +11,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [セマンティックセグメンテーション](#Semantic-Segmentation)
 - [インスタンスセグメンテーション](#Instance-Segmentation)
 - [動画物体分割](#VOS)
-- [超像素分割](#Superpixel)
+- [スーパーピクセルセグメンテーション](#Superpixel)
 - [NAS](#NAS)
 - [GAN](#GAN)
 - [Re-ID](#Re-ID)
@@ -30,10 +30,10 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [群衆カウント](#Crowd-Counting)
 - [深度推定](#Depth-Estimation)
 - [6D物体姿勢推定](#6DOF)
-- [手势推定](#Hand-Pose)
+- [手姿勢推定](#Hand-Pose)
 - [画像修復](#Denoising)
 - [デブラー](#Deblurring)
-- [特征点検出与描述](#Feature)
+- [特徴点検出・記述](#Feature)
 - [VQA](#VQA)
 - [視覚言語ナビゲーション](#VLN)
 - [動画圧縮](#Video-Compression)
@@ -219,7 +219,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="Superpixel"></a>
 
-# 超像素分割
+# スーパーピクセルセグメンテーション
 
 **Superpixel Segmentation with Fully Convolutional Networks**
 
@@ -415,7 +415,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
 
 - 論文：https://arxiv.org/abs/2003.10608
-- コード和データセット：https://github.com/Jyouhou/UnrealText/
+- コードとデータセット：https://github.com/Jyouhou/UnrealText/
 
 **ABCNet: Real-time Scene Text Spotting with Adaptive Bezier-Curve Network**
 
@@ -436,7 +436,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
 
 - 論文：https://arxiv.org/abs/2003.10608
-- コード和データセット：https://github.com/Jyouhou/UnrealText/
+- コードとデータセット：https://github.com/Jyouhou/UnrealText/
 
 **ABCNet: Real-time Scene Text Spotting with Adaptive Bezier-Curve Network**
 
@@ -521,7 +521,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="Hand-Pose"></a>
 
-# 手势推定
+# 手姿勢推定
 
 **Monocular Real-time Hand Shape and Motion Capture using Multi-modal Data**
 
@@ -569,7 +569,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="Feature"></a>
 
-# 特征点検出与描述
+# 特徴点検出・記述
 
 **ASLFeat: Learning Local Features of Accurate Shape and Localization**
 
@@ -670,7 +670,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
 
 - 論文：https://arxiv.org/abs/2003.10608
-- コード和データセット：https://github.com/Jyouhou/UnrealText/
+- コードとデータセット：https://github.com/Jyouhou/UnrealText/
 
 **PANDA: A Gigapixel-level Human-centric Video Dataset**
 
