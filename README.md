@@ -304,6 +304,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 ## 3D点群セマンティックセグメンテーション
 
+**PolarNet: An Improved Grid Representation for Online LiDAR Point Clouds Semantic Segmentation**
+
+- 論文：https://arxiv.org/abs/2003.14032
+- コード：https://github.com/edwardzhou130/PolarSeg
+
 **Learning to Segment 3D Point Clouds in 2D Image Space**
 
 - 論文：https://arxiv.org/abs/2003.05593
