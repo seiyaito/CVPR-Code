@@ -535,6 +535,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：準備中
 - コード：https://github.com/limbo0000/TPN
 
+## 基于骨架的动作識別
+
+**Disentangling and Unifying Graph Convolutions for Skeleton-Based Action Recognition**
+
+- 論文：https://arxiv.org/abs/2003.14111
+- コード：https://github.com/kenziyuliu/ms-g3d
+
 <a name="Crowd-Counting"></a>
 
 # 群衆カウント
