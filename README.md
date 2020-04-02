@@ -25,6 +25,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [人体姿勢推定](#Human-Pose-Estimation)
 - [シーンテキスト検出](#Scene-Text-Detection)
 - [シーンテキスト識別](#Scene-Text-Recognition)
+- [超解像](#Super-Resolution)
 - [モデル圧縮](#Model-Compression)
 - [モデル枝刈り](#Model-Pruning)
 - [行動識別](#Action-Recognition)
@@ -286,6 +287,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # Re-ID
 
+**Pose-guided Visible Part Matching for Occluded Person ReID**
+
+- 論文：https://arxiv.org/abs/2004.00230
+- コード：https://github.com/hh23333/PVPM
+
 **Weakly supervised discriminative feature learning with state information for person identification**
 
 - 論文：https://arxiv.org/abs/2002.11939 
@@ -337,6 +343,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Face-Recognition"></a>
 
 # 顔識別
+
+**CurricularFace: Adaptive Curriculum Learning Loss for Deep Face Recognition**
+
+- 論文：https://arxiv.org/abs/2004.00288
+
+- コード：https://github.com/HuangYG123/CurricularFace
 
 **Learning Meta Face Recognition in Unseen Domains**
 
@@ -402,9 +414,8 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 **Compressed Volumetric Heatmaps for Multi-Person 3D Pose Estimation**
 
-- 論文：なし
-
-- コード：https://github.com/anonymous-goat/CVPR-2020 
+- 論文：https://arxiv.org/abs/2004.00329
+- コード：https://github.com/fabbrimatteo/LoCO
 
 **VIBE: Video Inference for Human Body Pose and Shape Estimation**
 
@@ -474,6 +485,14 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Super-Resolution"></a>
 
 # 超解像
+
+## 画像超解像
+
+**Rethinking Data Augmentation for Image Super-resolution: A Comprehensive Analysis and a New Strategy**
+
+論文：https://arxiv.org/abs/2004.00448
+
+コード：https://github.com/clovaai/cutblur
 
 ## 動画超解像
 
