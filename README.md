@@ -129,6 +129,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体追跡
 
+**High-Performance Long-Term Tracking with Meta-Updater**
+
+- 論文：https://arxiv.org/abs/2004.00305
+
+- コード：https://github.com/Daikenan/LTMU
+
 **AutoTrack: Towards High-Performance Visual Tracking for UAV with Automatic Spatio-Temporal Regularization**
 
 - 論文：https://arxiv.org/abs/2003.12949
@@ -538,6 +544,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Hand-Pose"></a>
 
 # 手姿勢推定
+
+**HOPE-Net: A Graph-based Model for Hand-Object Pose Estimation**
+
+- 論文：https://arxiv.org/abs/2004.00060
+
+- ホームページ：http://vision.sice.indiana.edu/projects/hopenet
 
 **Monocular Real-time Hand Shape and Motion Capture using Multi-modal Data**
 
