@@ -44,6 +44,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [Human-Object Interaction (HOI)検出](#HOI)
 - [行動軌跡予測](#HTP)
 - [モーション予測](#Motion-Predication)
+- [HDR](#HDR)
 - [データセット](#Datasets)
 - [その他](#Others)
 - [採択されたか不明](#Not-Sure)
@@ -129,6 +130,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Object-Tracking"></a>
 
 # 物体追跡
+
+Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
+
+- 論文：https://arxiv.org/abs/2003.09595 
+- コード：https://github.com/MasterBin-IIAU/CSA 
 
 **High-Performance Long-Term Tracking with Meta-Updater**
 
@@ -395,6 +401,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 # 人体姿勢推定
 
 ## 2D人体姿勢推定
+
+**HigherHRNet: Scale-Aware Representation Learning for Bottom-Up Human Pose Estimation**
+
+- 論文：https://arxiv.org/abs/1908.10357
+- コード：https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation
 
 **The Devil is in the Details: Delving into Unbiased Data Processing for Human Pose Estimation**
 
@@ -722,6 +733,18 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - コード：https://github.com/pxiangwu/MotionNet
 
+<a name="HDR"></a>
+
+# HDR
+
+**Single-Image HDR Reconstruction by Learning to Reverse the Camera Pipeline**
+
+- ホームページ：https://www.cmlab.csie.ntu.edu.tw/~yulunliu/SingleHDR
+
+- 論文下载链接：https://www.cmlab.csie.ntu.edu.tw/~yulunliu/SingleHDR_/00942.pdf
+
+- コード：https://github.com/alex04072000/SingleHDR
+
 <a name="Datasets"></a>
 
 # データセット
@@ -750,6 +773,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Others"></a>
 
 # その他
+
+**Polarized Reflection Removal with Perfect Alignment in the Wild** 
+
+- ホームページ：https://leichenyang.weebly.com/project-polarized.html
+- コード：https://github.com/ChenyangLEI/CVPR2020-Polarized-Reflection-Removal-with-Perfect-Alignment 
 
 **Background Matting: The World is Your Green Screen**
 
