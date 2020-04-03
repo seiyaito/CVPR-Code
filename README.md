@@ -662,6 +662,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 動画補間
 
+**Scene-Adaptive Video Frame Interpolation via Meta-Learning**
+
+- 論文：https://arxiv.org/abs/2004.00779
+- コード：https://github.com/myungsub/meta-interpolation
+
 **Softmax Splatting for Video Frame Interpolation**
 
 - ホームページ：http://sniklaus.com/papers/softsplat
@@ -745,6 +750,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Others"></a>
 
 # その他
+
+**Background Matting: The World is Your Green Screen**
+
+- 論文：https://arxiv.org/abs/2004.00626
+- コード：http://github.com/senguptaumd/Background-Matting
 
 **What Deep CNNs Benefit from Global Covariance Pooling: An Optimization Perspective**
 
