@@ -563,6 +563,12 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 ## 単眼深度推定
 
+**3D Packing for Self-Supervised Monocular Depth Estimation**
+
+- 論文：https://arxiv.org/abs/1905.02693
+- コード：https://arxiv.org/abs/1905.02693
+- Demo動画：https://www.bilibili.com/video/av70562892/
+
 **Domain Decluttering: Simplifying Images to Mitigate Synthetic-Real Domain Shift and Improve Depth Estimation**
 
 - 論文：https://arxiv.org/abs/2002.12114
@@ -748,6 +754,11 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 <a name="Datasets"></a>
 
 # データセット
+
+**Assessing Image Quality Issues for Real-World Problems**
+
+- ホームページ：https://vizwiz.org/tasks-and-datasets/image-quality-issues/
+- 論文：https://arxiv.org/abs/2003.12511
 
 **UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
 
