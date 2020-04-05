@@ -578,6 +578,12 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 # 6D物体姿勢推定
 
+**EPOS: Estimating 6D Pose of Objects with Symmetries**
+
+ホームページ：http://cmp.felk.cvut.cz/epos
+
+論文：https://arxiv.org/abs/2004.00605
+
 **G2L-Net: Global to Local Network for Real-time 6D Pose Estimation with Embedding Vector Features**
 
 - 論文：https://arxiv.org/abs/2003.11089
