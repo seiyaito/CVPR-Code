@@ -168,6 +168,12 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 # セマンティックセグメンテーション
 
+**Context Prior for Scene Segmentation**
+
+- 論文：https://arxiv.org/abs/2004.01547
+
+- コード：https://git.io/ContextPrior
+
 **Strip Pooling: Rethinking Spatial Pooling for Scene Parsing**
 
 - 論文：https://arxiv.org/abs/2003.13328
