@@ -106,6 +106,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 3D物体検出
 
+**DSGN: Deep Stereo Geometry Network for 3D Object Detection**
+
+- 論文：https://arxiv.org/abs/2001.03398
+- コード：https://github.com/chenyilun95/DSGN
+
+**LiDAR-based Online 3D Video Object Detection with Graph-based Message Passing and Spatiotemporal Transformer Attention**
+
+- 論文：https://arxiv.org/abs/2004.01389
+- コード：https://github.com/yinjunbo/3DVID
+
 **PV-RCNN: Point-Voxel Feature Set Abstraction for 3D Object Detection**
 
 - 論文：https://arxiv.org/abs/1912.13192
