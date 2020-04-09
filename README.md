@@ -821,6 +821,20 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 # データセット
 
+**A Local-to-Global Approach to Multi-modal Movie Scene Segmentation**
+
+- ホームページ：https://anyirao.com/projects/SceneSeg.html
+
+- 論文下载链接：https://arxiv.org/abs/2004.02678
+
+- コード：https://github.com/AnyiRao/SceneSeg
+
+**Deep Homography Estimation for Dynamic Scenes**
+
+- 論文：https://arxiv.org/abs/2004.02132
+
+- データセット：https://github.com/lcmhoang/hmg-dynamics
+
 **Assessing Image Quality Issues for Real-World Problems**
 
 - ホームページ：https://vizwiz.org/tasks-and-datasets/image-quality-issues/
@@ -850,6 +864,14 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 <a name="Others"></a>
 
 # その他
+
+**A Local-to-Global Approach to Multi-modal Movie Scene Segmentation**
+
+- ホームページ：https://anyirao.com/projects/SceneSeg.html
+
+- 論文下载链接：https://arxiv.org/abs/2004.02678
+
+- コード：https://github.com/AnyiRao/SceneSeg
 
 **DeepFLASH: An Efficient Network for Learning-based Medical Image Registration**
 
