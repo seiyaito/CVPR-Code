@@ -106,6 +106,14 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 3D物体検出
 
+**3DSSD: Point-based 3D Single Stage Object Detector**
+
+- CVPR 2020 Oral
+
+- 論文：https://arxiv.org/abs/2002.10187
+
+- コード：https://github.com/tomztyang/3DSSD
+
 **Disp R-CNN: Stereo 3D Object Detection via Shape Prior Guided Instance Disparity Estimation**
 
 - 論文：https://arxiv.org/abs/2004.03572
@@ -248,6 +256,11 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 <a name="Panoptic-Segmentation"></a>
 
 # 全景分割
+
+**Pixel Consensus Voting for Panoptic Segmentation**
+
+- 論文：https://arxiv.org/abs/2004.01849
+- コード：还未公布
 
 **BANet: Bidirectional Aggregation Network with Occlusion Handling for Panoptic Segmentation**
 
