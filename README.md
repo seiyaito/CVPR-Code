@@ -106,6 +106,18 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 3D物体検出
 
+**Disp R-CNN: Stereo 3D Object Detection via Shape Prior Guided Instance Disparity Estimation**
+
+- 論文：https://arxiv.org/abs/2004.03572
+
+- コード：https://github.com/zju3dv/disprcn
+
+**End-to-End Pseudo-LiDAR for Image-Based 3D Object Detection**
+
+- 論文：https://arxiv.org/abs/2004.03080
+
+- コード：https://github.com/mileyan/pseudo-LiDAR_e2e
+
 **DSGN: Deep Stereo Geometry Network for 3D Object Detection**
 
 - 論文：https://arxiv.org/abs/2001.03398
@@ -177,6 +189,12 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 <a name="Semantic-Segmentation"></a>
 
 # セマンティックセグメンテーション
+
+**Temporally Distributed Networks for Fast Video Segmentation**
+
+- 論文：https://arxiv.org/abs/2004.01800
+
+- コード：https://github.com/feinanshan/TDNet
 
 **Context Prior for Scene Segmentation**
 
@@ -270,6 +288,11 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 # NAS
 
+**Neural Architecture Search for Lightweight Non-Local Networks**
+
+- 論文：https://arxiv.org/abs/2004.01961
+- コード：https://github.com/LiYingwei/AutoNL
+
 **Rethinking Performance Estimation in Neural Architecture Search**
 
 - 論文：準備中
@@ -359,8 +382,14 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 **RPM-Net: Robust Point Matching using Learned Features**
 
 - 論文：https://arxiv.org/abs/2003.13479
-
 - コード：https://github.com/yewzijian/RPMNet 
+
+## 3D点群补全
+
+**Cascaded Refinement Network for Point Cloud Completion**
+
+- 論文：https://arxiv.org/abs/2004.03327
+- コード：https://github.com/xiaogangw/cascaded-point-completion
 
 <a name="Face-Recognition"></a>
 
@@ -559,8 +588,10 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 **Temporal Pyramid Network for Action Recognition**
 
-- 論文：準備中
-- コード：https://github.com/limbo0000/TPN
+- ホームページ：https://decisionforce.github.io/TPN
+
+- 論文：https://arxiv.org/abs/2004.03548 
+- コード：https://github.com/decisionforce/TPN 
 
 ## 基于骨架的动作識別
 
@@ -657,7 +688,7 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 **Cascaded Deep Video Deblurring Using Temporal Sharpness Prior**
 
 - ホームページ：https://csbhr.github.io/projects/cdvd-tsp/index.html 
-- 論文：準備中
+- 論文：https://arxiv.org/abs/2004.02501 
 - コード：https://github.com/csbhr/CDVD-TSP
 
 <a name="Feature"></a>
@@ -806,6 +837,18 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 <a name="Others"></a>
 
 # その他
+
+**DeepFLASH: An Efficient Network for Learning-based Medical Image Registration**
+
+- 論文：https://arxiv.org/abs/2004.02097
+
+- コード：https://github.com/jw4hv/deepflash
+
+**Self-Supervised Scene De-occlusion**
+
+- ホームページ：https://xiaohangzhan.github.io/projects/deocclusion/
+- 論文：https://arxiv.org/abs/2004.02788
+- コード：https://github.com/XiaohangZhan/deocclusion
 
 **Polarized Reflection Removal with Perfect Alignment in the Wild** 
 
