@@ -28,7 +28,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [超解像](#Super-Resolution)
 - [モデル圧縮](#Model-Compression)
 - [モデル枝刈り](#Model-Pruning)
-- [行動識別](#Action-Recognition)
+- [動画理解/行動識別](#Action-Recognition)
 - [群衆カウント](#Crowd-Counting)
 - [深度推定](#Depth-Estimation)
 - [6D物体姿勢推定](#6DOF)
@@ -197,6 +197,11 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 <a name="Semantic-Segmentation"></a>
 
 # セマンティックセグメンテーション
+
+**Self-supervised Equivariant Attention Mechanism for Weakly Supervised Semantic Segmentation**
+
+- 論文：https://arxiv.org/abs/2004.04581
+- コード：https://github.com/YudeWang/SEAM
 
 **Temporally Distributed Networks for Fast Video Segmentation**
 
@@ -481,6 +486,11 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 ## 3D人体姿勢推定
 
+**Self-Supervised 3D Human Pose Estimation via Part Guided Novel Image Synthesis**
+
+- ホームページ：http://val.cds.iisc.ac.in/pgp-human/
+- 論文：https://arxiv.org/abs/2004.04400
+
 **Compressed Volumetric Heatmaps for Multi-Person 3D Pose Estimation**
 
 - 論文：https://arxiv.org/abs/2004.00329
@@ -557,6 +567,12 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 ## 画像超解像
 
+**Structure-Preserving Super Resolution with Gradient Guidance**
+
+- 論文：https://arxiv.org/abs/2003.13081
+
+- コード：https://github.com/Maclory/SPSR
+
 **Rethinking Data Augmentation for Image Super-resolution: A Comprehensive Analysis and a New Strategy**
 
 論文：https://arxiv.org/abs/2004.00448
@@ -597,7 +613,13 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 <a name="Action-Recognition"></a>
 
-# 行動識別
+# 動画理解/行動識別
+
+**X3D: Expanding Architectures for Efficient Video Recognition**
+
+- 論文：https://arxiv.org/abs/2004.04730
+
+- コード：https://github.com/facebookresearch/SlowFast
 
 **Temporal Pyramid Network for Action Recognition**
 
@@ -864,6 +886,11 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 <a name="Others"></a>
 
 # その他
+
+**Quasi-Newton Solver for Robust Non-Rigid Registration**
+
+- 論文：https://arxiv.org/abs/2004.04322
+- コード：https://github.com/Juyong/Fast_RNRR
 
 **A Local-to-Global Approach to Multi-modal Movie Scene Segmentation**
 
