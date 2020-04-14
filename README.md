@@ -26,13 +26,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [シーンテキスト検出](#Scene-Text-Detection)
 - [シーンテキスト識別](#Scene-Text-Recognition)
 - [超解像](#Super-Resolution)
-- [モデル圧縮](#Model-Compression)
-- [モデル枝刈り](#Model-Pruning)
+- [モデル圧縮/枝刈り](#Model-Compression)
 - [動画理解/行動識別](#Action-Recognition)
 - [群衆カウント](#Crowd-Counting)
 - [深度推定](#Depth-Estimation)
 - [6D物体姿勢推定](#6DOF)
 - [手姿勢推定](#Hand-Pose)
+- [显著性検出](#Saliency)
 - [画像修復](#Denoising)
 - [デブラー](#Deblurring)
 - [特徴点検出・記述](#Feature)
@@ -41,9 +41,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [動画圧縮](#Video-Compression)
 - [動画補間](#Video-Frame-Interpolation)
 - [スタイル変換](#Style-Transfer)
+- [车道线検出](#Lane-Detection)
 - [Human-Object Interaction (HOI)検出](#HOI)
 - [行動軌跡予測](#HTP)
 - [モーション予測](#Motion-Predication)
+- [虚拟试衣](#Virtual-Try-On)
 - [HDR](#HDR)
 - [データセット](#Datasets)
 - [その他](#Others)
@@ -71,6 +73,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Object-Detection"></a>
 
 # 物体検出
+
+**Instance-aware, Context-focused, and Memory-efficient Weakly Supervised Object Detection**
+
+- 論文：https://arxiv.org/abs/2004.04725
+- コード：https://github.com/NVlabs/wetectron
 
 **Bridging the Gap Between Anchor-based and Anchor-free Detection via Adaptive Training Sample Selection**
 
@@ -105,6 +112,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="3D-Object-Detection"></a>
 
 # 3D物体検出
+
+**MLCVNet: Multi-Level Context VoteNet for 3D Object Detection**
+
+- 論文：https://arxiv.org/abs/2004.05679
+- コード：https://github.com/NUAAXQ/MLCVNet
 
 **3DSSD: Point-based 3D Single Stage Object Detector**
 
@@ -161,7 +173,14 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体追跡
 
-Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
+**Siam R-CNN: Visual Tracking by Re-Detection**
+
+- ホームページ：https://www.vision.rwth-aachen.de/page/siamrcnn
+- 論文：https://arxiv.org/abs/1911.12836
+- 論文2：https://www.vision.rwth-aachen.de/media/papers/192/siamrcnn.pdf
+- コード：https://github.com/VisualComputingInstitute/SiamR-CNN
+
+**Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises**
 
 - 論文：https://arxiv.org/abs/2003.09595 
 - コード：https://github.com/MasterBin-IIAU/CSA 
@@ -306,6 +325,12 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 # NAS
 
+**FBNetV2: Differentiable Neural Architecture Search for Spatial and Channel Dimensions**
+
+- 論文下载链接：https://arxiv.org/abs/2004.05565
+
+- コード：https://github.com/facebookresearch/mobile-vision
+
 **Neural Architecture Search for Lightweight Non-Local Networks**
 
 - 論文：https://arxiv.org/abs/2004.01961
@@ -378,6 +403,12 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 - コード：https://github.com/lyqun/FPConv
 
 ## 3D点群セマンティックセグメンテーション
+
+**Weakly Supervised Semantic Point Cloud Segmentation:Towards 10X Fewer Labels**
+
+- 論文：https://arxiv.org/abs/2004.0409
+
+- コード：https://github.com/alex-xun-xu/WeakSupPointCloudSeg
 
 **PolarNet: An Improved Grid Representation for Online LiDAR Point Clouds Semantic Segmentation**
 
@@ -588,7 +619,17 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 <a name="Model-Compression"></a>
 
-# モデル圧縮
+# モデル圧縮/枝刈り
+
+**Towards Efficient Model Compression via Learned Global Ranking**
+
+- 論文：https://arxiv.org/abs/1904.12368
+- コード：https://github.com/cmu-enyac/LeGR
+
+**HRank: Filter Pruning using High-Rank Feature Map**
+
+- 論文：http://arxiv.org/abs/2002.10179
+- コード：https://github.com/lmbxmu/HRank 
 
 **GAN Compression: Efficient Architectures for Interactive Conditional GANs**
 
@@ -602,18 +643,15 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 - コード：https://github.com/ofsoundof/group_sparsity
 
-<a name="Model-Pruning"></a>
-
-# モデル枝刈り
-
-**HRank: Filter Pruning using High-Rank Feature Map**
-
-- 論文：http://arxiv.org/abs/2002.10179
-- コード：https://github.com/lmbxmu/HRank 
-
 <a name="Action-Recognition"></a>
 
 # 動画理解/行動識別
+
+**TEA: Temporal Excitation and Aggregation for Action Recognition**
+
+- 論文：https://arxiv.org/abs/2004.01398
+
+- コード：https://github.com/Phoenix1327/tea-action-recognition
 
 **X3D: Expanding Architectures for Efficient Video Recognition**
 
@@ -642,6 +680,12 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 <a name="Depth-Estimation"></a>
 
 # 深度推定
+
+**Towards Better Generalization: Joint Depth-Pose Learning without PoseNet**
+
+- 論文：https://github.com/B1ueber2y/TrianFlow
+
+- コード：https://github.com/B1ueber2y/TrianFlow
 
 ## 単眼深度推定
 
@@ -687,6 +731,17 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 - 論文：https://arxiv.org/abs/2003.09572
 
 - コード：https://github.com/CalciferZh/minimal-hand
+
+<a name="Saliency"></a>
+
+# 显著性検出
+
+**UC-Net: Uncertainty Inspired RGB-D Saliency Detection via Conditional Variational Autoencoders**
+
+- ホームページ：http://dpfan.net/d3netbenchmark/
+
+- 論文：https://arxiv.org/abs/2004.05763
+- コード：https://github.com/JingZhang617/UCNet
 
 <a name="Denoising"></a>
 
@@ -788,6 +843,15 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 
 - コード：https://github.com/mingsun-tse/collaborative-distillation
 
+<a name="Lane-Detection"></a>
+
+# 车道线検出
+
+**Inter-Region Affinity Distillation for Road Marking Segmentation**
+
+- 論文：https://arxiv.org/abs/2004.05304
+- コード：https://github.com/cardwing/Codes-for-IntRA-KD
+
 <a name="HOI"></a>
 
 # Human-Object Interaction (HOT)検出
@@ -826,6 +890,15 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 - 論文：https://arxiv.org/abs/2003.06754
 
 - コード：https://github.com/pxiangwu/MotionNet
+
+<a name="Virtual-Try-On"></a>
+
+# 虚拟试衣
+
+**Towards Photo-Realistic Virtual Try-On by Adaptively Generating↔Preserving Image Content**
+
+- 論文：https://arxiv.org/abs/2003.05863
+- コード：https://github.com/switchablenorms/DeepFashion_Try_On
 
 <a name="HDR"></a>
 
@@ -886,6 +959,11 @@ Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises
 <a name="Others"></a>
 
 # その他
+
+**Self-Supervised Monocular Scene Flow Estimation**
+
+- 論文：https://arxiv.org/abs/2004.04143
+- コード：https://github.com/visinf/self-mono-sf
 
 **Quasi-Newton Solver for Robust Non-Rigid Registration**
 
