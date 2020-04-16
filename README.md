@@ -296,6 +296,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 動画物体分割
 
+**A Transductive Approach for Video Object Segmentation**
+
+- 論文：https://arxiv.org/abs/2004.07193
+
+- コード：https://github.com/microsoft/transductive-vos.pytorch
+
 **State-Aware Tracker for Real-Time Video Object Segmentation**
 
 - 論文：https://arxiv.org/abs/2003.00482
@@ -647,6 +653,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 動画理解/行動識別
 
+**FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding**
+
+- ホームページ：https://sdolivia.github.io/FineGym/
+- 論文：https://arxiv.org/abs/2004.06704
+
 **TEA: Temporal Excitation and Aggregation for Action Recognition**
 
 - 論文：https://arxiv.org/abs/2004.01398
@@ -915,6 +926,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Datasets"></a>
 
 # データセット
+
+**FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding**
+
+- ホームページ：https://sdolivia.github.io/FineGym/
+- 論文：https://arxiv.org/abs/2004.06704
 
 **A Local-to-Global Approach to Multi-modal Movie Scene Segmentation**
 
