@@ -217,6 +217,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # セマンティックセグメンテーション
 
+**Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision**
+
+- Oral
+- 論文：https://arxiv.org/abs/2004.07703
+- コード：https://github.com/feipan664/IntraDA
+
 **Self-supervised Equivariant Attention Mechanism for Weakly Supervised Semantic Segmentation**
 
 - 論文：https://arxiv.org/abs/2004.04581
