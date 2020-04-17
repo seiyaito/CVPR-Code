@@ -529,6 +529,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 ## 3D人体姿勢推定
 
+**Bodies at Rest: 3D Human Pose and Shape Estimation from a Pressure Image using Synthetic Data**
+
+- 論文下载链接：https://arxiv.org/abs/2004.01166
+
+- コード：https://github.com/Healthcare-Robotics/bodies-at-rest
+- データセット：https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KOA4ML
+
 **Self-Supervised 3D Human Pose Estimation via Part Guided Novel Image Synthesis**
 
 - ホームページ：http://val.cds.iisc.ac.in/pgp-human/
@@ -932,6 +939,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Datasets"></a>
 
 # データセット
+
+**Bodies at Rest: 3D Human Pose and Shape Estimation from a Pressure Image using Synthetic Data**
+
+- 論文下载链接：https://arxiv.org/abs/2004.01166
+
+- コード：https://github.com/Healthcare-Robotics/bodies-at-rest
+- データセット：https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KOA4ML
 
 **FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding**
 
