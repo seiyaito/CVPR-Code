@@ -173,6 +173,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体追跡
 
+**ROAM: Recurrently Optimizing Tracking Model**
+
+- 論文：https://arxiv.org/abs/1907.12006
+
+- コード：https://github.com/skyoung/ROAM
+
 **Siam R-CNN: Visual Tracking by Re-Detection**
 
 - ホームページ：https://www.vision.rwth-aachen.de/page/siamrcnn
@@ -363,6 +369,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # GAN
 
+**Unpaired Portrait Drawing Generation via Asymmetric Cycle Mapping**
+
+- 論文：https://yiranran.github.io/files/CVPR2020_Unpaired%20Portrait%20Drawing%20Generation%20via%20Asymmetric%20Cycle%20Mapping.pdf
+- コード：https://github.com/yiranran/Unpaired-Portrait-Drawing
+
 **Learning to Cartoonize Using White-box Cartoon Representations**
 
 - 論文：https://github.com/SystemErrorWang/White-box-Cartoonization/blob/master/paper/06791.pdf
@@ -402,6 +413,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 # 3D点群（セマンティックセグメンテーション等）
 
 ## 3D点群畳み込み
+
+**Global-Local Bidirectional Reasoning for Unsupervised Representation Learning of 3D Point Clouds**
+
+- 論文下载链接：https://arxiv.org/abs/2003.12971
+
+- コード：https://github.com/raoyongming/PointGLR
 
 **Grid-GCN for Fast and Scalable Point Cloud Learning**
 
@@ -995,6 +1012,18 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Others"></a>
 
 # その他
+
+**Towards Learning Structure via Consensus for Face Segmentation and Parsing**
+
+- 論文：https://arxiv.org/abs/1911.00957
+- コード：https://github.com/isi-vista/structure_via_consensus
+
+**Plug-and-Play Algorithms for Large-scale Snapshot Compressive Imaging**
+
+- Oral
+- 論文：https://arxiv.org/abs/2003.13654
+
+- コード：https://github.com/liuyang12/PnP-SCI
 
 **Lightweight Photometric Stereo for Facial Details Recovery**
 
