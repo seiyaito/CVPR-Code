@@ -369,6 +369,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # GAN
 
+**Semantically Mutil-modal Image Synthesis**
+
+- ホームページ：http://seanseattle.github.io/SMIS
+- 論文：https://arxiv.org/abs/2003.12697
+- コード：https://github.com/Seanseattle/SMIS
+
 **Unpaired Portrait Drawing Generation via Asymmetric Cycle Mapping**
 
 - 論文：https://yiranran.github.io/files/CVPR2020_Unpaired%20Portrait%20Drawing%20Generation%20via%20Asymmetric%20Cycle%20Mapping.pdf
@@ -648,6 +654,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 ## 動画超解像
 
+**Space-Time-Aware Multi-Resolution Video Enhancement**
+
+- ホームページ：https://alterzero.github.io/projects/STAR.html
+- 論文：http://arxiv.org/abs/2003.13170
+- コード：https://github.com/alterzero/STARnet
+
 **Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution**
 
 - 論文：https://arxiv.org/abs/2002.11616 
@@ -863,6 +875,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 動画補間
 
+**Space-Time-Aware Multi-Resolution Video Enhancement**
+
+- ホームページ：https://alterzero.github.io/projects/STAR.html
+- 論文：http://arxiv.org/abs/2003.13170
+- コード：https://github.com/alterzero/STARnet
+
 **Scene-Adaptive Video Frame Interpolation via Meta-Learning**
 
 - 論文：https://arxiv.org/abs/2004.00779
@@ -1012,6 +1030,19 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Others"></a>
 
 # その他
+
+**Self-Supervised Viewpoint Learning from Image Collections**
+
+- 論文：https://arxiv.org/abs/2004.01793
+- 論文2：https://research.nvidia.com/sites/default/files/pubs/2020-03_Self-Supervised-Viewpoint-Learning/SSV-CVPR2020.pdf 
+- コード：https://github.com/NVlabs/SSV 
+
+**Towards Discriminability and Diversity: Batch Nuclear-norm Maximization under Label Insufficient Situations**
+
+- Oral
+
+- 論文：https://arxiv.org/abs/2003.12237 
+- コード：https://github.com/cuishuhao/BNM 
 
 **Towards Learning Structure via Consensus for Face Segmentation and Parsing**
 
