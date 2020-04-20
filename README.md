@@ -915,6 +915,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # Human-Object Interaction (HOT)検出
 
+**Detailed 2D-3D Joint Representation for Human-Object Interaction**
+
+- 論文：https://arxiv.org/abs/2004.08154
+
+- コード：https://github.com/DirtyHarryLYL/DJ-RN
+
 **Cascaded Human-Object Interaction Recognition**
 
 - 論文：https://arxiv.org/abs/2003.04262
@@ -1030,6 +1036,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Others"></a>
 
 # その他
+
+**MaskFlownet: Asymmetric Feature Matching with Learnable Occlusion Mask**
+
+- 論文：https://arxiv.org/abs/2003.10955 
+
+- コード：https://github.com/microsoft/MaskFlownet 
 
 **Self-Supervised Viewpoint Learning from Image Collections**
 
