@@ -1037,6 +1037,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # その他
 
+**Bringing Old Photos Back to Life**
+
+- ホームページ：http://raywzy.com/Old_Photo/
+- 論文：https://arxiv.org/abs/2004.09484
+
 **MaskFlownet: Asymmetric Feature Matching with Learnable Occlusion Mask**
 
 - 論文：https://arxiv.org/abs/2003.10955 
