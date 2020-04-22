@@ -734,6 +734,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 深度推定
 
+**AANet: Adaptive Aggregation Network for Efficient Stereo Matching**
+
+- 論文：https://arxiv.org/abs/2004.09548
+- コード：https://github.com/haofeixu/aanet
+
 **Towards Better Generalization: Joint Depth-Pose Learning without PoseNet**
 
 - 論文：https://github.com/B1ueber2y/TrianFlow
