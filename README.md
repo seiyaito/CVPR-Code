@@ -74,6 +74,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体検出
 
+**Detection in Crowded Scenes: One Proposal, Multiple Predictions**
+
+- 論文：https://arxiv.org/abs/2003.09163
+- コード：https://github.com/megvii-model/CrowdDetection
+
 **Instance-aware, Context-focused, and Memory-efficient Weakly Supervised Object Detection**
 
 - 論文：https://arxiv.org/abs/2004.04725
