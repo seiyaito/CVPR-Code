@@ -805,6 +805,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 显著性検出
 
+**JL-DCF: Joint Learning and Densely-Cooperative Fusion Framework for RGB-D Salient Object Detection**
+
+- 論文：https://arxiv.org/abs/2004.08515
+
+- コード：https://github.com/kerenfu/JLDCF/
+
 **UC-Net: Uncertainty Inspired RGB-D Saliency Detection via Conditional Variational Autoencoders**
 
 - ホームページ：http://dpfan.net/d3netbenchmark/
