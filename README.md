@@ -178,6 +178,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体追跡
 
+**D3S -- A Discriminative Single Shot Segmentation Tracker**
+
+- 論文：https://arxiv.org/abs/1911.08862
+- コード：https://github.com/alanlukezic/d3s
+
 **ROAM: Recurrently Optimizing Tracking Model**
 
 - 論文：https://arxiv.org/abs/1907.12006
