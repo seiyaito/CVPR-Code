@@ -74,6 +74,17 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体検出
 
+**Revisiting the Sibling Head in Object Detector**
+
+- 論文：https://arxiv.org/abs/2003.07540
+
+- コード：https://github.com/Sense-X/TSD 
+
+**Scale-equalizing Pyramid Convolution for Object Detection**
+
+- 論文：なし
+- コード：https://github.com/jshilong/SEPC 
+
 **Detection in Crowded Scenes: One Proposal, Multiple Predictions**
 
 - 論文：https://arxiv.org/abs/2003.09163
