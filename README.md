@@ -17,11 +17,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [GAN](#GAN)
 - [Re-ID](#Re-ID)
 - [3D点群（セマンティックセグメンテーション等）](#3D-PointCloud)
-- [顔識別](#Face-Recognition)
-- [顔検出](#Face-Detection)
-- [Face Anti-spoofing](#FAS)
-- [顔表情識別](#Facial-Expression-Recognition)
-- [Face Rotation](#Face-Rotation)
+- [顔（識別/検出/重建等）](#Face)
 - [人体姿勢推定](#Human-Pose-Estimation)
 - [シーンテキスト検出](#Scene-Text-Detection)
 - [シーンテキスト識別](#Scene-Text-Recognition)
@@ -47,6 +43,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [モーション予測](#Motion-Predication)
 - [虚拟试衣](#Virtual-Try-On)
 - [HDR](#HDR)
+- [对抗样本](#AE)
 - [データセット](#Datasets)
 - [その他](#Others)
 - [採択されたか不明](#Not-Sure)
@@ -502,9 +499,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：https://arxiv.org/abs/2004.03327
 - コード：https://github.com/xiaogangw/cascaded-point-completion
 
-<a name="Face-Recognition"></a>
+<a name="Face"></a>
 
-# 顔識別
+# 顔
+
+## 顔識別
 
 **CurricularFace: Adaptive Curriculum Learning Loss for Deep Face Recognition**
 
@@ -518,13 +517,9 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - コード：https://github.com/cleardusk/MFR
 - 解説：https://mp.weixin.qq.com/s/YZoEnjpnlvb90qSI3xdJqQ 
 
-<a name="Face-Detection"></a>
+## 顔検出
 
-# 顔検出
-
-<a name="FAS"></a>
-
-# Face Anti-spoofing
+## Face Anti-spoofing
 
 **Searching Central Difference Convolutional Networks for Face Anti-Spoofing**
 
@@ -532,9 +527,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - コード：https://github.com/ZitongYu/CDCN
 
-<a name="Facial-Expression-Recognition"></a>
-
-# 顔表情識別
+## 顔表情識別
 
 **Suppressing Uncertainties for Large-Scale Facial Expression Recognition**
 
@@ -542,15 +535,19 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - コード（公開前）：https://github.com/kaiwang960112/Self-Cure-Network 
 
-<a name="Face-Rotation"></a>
-
-# Face Rotation
+## Face Rotation
 
 **Rotate-and-Render: Unsupervised Photorealistic Face Rotation from Single-View Images**
 
 - 論文：https://arxiv.org/abs/2003.08124
-
 - コード：https://github.com/Hangz-nju-cuhk/Rotate-and-Render
+
+## 顔3D重建
+
+**FaceScape: a Large-scale High Quality 3D Face Dataset and Detailed Riggable 3D Face Prediction**
+
+- 論文：https://arxiv.org/abs/2003.13989
+- コード：https://github.com/zhuhao-nju/facescape
 
 <a name="Human-Pose-Estimation"></a>
 
@@ -904,6 +901,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 動画圧縮
 
+**Forward and Backward Information Retention for Accurate Binary Neural Networks**
+
+- 論文：https://arxiv.org/abs/1909.10788
+
+- コード：https://github.com/htqin/IR-Net
+
 **Learning for Video Compression with Hierarchical Quality and Recurrent Enhancement**
 
 - 論文：https://arxiv.org/abs/2003.01966 
@@ -1015,9 +1018,25 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - コード：https://github.com/alex04072000/SingleHDR
 
+<a name="AE"></a>
+
+# 对抗样本
+
+**Towards Large yet Imperceptible Adversarial Image Perturbations with Perceptual Color Distance**
+
+- 論文：https://arxiv.org/abs/1911.02466
+- コード：https://github.com/ZhengyuZhao/PerC-Adversarial 
+
 <a name="Datasets"></a>
 
 # データセット
+
+## 顔3D重建
+
+**FaceScape: a Large-scale High Quality 3D Face Dataset and Detailed Riggable 3D Face Prediction**
+
+- 論文：https://arxiv.org/abs/2003.13989
+- コード：https://github.com/zhuhao-nju/facescape
 
 **Bodies at Rest: 3D Human Pose and Shape Estimation from a Pressure Image using Synthetic Data**
 
