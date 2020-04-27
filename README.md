@@ -63,9 +63,9 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 **Spatially Attentive Output Layer for Image Classification**
 
-- 論文：未公開
+- 論文：https://arxiv.org/abs/2004.07570 
 
-- コード： https://github.com/ildoonet/spatially-attentive-output-layer 
+- コード（好像被原作者删除了）：https://github.com/ildoonet/spatially-attentive-output-layer 
 
 <a name="Object-Detection"></a>
 
@@ -693,6 +693,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # モデル圧縮/枝刈り
 
+**Forward and Backward Information Retention for Accurate Binary Neural Networks**
+
+- 論文：https://arxiv.org/abs/1909.10788
+
+- コード：https://github.com/htqin/IR-Net
+
 **Towards Efficient Model Compression via Learned Global Ranking**
 
 - 論文：https://arxiv.org/abs/1904.12368
@@ -900,12 +906,6 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Video-Compression"></a>
 
 # 動画圧縮
-
-**Forward and Backward Information Retention for Accurate Binary Neural Networks**
-
-- 論文：https://arxiv.org/abs/1909.10788
-
-- コード：https://github.com/htqin/IR-Net
 
 **Learning for Video Compression with Hierarchical Quality and Recurrent Enhancement**
 
