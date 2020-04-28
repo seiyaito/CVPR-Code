@@ -1031,7 +1031,10 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # データセット
 
-## 顔3D重建
+**Learning to Autofocus**
+
+- 論文：https://arxiv.org/abs/2004.12260
+- データセット：なし
 
 **FaceScape: a Large-scale High Quality 3D Face Dataset and Detailed Riggable 3D Face Prediction**
 
