@@ -52,6 +52,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # CNN
 
+**Improving Convolutional Networks with Self-Calibrated Convolutions**
+
+- ホームページ：https://mmcheng.net/scconv/
+
+- 論文：http://mftp.mmcheng.net/Papers/20cvprSCNet.pdf
+- コード：https://github.com/backseason/SCNet
+
 **Rethinking Depthwise Separable Convolutions: How Intra-Kernel Correlations Lead to Improved MobileNets**
 
 - 論文：https://arxiv.org/abs/2003.13549
@@ -60,6 +67,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Image-Classification"></a>
 
 # 画像分類
+
+**Compositional Convolutional Neural Networks: A Deep Architecture with Innate Robustness to Partial Occlusion**
+
+- 論文：https://arxiv.org/abs/2003.04490
+
+- コード：https://github.com/AdamKortylewski/CompositionalNets
 
 **Spatially Attentive Output Layer for Image Classification**
 
