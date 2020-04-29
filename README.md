@@ -31,6 +31,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [显著性検出](#Saliency)
 - [画像修復](#Denoising)
 - [デブラー](#Deblurring)
+- [去雾](#Dehazing)
 - [特徴点検出・記述](#Feature)
 - [VQA](#VQA)
 - [視覚言語ナビゲーション](#VLN)
@@ -51,6 +52,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="CNN"></a>
 
 # CNN
+
+**Exploring Self-attention for Image Recognition**
+
+- 論文：https://hszhao.github.io/papers/cvpr20_san.pdf
+
+- コード：https://github.com/hszhao/SAN
 
 **Improving Convolutional Networks with Self-Calibrated Convolutions**
 
@@ -557,6 +564,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 ## 顔3D重建
 
+**AvatarMe: Realistically Renderable 3D Facial Reconstruction "in-the-wild"**
+
+- 論文：https://arxiv.org/abs/2003.13845
+- データセット：https://github.com/lattas/AvatarMe
+
 **FaceScape: a Large-scale High Quality 3D Face Dataset and Detailed Riggable 3D Face Prediction**
 
 - 論文：https://arxiv.org/abs/2003.13989
@@ -888,6 +900,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：https://arxiv.org/abs/2004.02501 
 - コード：https://github.com/csbhr/CDVD-TSP
 
+<a name="Dehazing"></a>
+
+# 去雾
+
+**Multi-Scale Boosted Dehazing Network with Dense Feature Fusion**
+
+- 論文：https://arxiv.org/abs/2004.13388
+
+- コード：https://github.com/BookerDeWitt/MSBDN-DFF
+
 <a name="Feature"></a>
 
 # 特徴点検出・記述
@@ -1043,6 +1065,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Datasets"></a>
 
 # データセット
+
+**AvatarMe: Realistically Renderable 3D Facial Reconstruction "in-the-wild"**
+
+- 論文：https://arxiv.org/abs/2003.13845
+- データセット：https://github.com/lattas/AvatarMe
 
 **Learning to Autofocus**
 
