@@ -33,7 +33,8 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [デブラー](#Deblurring)
 - [去雾](#Dehazing)
 - [特徴点検出・記述](#Feature)
-- [VQA](#VQA)
+- [VQA(VQA)](#VQA)
+- [動画问答(VideoQA)](#VideoQA)
 - [視覚言語ナビゲーション](#VLN)
 - [動画圧縮](#Video-Compression)
 - [動画補間](#Video-Frame-Interpolation)
@@ -922,12 +923,21 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="VQA"></a>
 
-# VQA
+# VQA(VQA)
 
 **VC R-CNN：Visual Commonsense R-CNN** 
 
 - 論文：https://arxiv.org/abs/2002.12204
 - コード：https://github.com/Wangt-CN/VC-R-CNN
+
+<a name="VideoQA"></a>
+
+# 動画问答(VideoQA)
+
+**Hierarchical Conditional Relation Networks for Video Question Answering**
+
+- 論文：https://arxiv.org/abs/2002.10698
+- コード：https://github.com/thaolmk54/hcrn-videoqa
 
 <a name="VLN"></a>
 
@@ -1136,6 +1146,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Others"></a>
 
 # その他
+
+**Epipolar Transformers**
+
+- 論文：なし
+
+- コード：https://github.com/yihui-he/epipolar-transformers 
 
 **Bringing Old Photos Back to Life**
 
