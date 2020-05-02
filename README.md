@@ -501,6 +501,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - コード：https://github.com/WPI-VISLab/Learning-to-Segment-3D-Point-Clouds-in-2D-Image-Space
 
+## 3D点群インスタンスセグメンテーション
+
+PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
+
+- 論文：https://arxiv.org/abs/2004.01658
+- コード：https://github.com/Jia-Research-Lab/PointGroup
+
 ## 3D点群レジストレーション
 
 **D3Feat: Joint Learning of Dense Detection and Description of 3D Local Features**
