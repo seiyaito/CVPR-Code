@@ -382,6 +382,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # NAS
 
+**Densely Connected Search Space for More Flexible Neural Architecture Search**
+
+- 論文：https://arxiv.org/abs/1906.09607
+
+- コード：https://github.com/JaminFong/DenseNAS
+
 **MTL-NAS: Task-Agnostic Neural Architecture Search towards General-Purpose Multi-Task Learning**
 
 - 論文：https://arxiv.org/abs/2003.14058
