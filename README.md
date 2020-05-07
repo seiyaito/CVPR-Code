@@ -262,6 +262,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # セマンティックセグメンテーション
 
+**CascadePSP: Toward Class-Agnostic and Very High-Resolution Segmentation via Global and Local Refinement**
+
+- 論文：https://arxiv.org/abs/2005.02551
+- コード：https://github.com/hkchengrex/CascadePSP
+
 **Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision**
 
 - Oral
