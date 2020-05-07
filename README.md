@@ -1007,6 +1007,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # スタイル変換
 
+**Diversified Arbitrary Style Transfer via Deep Feature Perturbation**
+
+- 論文：https://arxiv.org/abs/1909.08223
+- コード：https://github.com/EndyWon/Deep-Feature-Perturbation
+
 **Collaborative Distillation for Ultra-Resolution Universal Style Transfer**
 
 - 論文：https://arxiv.org/abs/2003.08436
