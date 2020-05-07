@@ -495,6 +495,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 ## 3D点群セマンティックセグメンテーション
 
+**RandLA-Net: Efficient Semantic Segmentation of Large-Scale Point Clouds**
+
+- 論文：https://arxiv.org/abs/1911.11236
+- コード：https://github.com/QingyongHu/RandLA-Net
+
+- 解説：https://zhuanlan.zhihu.com/p/105433460
+
 **Weakly Supervised Semantic Point Cloud Segmentation:Towards 10X Fewer Labels**
 
 - 論文：https://arxiv.org/abs/2004.0409
