@@ -92,6 +92,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体検出
 
+**Scale-Equalizing Pyramid Convolution for Object Detection**
+
+論文：https://arxiv.org/abs/2005.03101
+
+コード：https://github.com/jshilong/SEPC
+
 **Revisiting the Sibling Head in Object Detector**
 
 - 論文：https://arxiv.org/abs/2003.07540
@@ -743,6 +749,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Model-Compression"></a>
 
 # モデル圧縮/枝刈り
+
+**DMCP: Differentiable Markov Channel Pruning for Neural Networks**
+
+- 論文：https://arxiv.org/abs/2005.03354
+- コード：https://github.com/zx55/dmcp
 
 **Forward and Backward Information Retention for Accurate Binary Neural Networks**
 
