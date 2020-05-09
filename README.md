@@ -16,9 +16,10 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [NAS](#NAS)
 - [GAN](#GAN)
 - [Re-ID](#Re-ID)
-- [3D点群（セマンティックセグメンテーション等）](#3D-PointCloud)
+- [3D点群（分類/分割/レジストレーション等）](#3D-PointCloud)
 - [顔（識別/検出/重建等）](#Face)
-- [人体姿勢推定](#Human-Pose-Estimation)
+- [人体姿勢推定(2D/3D)](#Human-Pose-Estimation)
+- [人体解析](#Human-Parsing)
 - [シーンテキスト検出](#Scene-Text-Detection)
 - [シーンテキスト識別](#Scene-Text-Recognition)
 - [超解像](#Super-Resolution)
@@ -268,6 +269,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # セマンティックセグメンテーション
 
+**MSeg: A Composite Dataset for Multi-domain Semantic Segmentation**
+
+- 論文：http://vladlen.info/papers/MSeg.pdf
+- コード：https://github.com/mseg-dataset/mseg-api
+
 **CascadePSP: Toward Class-Agnostic and Very High-Resolution Segmentation via Global and Local Refinement**
 
 - 論文：https://arxiv.org/abs/2005.02551
@@ -478,7 +484,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 <a name="3D-PointCloud"></a>
 
-# 3D点群（セマンティックセグメンテーション等）
+# 3D点群（分類/分割/レジストレーション等）
 
 ## 3D点群畳み込み
 
@@ -498,6 +504,13 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - 論文：https://arxiv.org/abs/2002.10701
 - コード：https://github.com/lyqun/FPConv
+
+## 3D点群分類
+
+**PointAugment: an Auto-Augmentation Framework for Point Cloud Classification**
+
+- 論文：https://arxiv.org/abs/2002.10876 
+- コード（公開前）： https://github.com/liruihui/PointAugment/ 
 
 ## 3D点群セマンティックセグメンテーション
 
@@ -608,7 +621,7 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 <a name="Human-Pose-Estimation"></a>
 
-# 人体姿勢推定
+# 人体姿勢推定(2D/3D)
 
 ## 2D人体姿勢推定
 
@@ -665,16 +678,17 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 論文：https://arxiv.org/abs/2003.03972
 - データセット：なし
 
+<a name="Human-Parsing"></a>
+
+# 人体解析
+
+**Correlating Edge, Pose with Parsing**
+
+- 論文：https://arxiv.org/abs/2005.01431
+
+- コード：https://github.com/ziwei-zh/CorrPM
+
 <a name="Scene-Text-Detection"></a>
-
-# 点群
-
-## 点群分類
-
-**PointAugment: an Auto-Augmentation Framework for Point Cloud Classification**
-
-- 論文：https://arxiv.org/abs/2002.10876 
-- コード（公開前）： https://github.com/liruihui/PointAugment/ 
 
 # シーンテキスト検出
 
@@ -1116,6 +1130,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Datasets"></a>
 
 # データセット
+
+**MSeg: A Composite Dataset for Multi-domain Semantic Segmentation**
+
+- 論文：http://vladlen.info/papers/MSeg.pdf
+- コード：https://github.com/mseg-dataset/mseg-api
 
 **AvatarMe: Realistically Renderable 3D Facial Reconstruction "in-the-wild"**
 
