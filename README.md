@@ -269,6 +269,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # セマンティックセグメンテーション
 
+**Learning Texture Invariant Representation for Domain Adaptation of Semantic Segmentation**
+
+- 論文：https://arxiv.org/abs/2003.00867
+- コード：https://github.com/MyeongJin-Kim/Learning-Texture-Invariant-Representation
+
 **MSeg: A Composite Dataset for Multi-domain Semantic Segmentation**
 
 - 論文：http://vladlen.info/papers/MSeg.pdf
