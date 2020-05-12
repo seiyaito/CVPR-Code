@@ -339,6 +339,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - 論文：https://arxiv.org/abs/1911.06667 
 - コード：https://github.com/youngwanLEE/CenterMask 
 
+**BlendMask: Top-Down Meets Bottom-Up for Instance Segmentation**
+
+- 論文：https://arxiv.org/abs/2001.00309
+- コード：https://github.com/aim-uofa/AdelaiDet
+
 **Deep Snake for Real-Time Instance Segmentation**
 
 - 論文：https://arxiv.org/abs/2001.01629
