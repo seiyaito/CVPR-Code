@@ -811,6 +811,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # 動画理解/行動識別
 
+**3DV: 3D Dynamic Voxel for Action Recognition in Depth Video**
+
+- 論文：https://arxiv.org/abs/2005.05501
+- コード：https://github.com/3huo/3DV-Action
+
 **FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding**
 
 - ホームページ：https://sdolivia.github.io/FineGym/
