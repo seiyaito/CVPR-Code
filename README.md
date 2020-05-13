@@ -482,6 +482,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # Re-ID
 
+**Transferable, Controllable, and Inconspicuous Adversarial Attacks on Person Re-identification With Deep Mis-Ranking**
+
+- 論文：https://arxiv.org/abs/2004.04199
+
+- コード：https://github.com/whj363636/Adversarial-attack-on-Person-ReID-With-Deep-Mis-Ranking
+
 **Pose-guided Visible Part Matching for Occluded Person ReID**
 
 - 論文：https://arxiv.org/abs/2004.00230
