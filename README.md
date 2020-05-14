@@ -874,6 +874,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 ## 単眼深度推定
 
+**On the uncertainty of self-supervised monocular depth estimation**
+
+- 論文：https://arxiv.org/abs/2005.06209
+- コード：https://github.com/mattpoggi/mono-uncertainty
+
 **3D Packing for Self-Supervised Monocular Depth Estimation**
 
 - 論文：https://arxiv.org/abs/1905.02693
