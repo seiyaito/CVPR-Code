@@ -1239,6 +1239,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # その他
 
+**Where am I looking at? Joint Location and Orientation Estimation by Cross-View Matching**
+
+- 論文：https://arxiv.org/abs/2005.03860
+- コード：https://github.com/shiyujiao/cross_view_localization_DSM
+
 **Epipolar Transformers**
 
 - 論文：https://arxiv.org/abs/2005.04551
