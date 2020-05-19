@@ -47,6 +47,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [虚拟试衣](#Virtual-Try-On)
 - [HDR](#HDR)
 - [对抗样本](#AE)
+- [セマンティックシーン补全](#SSC)
 - [データセット](#Datasets)
 - [その他](#Others)
 - [採択されたか不明](#Not-Sure)
@@ -153,6 +154,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="3D-Object-Detection"></a>
 
 # 3D物体検出
+
+**Train in Germany, Test in The USA: Making 3D Object Detectors Generalize**
+
+- 論文：https://arxiv.org/abs/2005.08139
+
+- コード：https://github.com/cxy1997/3D_adapt_auto_driving
 
 **MLCVNet: Multi-Level Context VoteNet for 3D Object Detection**
 
@@ -268,6 +275,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Semantic-Segmentation"></a>
 
 # セマンティックセグメンテーション
+
+**Single-Stage Semantic Segmentation from Image Labels**
+
+- 論文：https://arxiv.org/abs/2005.08104
+
+- コード：https://github.com/visinf/1-stage-wseg
 
 **Learning Texture Invariant Representation for Domain Adaptation of Semantic Segmentation**
 
@@ -661,6 +674,13 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - コード：https://github.com/ilovepose/DarkPose 
 
 ## 3D人体姿勢推定
+
+**Fusing Wearable IMUs with Multi-View Images for Human Pose Estimation: A Geometric Approach**
+
+- ホームページ：https://www.zhe-zhang.com/cvpr2020
+- 論文：https://arxiv.org/abs/2003.11163
+
+- コード：https://github.com/CHUNYUWANG/imu-human-pose-pytorch
 
 **Bodies at Rest: 3D Human Pose and Shape Estimation from a Pressure Image using Synthetic Data**
 
@@ -1158,6 +1178,15 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 - 論文：https://arxiv.org/abs/1911.02466
 - コード：https://github.com/ZhengyuZhao/PerC-Adversarial 
+
+<a name="SSC"></a>
+
+# セマンティックシーン补全
+
+**3D Sketch-aware Semantic Scene Completion via Semi-supervised Structure Prior**
+
+- 論文：https://arxiv.org/abs/2003.14052
+- コード：https://github.com/charlesCXK/3D-SketchAware-SSC 
 
 <a name="Datasets"></a>
 
