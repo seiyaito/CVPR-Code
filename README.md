@@ -1299,6 +1299,12 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # その他
 
+**Contextual Residual Aggregation for Ultra High-Resolution Image Inpainting**
+
+- 論文：https://arxiv.org/abs/2005.09704
+
+- コード：https://github.com/Atlas200dk/sample-imageinpainting-HiFill
+
 **Where am I looking at? Joint Location and Orientation Estimation by Cross-View Matching**
 
 - 論文：https://arxiv.org/abs/2005.03860
