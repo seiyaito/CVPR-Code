@@ -1299,6 +1299,12 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # その他
 
+**Instance-aware Image Colorization**
+
+- ホームページ：https://ericsujw.github.io/InstColorization/
+- 論文：https://arxiv.org/abs/2005.10825
+- コード：https://github.com/ericsujw/InstColorization
+
 **Contextual Residual Aggregation for Ultra High-Resolution Image Inpainting**
 
 - 論文：https://arxiv.org/abs/2005.09704
