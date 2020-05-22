@@ -428,6 +428,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # NAS
 
+**AOWS: Adaptive and optimal network width search with latency constraints**
+
+- 論文：https://arxiv.org/abs/2005.10481
+- コード：https://github.com/bermanmaxim/AOWS
+
 **Densely Connected Search Space for More Flexible Neural Architecture Search**
 
 - 論文：https://arxiv.org/abs/1906.09607
@@ -921,7 +926,7 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 **3D Packing for Self-Supervised Monocular Depth Estimation**
 
 - 論文：https://arxiv.org/abs/1905.02693
-- コード：https://arxiv.org/abs/1905.02693
+- コード：https://github.com/TRI-ML/packnet-sfm
 - Demo動画：https://www.bilibili.com/video/av70562892/
 
 **Domain Decluttering: Simplifying Images to Mitigate Synthetic-Real Domain Shift and Improve Depth Estimation**
@@ -1298,6 +1303,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Others"></a>
 
 # その他
+
+**Equalization Loss for Long-Tailed Object Recognition**
+
+- 論文：https://arxiv.org/abs/2003.05176
+- コード：https://github.com/tztztztztz/eql.detectron2
 
 **Instance-aware Image Colorization**
 
