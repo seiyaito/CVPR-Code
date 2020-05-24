@@ -855,6 +855,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # 動画理解/行動識別
 
+**Intra- and Inter-Action Understanding via Temporal Action Parsing**
+
+- 論文：https://arxiv.org/abs/2005.10229
+- ホームページ和データセット：https://sdolivia.github.io/TAPOS/
+
 **3DV: 3D Dynamic Voxel for Action Recognition in Depth Video**
 
 - 論文：https://arxiv.org/abs/2005.05501
@@ -898,6 +903,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Depth-Estimation"></a>
 
 # 深度推定
+
+**Focus on defocus: bridging the synthetic to real domain gap for depth estimation**
+
+- 論文：https://arxiv.org/abs/2005.09623
+- コード：https://github.com/dvl-tum/defocus-net
 
 **Bi3D: Stereo Depth Estimation via Binary Classifications**
 
@@ -1209,6 +1219,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Datasets"></a>
 
 # データセット
+
+**Intra- and Inter-Action Understanding via Temporal Action Parsing**
+
+- 論文：https://arxiv.org/abs/2005.10229
+- ホームページ和データセット：https://sdolivia.github.io/TAPOS/
 
 **Dynamic Refinement Network for Oriented and Densely Packed Object Detection**
 
