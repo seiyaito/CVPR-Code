@@ -767,6 +767,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # シーンテキスト識別
 
+**SEED: Semantics Enhanced Encoder-Decoder Framework for Scene Text Recognition**
+
+- 論文：https://arxiv.org/abs/2005.10977
+- コード：https://github.com/Pay20Y/SEED
+
 **UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
 
 - 論文：https://arxiv.org/abs/2003.10608
