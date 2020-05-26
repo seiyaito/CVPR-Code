@@ -282,6 +282,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # セマンティックセグメンテーション
 
+**Super-BPD: Super Boundary-to-Pixel Direction for Fast Image Segmentation**
+
+- 論文：なし
+
+- コード：https://github.com/JianqiangWan/Super-BPD
+
 **Single-Stage Semantic Segmentation from Image Labels**
 
 - 論文：https://arxiv.org/abs/2005.08104
@@ -952,6 +958,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="6DOF"></a>
 
 # 6D物体姿勢推定
+
+**MoreFusion: Multi-object Reasoning for 6D Pose Estimation from Volumetric Fusion**
+
+- 論文：https://arxiv.org/abs/2004.04336
+- コード：https://github.com/wkentaro/morefusion
 
 **EPOS: Estimating 6D Pose of Objects with Symmetries**
 
