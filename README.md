@@ -1342,6 +1342,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # その他
 
+**QEBA: Query-Efficient Boundary-Based Blackbox Attack**
+
+- 論文：https://arxiv.org/abs/2005.14137
+- コード：https://github.com/AI-secure/QEBA
+
 **Equalization Loss for Long-Tailed Object Recognition**
 
 - 論文：https://arxiv.org/abs/2003.05176
