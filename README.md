@@ -807,6 +807,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 ## 画像超解像
 
+**Image Super-Resolution with Cross-Scale Non-Local Attention and Exhaustive Self-Exemplars Mining**
+
+- 論文：https://arxiv.org/abs/2006.01424
+- コード：https://github.com/SHI-Labs/Cross-Scale-Non-Local-Attention
+
 **Structure-Preserving Super Resolution with Gradient Guidance**
 
 - 論文：https://arxiv.org/abs/2003.13081
