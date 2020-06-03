@@ -1347,6 +1347,12 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # その他
 
+**Differentiable Volumetric Rendering: Learning Implicit 3D Representations without 3D Supervision**
+
+- 論文：http://www.cvlibs.net/publications/Niemeyer2020CVPR.pdf
+
+- コード：https://github.com/autonomousvision/differentiable_volumetric_rendering
+
 **QEBA: Query-Efficient Boundary-Based Blackbox Attack**
 
 - 論文：https://arxiv.org/abs/2005.14137
