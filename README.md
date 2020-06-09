@@ -808,6 +808,12 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 ## 画像超解像
 
+**Learning Texture Transformer Network for Image Super-Resolution**
+
+- 論文：https://arxiv.org/abs/2006.04139
+
+- コード：https://github.com/FuzhiYang/TTSR
+
 **Image Super-Resolution with Cross-Scale Non-Local Attention and Exhaustive Self-Exemplars Mining**
 
 - 論文：https://arxiv.org/abs/2006.01424
