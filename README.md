@@ -47,6 +47,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [虚拟试衣](#Virtual-Try-On)
 - [HDR](#HDR)
 - [对抗样本](#AE)
+- [深度补全](#DC)
 - [セマンティックシーン补全](#SSC)
 - [データセット](#Datasets)
 - [その他](#Others)
@@ -1235,6 +1236,16 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 論文：https://arxiv.org/abs/1911.02466
 - コード：https://github.com/ZhengyuZhao/PerC-Adversarial 
 
+<a name="DC"></a>
+
+# 深度补全
+
+**Uncertainty-Aware CNNs for Depth Completion: Uncertainty from Beginning to End**
+
+論文：https://arxiv.org/abs/2006.03349
+
+コード：https://github.com/abdo-eldesokey/pncnn
+
 <a name="SSC"></a>
 
 # セマンティックシーン补全
@@ -1247,6 +1258,13 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Datasets"></a>
 
 # データセット
+
+**Open Compound Domain Adaptation**
+
+- ホームページ：https://liuziwei7.github.io/projects/CompoundDomain.html
+- データセット：https://drive.google.com/drive/folders/1_uNTF8RdvhS_sqVTnYx17hEOQpefmE2r?usp=sharing
+- 論文：https://arxiv.org/abs/1909.03403
+- コード：https://github.com/zhmiao/OpenCompoundDomainAdaptation-OCDA
 
 **Intra- and Inter-Action Understanding via Temporal Action Parsing**
 
@@ -1346,6 +1364,13 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Others"></a>
 
 # その他
+
+**Open Compound Domain Adaptation**
+
+- ホームページ：https://liuziwei7.github.io/projects/CompoundDomain.html
+- データセット：https://drive.google.com/drive/folders/1_uNTF8RdvhS_sqVTnYx17hEOQpefmE2r?usp=sharing
+- 論文：https://arxiv.org/abs/1909.03403
+- コード：https://github.com/zhmiao/OpenCompoundDomainAdaptation-OCDA
 
 **Differentiable Volumetric Rendering: Learning Implicit 3D Representations without 3D Supervision**
 
