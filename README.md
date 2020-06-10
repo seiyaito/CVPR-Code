@@ -234,6 +234,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体追跡
 
+**SiamCAR: Siamese Fully Convolutional Classification and Regression for Visual Tracking**
+
+- 論文：https://arxiv.org/abs/1911.07241
+- コード：https://github.com/ohhhyeahhh/SiamCAR
+
 **D3S -- A Discriminative Single Shot Segmentation Tracker**
 
 - 論文：https://arxiv.org/abs/1911.08862
