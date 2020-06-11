@@ -2,6 +2,8 @@
 
 CVPR 2020の論文及びオープンソースプロジェクトのコレクションです.そして,もし問題があればissueに提出して,CVPR 2020のオープンソースプロジェクトを共有することも歓迎します
 
+关于往年CV顶会論文（如CVPR 2019、ICCV 2019、ECCV 2018）以及その他优质CV論文和大盘点，详见： https://github.com/amusi/daily-paper-computer-vision 
+
 - [CNN](#CNN)
 - [画像分類](#Image-Classification)
 - [物体検出](#Object-Detection)
