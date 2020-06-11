@@ -496,6 +496,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # GAN
 
+**Distribution-induced Bidirectional Generative Adversarial Network for Graph Representation Learning**
+
+- 論文：https://arxiv.org/abs/1912.01899
+- コード：https://github.com/SsGood/DBGAN 
+
+**PSGAN: Pose and Expression Robust Spatial-Aware GAN for Customizable Makeup Transfer**
+
+- 論文：https://arxiv.org/abs/1909.06956
+- コード：https://github.com/wtjiang98/PSGAN
+
 **Semantically Mutil-modal Image Synthesis**
 
 - ホームページ：http://seanseattle.github.io/SMIS
@@ -558,6 +568,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 # 3D点群（分類/分割/レジストレーション等）
 
 ## 3D点群畳み込み
+
+**PointASNL: Robust Point Clouds Processing using Nonlocal Neural Networks with Adaptive Sampling**
+
+- 論文：https://arxiv.org/abs/2003.00492
+- コード：https://github.com/yanx27/PointASNL 
 
 **Global-Local Bidirectional Reasoning for Unsupervised Representation Learning of 3D Point Clouds**
 
@@ -849,6 +864,16 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 コード：https://github.com/clovaai/cutblur
 
 ## 動画超解像
+
+**Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution**
+
+- 論文：https://arxiv.org/abs/2002.11616
+- コード：https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020
+
+**TDAN: Temporally-Deformable Alignment Network for Video Super-Resolution**
+
+- 論文：https://arxiv.org/abs/1812.02898
+- コード：https://github.com/YapengTian/TDAN-VSR-CVPR-2020
 
 **Space-Time-Aware Multi-Resolution Video Enhancement**
 
@@ -1143,6 +1168,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # 動画補間
 
+**Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution**
+
+- 論文：https://arxiv.org/abs/2002.11616
+- コード：https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020
+
 **Space-Time-Aware Multi-Resolution Video Enhancement**
 
 - ホームページ：https://alterzero.github.io/projects/STAR.html
@@ -1187,6 +1217,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="HOI"></a>
 
 # Human-Object Interaction (HOT)検出
+
+**PPDM: Parallel Point Detection and Matching for Real-time Human-Object Interaction Detection**
+
+- 論文：https://arxiv.org/abs/1912.12898
+- コード：https://github.com/YueLiao/PPDM
 
 **Detailed 2D-3D Joint Representation for Human-Object Interaction**
 
