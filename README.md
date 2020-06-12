@@ -97,6 +97,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体検出
 
+**Learning a Unified Sample Weighting Network for Object Detection**
+
+- 論文：https://arxiv.org/abs/2006.06568
+- コード：https://github.com/caiqi/sample-weighting-network
+
 **D2Det: Towards High Quality Object Detection and Instance Segmentation**
 
 - 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Cao_D2Det_Towards_High_Quality_Object_Detection_and_Instance_Segmentation_CVPR_2020_paper.pdf
