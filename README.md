@@ -40,17 +40,20 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [動画问答(VideoQA)](#VideoQA)
 - [視覚言語ナビゲーション](#VLN)
 - [動画圧縮](#Video-Compression)
-- [動画補間](#Video-Frame-Interpolation)
+- [動画插帧](#Video-Frame-Interpolation)
 - [スタイル変換](#Style-Transfer)
 - [车道线検出](#Lane-Detection)
 - [Human-Object Interaction (HOI)検出](#HOI)
-- [行動軌跡予測](#HTP)
+- [軌跡予測](#TP)
 - [モーション予測](#Motion-Predication)
+- [光流推定](#OF)
 - [虚拟试衣](#Virtual-Try-On)
 - [HDR](#HDR)
 - [对抗样本](#AE)
 - [深度补全](#DC)
 - [セマンティックシーン补全](#SSC)
+- [画像/動画描述](#Captioning)
+- [线框解析](#WP)
 - [データセット](#Datasets)
 - [その他](#Others)
 - [採択されたか不明](#Not-Sure)
@@ -174,6 +177,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="3D-Object-Detection"></a>
 
 # 3D物体検出
+
+**IDA-3D: Instance-Depth-Aware 3D Object Detection from Stereo Vision for Autonomous Driving**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Peng_IDA-3D_Instance-Depth-Aware_3D_Object_Detection_From_Stereo_Vision_for_Autonomous_CVPR_2020_paper.pdf
+
+- コード：https://github.com/swords123/IDA-3D
 
 **Train in Germany, Test in The USA: Making 3D Object Detectors Generalize**
 
@@ -872,11 +881,6 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 ## 動画超解像
 
-**Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution**
-
-- 論文：https://arxiv.org/abs/2002.11616
-- コード：https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020
-
 **TDAN: Temporally-Deformable Alignment Network for Video Super-Resolution**
 
 - 論文：https://arxiv.org/abs/1812.02898
@@ -933,6 +937,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Action-Recognition"></a>
 
 # 動画理解/行動識別
+
+**PREDICT & CLUSTER: Unsupervised Skeleton Based Action Recognition**
+
+- 論文：https://arxiv.org/abs/1911.12409
+- コード：https://github.com/shlizee/Predict-Cluster 
 
 **Intra- and Inter-Action Understanding via Temporal Action Parsing**
 
@@ -1173,7 +1182,13 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 <a name="Video-Frame-Interpolation"></a>
 
-# 動画補間
+# 動画插帧
+
+**FeatureFlow: Robust Video Interpolation via Structure-to-Texture Generation**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Gui_FeatureFlow_Robust_Video_Interpolation_via_Structure-to-Texture_Generation_CVPR_2020_paper.html
+
+- コード：https://github.com/CM-BF/FeatureFlow
 
 **Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution**
 
@@ -1247,9 +1262,15 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 論文：https://arxiv.org/abs/2003.05541
 - コード：https://github.com/ASMIftekhar/VSGNet
 
-<a name="HTP"></a>
+<a name="TP"></a>
 
-# 歩行者軌跡予測
+# 軌跡予測
+
+**The Garden of Forking Paths: Towards Multi-Future Trajectory Prediction**
+
+- 論文：https://arxiv.org/abs/1912.06445
+- コード：https://github.com/JunweiLiang/Multiverse
+- データセット：https://next.cs.cmu.edu/multiverse/
 
 **Social-STGCNN: A Social Spatio-Temporal Graph Convolutional Neural Network for Human Trajectory Prediction**
 
@@ -1270,6 +1291,15 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 論文：https://arxiv.org/abs/2003.06754
 
 - コード：https://github.com/pxiangwu/MotionNet
+
+<a name="OF"></a>
+
+# 光流推定
+
+**Learning by Analogy: Reliable Supervision from Transformations for Unsupervised Optical Flow Estimation**
+
+- 論文：https://arxiv.org/abs/2003.13045
+- コード：https://github.com/lliuz/ARFlow 
 
 <a name="Virtual-Try-On"></a>
 
@@ -1320,9 +1350,34 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 論文：https://arxiv.org/abs/2003.14052
 - コード：https://github.com/charlesCXK/3D-SketchAware-SSC 
 
+<a name="Captioning"></a>
+
+# 画像/動画描述
+
+**Syntax-Aware Action Targeting for Video Captioning**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Zheng_Syntax-Aware_Action_Targeting_for_Video_Captioning_CVPR_2020_paper.pdf
+- コード：https://github.com/SydCaption/SAAT 
+
+<a name="WP"></a>
+
+# 线框解析
+
+**Holistically-Attracted Wireframe Parser**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Xue_Holistically-Attracted_Wireframe_Parsing_CVPR_2020_paper.html
+
+- コード：https://github.com/cherubicXN/hawp
+
 <a name="Datasets"></a>
 
 # データセット
+
+**The Garden of Forking Paths: Towards Multi-Future Trajectory Prediction**
+
+- 論文：https://arxiv.org/abs/1912.06445
+- コード：https://github.com/JunweiLiang/Multiverse
+- データセット：https://next.cs.cmu.edu/multiverse/
 
 **Open Compound Domain Adaptation**
 
