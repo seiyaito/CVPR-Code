@@ -1413,6 +1413,7 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 - 論文：http://vladlen.info/papers/MSeg.pdf
 - コード：https://github.com/mseg-dataset/mseg-api
+- データセット：https://github.com/mseg-dataset/mseg-semantic
 
 **AvatarMe: Realistically Renderable 3D Facial Reconstruction "in-the-wild"**
 
