@@ -24,6 +24,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [人体解析](#Human-Parsing)
 - [シーンテキスト検出](#Scene-Text-Detection)
 - [シーンテキスト識別](#Scene-Text-Recognition)
+- [特征(点)検出和描述](#Feature)
 - [超解像](#Super-Resolution)
 - [モデル圧縮/枝刈り](#Model-Compression)
 - [動画理解/行動識別](#Action-Recognition)
@@ -99,6 +100,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Object-Detection"></a>
 
 # 物体検出
+
+**Noise-Aware Fully Webly Supervised Object Detection**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Noise-Aware_Fully_Webly_Supervised_Object_Detection_CVPR_2020_paper.html
+- コード：https://github.com/shenyunhang/NA-fWebSOD/
 
 **Learning a Unified Sample Weighting Network for Object Detection**
 
@@ -177,6 +183,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="3D-Object-Detection"></a>
 
 # 3D物体検出
+
+**Structure Aware Single-stage 3D Object Detection from Point Cloud**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/He_Structure_Aware_Single-Stage_3D_Object_Detection_From_Point_Cloud_CVPR_2020_paper.html
+
+- コード：https://github.com/skyhehe123/SA-SSD
 
 **IDA-3D: Instance-Depth-Aware 3D Object Detection from Stereo Vision for Autonomous Driving**
 
@@ -808,6 +820,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # シーンテキスト検出
 
+**ContourNet: Taking a Further Step Toward Accurate Arbitrary-Shaped Scene Text Detection**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_ContourNet_Taking_a_Further_Step_Toward_Accurate_Arbitrary-Shaped_Scene_Text_CVPR_2020_paper.pdf
+- コード：https://github.com/wangyuxin87/ContourNet 
+
 **UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
 
 - 論文：https://arxiv.org/abs/2003.10608
@@ -849,6 +866,15 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 論文：https://arxiv.org/abs/2003.06606
 
 - コード：https://github.com/Canjie-Luo/Text-Image-Augmentation
+
+<a name="Feature"></a>
+
+# 特征(点)検出和描述
+
+**SuperGlue: Learning Feature Matching with Graph Neural Networks**
+
+- 論文：https://arxiv.org/abs/1911.11763
+- コード：https://github.com/magicleap/SuperGluePretrainedNetwork
 
 <a name="Super-Resolution"></a>
 
