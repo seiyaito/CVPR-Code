@@ -48,9 +48,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [軌跡予測](#TP)
 - [モーション予測](#Motion-Predication)
 - [光流推定](#OF)
+- [画像检索](#IR)
 - [虚拟试衣](#Virtual-Try-On)
 - [HDR](#HDR)
 - [对抗样本](#AE)
+- [三维重建](#3D-Reconstructing)
 - [深度补全](#DC)
 - [セマンティックシーン补全](#SSC)
 - [画像/動画描述](#Captioning)
@@ -882,6 +884,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 ## 画像超解像
 
+**Closed-Loop Matters: Dual Regression Networks for Single Image Super-Resolution**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Guo_Closed-Loop_Matters_Dual_Regression_Networks_for_Single_Image_Super-Resolution_CVPR_2020_paper.html
+- コード：https://github.com/guoyongcs/DRN
+
 **Learning Texture Transformer Network for Image Super-Resolution**
 
 - 論文：https://arxiv.org/abs/2006.04139
@@ -964,6 +971,14 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # 動画理解/行動識別
 
+**Oops! Predicting Unintentional Action in Video**
+
+- ホームページ：https://oops.cs.columbia.edu/
+
+- 論文：https://arxiv.org/abs/1911.11206
+- コード：https://github.com/cvlab-columbia/oops
+- データセット：https://oops.cs.columbia.edu/data
+
 **PREDICT & CLUSTER: Unsupervised Skeleton Based Action Recognition**
 
 - 論文：https://arxiv.org/abs/1911.12409
@@ -1017,6 +1032,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Depth-Estimation"></a>
 
 # 深度推定
+
+**BiFuse: Monocular 360◦ Depth Estimation via Bi-Projection Fusion**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_BiFuse_Monocular_360_Depth_Estimation_via_Bi-Projection_Fusion_CVPR_2020_paper.pdf
+- コード：https://github.com/Yeh-yu-hsuan/BiFuse
 
 **Focus on defocus: bridging the synthetic to real domain gap for depth estimation**
 
@@ -1327,6 +1347,15 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - 論文：https://arxiv.org/abs/2003.13045
 - コード：https://github.com/lliuz/ARFlow 
 
+<a name="IR"></a>
+
+# 画像检索
+
+**Evade Deep Image Retrieval by Stashing Private Images in the Hash Space**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Xiao_Evade_Deep_Image_Retrieval_by_Stashing_Private_Images_in_the_CVPR_2020_paper.html
+- コード：https://github.com/sugarruy/hashstash
+
 <a name="Virtual-Try-On"></a>
 
 # 虚拟试衣
@@ -1356,6 +1385,23 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 - 論文：https://arxiv.org/abs/1911.02466
 - コード：https://github.com/ZhengyuZhao/PerC-Adversarial 
+
+<a name="3D-Reconstructing"></a>
+
+# 三维重建
+
+**Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild**
+
+- CVPR 2020 Best Paper
+- ホームページ：https://elliottwu.com/projects/unsup3d/
+- 論文：https://arxiv.org/abs/1911.11130
+- コード：https://github.com/elliottwu/unsup3d
+
+**Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization**
+
+- ホームページ：https://shunsukesaito.github.io/PIFuHD/
+- 論文：https://arxiv.org/abs/2004.00452
+- コード：https://github.com/facebookresearch/pifuhd
 
 <a name="DC"></a>
 
@@ -1398,6 +1444,14 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Datasets"></a>
 
 # データセット
+
+**Oops! Predicting Unintentional Action in Video**
+
+- ホームページ：https://oops.cs.columbia.edu/
+
+- 論文：https://arxiv.org/abs/1911.11206
+- コード：https://github.com/cvlab-columbia/oops
+- データセット：https://oops.cs.columbia.edu/data
 
 **The Garden of Forking Paths: Towards Multi-Future Trajectory Prediction**
 
@@ -1511,6 +1565,16 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Others"></a>
 
 # その他
+
+**CONSAC: Robust Multi-Model Fitting by Conditional Sample Consensus**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Kluger_CONSAC_Robust_Multi-Model_Fitting_by_Conditional_Sample_Consensus_CVPR_2020_paper.html
+- コード：https://github.com/fkluger/consac
+
+**Learning to Learn Single Domain Generalization**
+
+- 論文：https://arxiv.org/abs/2003.13216
+- コード：https://github.com/joffery/M-ADA
 
 **Open Compound Domain Adaptation**
 
