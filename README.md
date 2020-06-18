@@ -103,6 +103,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体検出
 
+**AugFPN: Improving Multi-scale Feature Learning for Object Detection**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_AugFPN_Improving_Multi-Scale_Feature_Learning_for_Object_Detection_CVPR_2020_paper.pdf 
+- コード：https://github.com/Gus-Guo/AugFPN
+
 **Noise-Aware Fully Webly Supervised Object Detection**
 
 - 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Noise-Aware_Fully_Webly_Supervised_Object_Detection_CVPR_2020_paper.html
