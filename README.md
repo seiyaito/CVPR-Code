@@ -191,6 +191,30 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 3D物体検出
 
+**SESS: Self-Ensembling Semi-Supervised 3D Object Detection**
+
+- 論文： https://arxiv.org/abs/1912.11803
+
+- コード：https://github.com/Na-Z/sess
+
+**Associate-3Ddet: Perceptual-to-Conceptual Association for 3D Point Cloud Object Detection**
+
+- 論文： https://arxiv.org/abs/2006.04356
+
+- コード：https://github.com/dleam/Associate-3Ddet
+
+**What You See is What You Get: Exploiting Visibility for 3D Object Detection**
+
+- ホームページ：https://www.cs.cmu.edu/~peiyunh/wysiwyg/
+
+- 論文：https://arxiv.org/abs/1912.04986
+- コード：https://github.com/peiyunh/wysiwyg
+
+**Learning Depth-Guided Convolutions for Monocular 3D Object Detection**
+
+- 論文：https://arxiv.org/abs/1912.04799
+- コード：https://github.com/dingmyu/D4LCN
+
 **Structure Aware Single-stage 3D Object Detection from Point Cloud**
 
 - 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/He_Structure_Aware_Single-Stage_3D_Object_Detection_From_Point_Cloud_CVPR_2020_paper.html
@@ -691,6 +715,13 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 - 論文：https://arxiv.org/abs/2005.13888
 - コード：https://github.com/HaozheQi/P2B
+
+## その他
+
+**An Efficient PointLSTM for Point Clouds Based Gesture Recognition**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Min_An_Efficient_PointLSTM_for_Point_Clouds_Based_Gesture_Recognition_CVPR_2020_paper.html
+- コード：https://github.com/Blueprintf/pointlstm-gesture-recognition-pytorch
 
 <a name="Face"></a>
 
@@ -1397,7 +1428,7 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 **Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild**
 
-- CVPR 2020 Best Paper
+- **CVPR 2020 Best Paper**
 - ホームページ：https://elliottwu.com/projects/unsup3d/
 - 論文：https://arxiv.org/abs/1911.11130
 - コード：https://github.com/elliottwu/unsup3d
@@ -1407,6 +1438,18 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - ホームページ：https://shunsukesaito.github.io/PIFuHD/
 - 論文：https://arxiv.org/abs/2004.00452
 - コード：https://github.com/facebookresearch/pifuhd
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Patel_TailorNet_Predicting_Clothing_in_3D_as_a_Function_of_Human_CVPR_2020_paper.pdf
+- コード：https://github.com/chaitanya100100/TailorNet
+- データセット：https://github.com/zycliao/TailorNet_dataset
+
+**Implicit Functions in Feature Space for 3D Shape Reconstruction and Completion**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Chibane_Implicit_Functions_in_Feature_Space_for_3D_Shape_Reconstruction_and_CVPR_2020_paper.pdf
+- コード：https://github.com/jchibane/if-net
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Mir_Learning_to_Transfer_Texture_From_Clothing_Images_to_3D_Humans_CVPR_2020_paper.pdf
+- コード：https://github.com/aymenmir1/pix2surf
 
 <a name="DC"></a>
 
@@ -1449,6 +1492,12 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Datasets"></a>
 
 # データセット
+
+**TailorNet: Predicting Clothing in 3D as a Function of Human Pose, Shape and Garment Style**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Patel_TailorNet_Predicting_Clothing_in_3D_as_a_Function_of_Human_CVPR_2020_paper.pdf
+- コード：https://github.com/chaitanya100100/TailorNet
+- データセット：https://github.com/zycliao/TailorNet_dataset
 
 **Oops! Predicting Unintentional Action in Video**
 
