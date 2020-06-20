@@ -103,6 +103,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # 物体検出
 
+**Overcoming Classifier Imbalance for Long-tail Object Detection with Balanced Group Softmax**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Overcoming_Classifier_Imbalance_for_Long-Tail_Object_Detection_With_Balanced_Group_CVPR_2020_paper.pdf
+- コード：https://github.com/FishYuLi/BalancedGroupSoftmax
+
 **AugFPN: Improving Multi-scale Feature Learning for Object Detection**
 
 - 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_AugFPN_Improving_Multi-Scale_Feature_Learning_for_Object_Detection_CVPR_2020_paper.pdf 
