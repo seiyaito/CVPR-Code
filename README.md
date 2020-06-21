@@ -1506,6 +1506,14 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # データセット
 
+**FSS-1000: A 1000-Class Dataset for Few-Shot Segmentation**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Li_FSS-1000_A_1000-Class_Dataset_for_Few-Shot_Segmentation_CVPR_2020_paper.html
+
+- コード：https://github.com/HKUSTCV/FSS-1000
+
+- データセット：https://github.com/HKUSTCV/FSS-1000
+
 **3D-ZeF: A 3D Zebrafish Tracking Benchmark Dataset**
 
 - ホームページ：https://vap.aau.dk/3d-zef/
