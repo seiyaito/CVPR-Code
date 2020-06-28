@@ -6,6 +6,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - [CNN](#CNN)
 - [画像分類](#Image-Classification)
+- [動画分類](#Video-Classification)
 - [物体検出](#Object-Detection)
 - [3D物体検出](#3D-Object-Detection)
 - [動画物体検出](#Video-Object-Detection)
@@ -96,8 +97,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 **Spatially Attentive Output Layer for Image Classification**
 
 - 論文：https://arxiv.org/abs/2004.07570 
-
 - コード（好像被原作者删除了）：https://github.com/ildoonet/spatially-attentive-output-layer 
+
+<a name="Video-Classification"></a>
+
+# 動画分類
+
+**SmallBigNet: Integrating Core and Contextual Views for Video Classification**
+
+- 論文：https://arxiv.org/abs/2006.14582
+- コード：https://github.com/xhl-video/SmallBigNet
 
 <a name="Object-Detection"></a>
 
