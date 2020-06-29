@@ -639,6 +639,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # Re-ID
 
+ **High-Order Information Matters: Learning Relation and Topology for Occluded Person Re-Identification**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_High-Order_Information_Matters_Learning_Relation_and_Topology_for_Occluded_Person_CVPR_2020_paper.html
+- コード：https://github.com/wangguanan/HOReID 
+
 **COCAS: A Large-Scale Clothes Changing Person Dataset for Re-identification**
 
 - 論文：https://arxiv.org/abs/2005.07862
@@ -1304,6 +1309,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Video-Frame-Interpolation"></a>
 
 # 動画插帧
+
+**AdaCoF: Adaptive Collaboration of Flows for Video Frame Interpolation**
+
+- 論文：https://arxiv.org/abs/1907.10244
+- コード：https://github.com/HyeongminLEE/AdaCoF-pytorch
 
 **FeatureFlow: Robust Video Interpolation via Structure-to-Texture Generation**
 
