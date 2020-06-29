@@ -16,6 +16,7 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 - [全景分割](#Panoptic-Segmentation)
 - [動画物体分割](#VOS)
 - [スーパーピクセルセグメンテーション](#Superpixel)
+- [交互式画像分割](#IIS)
 - [NAS](#NAS)
 - [GAN](#GAN)
 - [Re-ID](#Re-ID)
@@ -534,6 +535,16 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 - 論文：https://arxiv.org/abs/2003.12929
 - コード：https://github.com/fuy34/superpixel_fcn
+
+<a name="IIS"></a>
+
+# 交互式画像分割
+
+**Interactive Object Segmentation with Inside-Outside Guidance**
+
+- 論文下载链接：http://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Interactive_Object_Segmentation_With_Inside-Outside_Guidance_CVPR_2020_paper.pdf
+- コード：https://github.com/shiyinzhang/Inside-Outside-Guidance
+- データセット：https://github.com/shiyinzhang/Pixel-ImageNet
 
 <a name="NAS"></a>
 
@@ -1520,6 +1531,12 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Datasets"></a>
 
 # データセット
+
+**Interactive Object Segmentation with Inside-Outside Guidance**
+
+- 論文下载链接：http://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Interactive_Object_Segmentation_With_Inside-Outside_Guidance_CVPR_2020_paper.pdf
+- コード：https://github.com/shiyinzhang/Inside-Outside-Guidance
+- データセット：https://github.com/shiyinzhang/Pixel-ImageNet
 
 **Video Panoptic Segmentation**
 
