@@ -2,7 +2,9 @@
 
 CVPR 2020の論文及びオープンソースプロジェクトのコレクションです.そして,もし問題があればissueに提出して,CVPR 2020のオープンソースプロジェクトを共有することも歓迎します
 
-关于往年CV顶会論文（如CVPR 2019、ICCV 2019、ECCV 2018）以及その他优质CV論文和大盘点，详见： https://github.com/amusi/daily-paper-computer-vision 
+ECCV 2020 論文开源项目合集来了：https://github.com/amusi/ECCV2020-Code
+
+关于往年CV顶会論文（如ECCV 2020、CVPR 2019、ICCV 2019）以及その他优质CV論文和大盘点，详见： https://github.com/amusi/daily-paper-computer-vision 
 
 - [CNN](#CNN)
 - [画像分類](#Image-Classification)
@@ -88,6 +90,12 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 <a name="Image-Classification"></a>
 
 # 画像分類
+
+**Interpretable and Accurate Fine-grained Recognition via Region Grouping**
+
+- 論文：https://arxiv.org/abs/2005.10411
+
+- コード：https://github.com/zxhuang1698/interpretability-by-parts
 
 **Compositional Convolutional Neural Networks: A Deep Architecture with Innate Robustness to Partial Occlusion**
 
@@ -594,6 +602,11 @@ CVPR 2020の論文及びオープンソースプロジェクトのコレクシ�
 
 # GAN
 
+**Reusing Discriminators for Encoding: Towards Unsupervised Image-to-Image Translation**
+
+- 論文地址：http://openaccess.thecvf.com/content_CVPR_2020/html/Chen_Reusing_Discriminators_for_Encoding_Towards_Unsupervised_Image-to-Image_Translation_CVPR_2020_paper.html
+- コード地址：https://github.com/alpc91/NICE-GAN-pytorch 
+
 **Distribution-induced Bidirectional Generative Adversarial Network for Graph Representation Learning**
 
 - 論文：https://arxiv.org/abs/1912.01899
@@ -735,6 +748,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 - コード：https://github.com/Jia-Research-Lab/PointGroup
 
 ## 3D点群レジストレーション
+
+**Feature-metric Registration: A Fast Semi-supervised Approach for Robust Point Cloud Registration without Correspondences**
+
+- 論文：https://arxiv.org/abs/2005.01014
+- コード：https://github.com/XiaoshuiHuang/fmr 
 
 **D3Feat: Joint Learning of Dense Detection and Description of 3D Local Features**
 
@@ -1254,6 +1272,12 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # 去雾
 
+**Domain Adaptation for Image Dehazing**
+
+- 論文：https://arxiv.org/abs/2005.04668
+
+- コード：https://github.com/HUSTSYJ/DA_dahazing
+
 **Multi-Scale Boosted Dehazing Network with Dense Feature Fusion**
 
 - 論文：https://arxiv.org/abs/2004.13388
@@ -1465,6 +1489,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="AE"></a>
 
 # 对抗样本
+
+**Enhancing Cross-Task Black-Box Transferability of Adversarial Examples With Dispersion Reduction**
+
+- 論文：https://openaccess.thecvf.com/content_CVPR_2020/papers/Lu_Enhancing_Cross-Task_Black-Box_Transferability_of_Adversarial_Examples_With_Dispersion_Reduction_CVPR_2020_paper.pdf
+- コード：https://github.com/erbloo/dr_cvpr20 
 
 **Towards Large yet Imperceptible Adversarial Image Perturbations with Perceptual Color Distance**
 
