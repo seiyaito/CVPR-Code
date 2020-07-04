@@ -602,6 +602,11 @@ ECCV 2020 論文开源项目合集来了：https://github.com/amusi/ECCV2020-Cod
 
 # GAN
 
+**SEAN: Image Synthesis with Semantic Region-Adaptive Normalization**
+
+- 論文：https://arxiv.org/abs/1911.12861
+- コード：https://github.com/ZPdesu/SEAN
+
 **Reusing Discriminators for Encoding: Towards Unsupervised Image-to-Image Translation**
 
 - 論文地址：http://openaccess.thecvf.com/content_CVPR_2020/html/Chen_Reusing_Discriminators_for_Encoding_Towards_Unsupervised_Image-to-Image_Translation_CVPR_2020_paper.html
@@ -845,6 +850,13 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 # 人体姿勢推定(2D/3D)
 
 ## 2D人体姿勢推定
+
+**TransMoMo: Invariance-Driven Unsupervised Video Motion Retargeting**
+
+- ホームページ：https://yzhq97.github.io/transmomo/
+
+- 論文：https://arxiv.org/abs/2003.14401
+- コード：https://github.com/yzhq97/transmomo.pytorch
 
 **HigherHRNet: Scale-Aware Representation Learning for Bottom-Up Human Pose Estimation**
 
@@ -1179,6 +1191,11 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="6DOF"></a>
 
 # 6D物体姿勢推定
+
+ **PVN3D: A Deep Point-wise 3D Keypoints Voting Network for 6DoF Pose Estimation**
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/He_PVN3D_A_Deep_Point-Wise_3D_Keypoints_Voting_Network_for_6DoF_CVPR_2020_paper.pdf
+- コード：https://github.com/ethnhe/PVN3D
 
 **MoreFusion: Multi-object Reasoning for 6D Pose Estimation from Volumetric Fusion**
 
