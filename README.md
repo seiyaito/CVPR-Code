@@ -937,6 +937,14 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 
 # シーンテキスト検出
 
+**STEFANN: Scene Text Editor using Font Adaptive Neural Network**
+
+- ホームページ：https://prasunroy.github.io/stefann/
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Roy_STEFANN_Scene_Text_Editor_Using_Font_Adaptive_Neural_Network_CVPR_2020_paper.html
+- コード：https://github.com/prasunroy/stefann
+- データセット：https://drive.google.com/open?id=1sEDiX_jORh2X-HSzUnjIyZr-G9LJIw1k
+
 **ContourNet: Taking a Further Step Toward Accurate Arbitrary-Shaped Scene Text Detection**
 
 - 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_ContourNet_Taking_a_Further_Step_Toward_Accurate_Arbitrary-Shaped_Scene_Text_CVPR_2020_paper.pdf
@@ -1592,6 +1600,14 @@ PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
 <a name="Datasets"></a>
 
 # データセット
+
+**STEFANN: Scene Text Editor using Font Adaptive Neural Network**
+
+- ホームページ：https://prasunroy.github.io/stefann/
+
+- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Roy_STEFANN_Scene_Text_Editor_Using_Font_Adaptive_Neural_Network_CVPR_2020_paper.html
+- コード：https://github.com/prasunroy/stefann
+- データセット：https://drive.google.com/open?id=1sEDiX_jORh2X-HSzUnjIyZr-G9LJIw1k
 
 **Interactive Object Segmentation with Inside-Outside Guidance**
 
