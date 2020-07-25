@@ -385,6 +385,12 @@ ECCV 2020 論文开源项目合集来了：https://github.com/amusi/ECCV2020-Cod
 
 # セマンティックセグメンテーション
 
+**FDA: Fourier Domain Adaptation for Semantic Segmentation**
+
+- 論文：https://arxiv.org/abs/2004.05498
+
+- コード：https://github.com/YanchaoYang/FDA
+
 **Super-BPD: Super Boundary-to-Pixel Direction for Fast Image Segmentation**
 
 - 論文：なし
