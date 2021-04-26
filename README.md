@@ -1,10 +1,10 @@
-# CVPR 2021 論文和开源项目合集(Papers with Code)
+# CVPR 2021 論文・オープンソースプロジェクト集(Papers with Code)
 
-[CVPR 2021](http://cvpr2021.thecvf.com/) 論文和开源项目合集(papers with code)！
+[CVPR 2021](http://cvpr2021.thecvf.com/) 論文・オープンソースプロジェクト集(papers with code)！
 
-CVPR 2021 收录列表：http://cvpr2021.thecvf.com/sites/default/files/2021-03/accepted_paper_ids.txt
+CVPR 2021 コレクション一覧：http://cvpr2021.thecvf.com/sites/default/files/2021-03/accepted_paper_ids.txt
 
-> 注1：欢迎各位大佬提交issue，分享CVPR 2021論文和开源项目！
+> 注1：CVPR2021論文やオープンソースプロジェクトの課題と共有の投稿をお待ちしています!
 >
 > 注2：关于往年CV顶会論文以及その他优质CV論文和大盘点，详见： https://github.com/amusi/daily-paper-computer-vision
 
@@ -19,11 +19,11 @@ CVPR 2021 中奖群已成立！已经收录的同学，可以添加微信：**CV
 - [Visual Transformer](#Visual-Transformer)
 - [Regularization](#Regularization)
 - [SLAM](#SLAM)
-- [长尾分布(Long-Tailed)](#Long-Tailed)
-- [数据增广(Data Augmentation)](#DA)
-- [无监督/自监督(Self-Supervised)](#Un/Self-Supervised)
+- [ロングテール(Long-Tailed)](#Long-Tailed)
+- [データ拡張(Data Augmentation)](#DA)
+- [教師なし/自己教師(Self-Supervised)](#Un/Self-Supervised)
 - [半监督(Semi-Supervised)](#Semi-Supervised)
-- [胶囊网络(Capsule Network)](#Capsule-Network)
+- [カプセルネットワーク(Capsule Network)](#Capsule-Network)
 - [2D物体検出(Object Detection)](#Object-Detection)
 - [单/多物体追跡(Object Tracking)](#Object-Tracking)
 - [セマンティックセグメンテーション(Semantic Segmentation)](#Semantic-Segmentation)
@@ -492,7 +492,7 @@ CVPR 2021 中奖群已成立！已经收录的同学，可以添加微信：**CV
 
 <a name="Long-Tailed"></a>
 
-# 长尾分布(Long-Tailed)
+# ロングテール(Long-Tailed)
 
 **Distribution Alignment: A Unified Framework for Long-tail Visual Recognition**
 
@@ -511,7 +511,7 @@ CVPR 2021 中奖群已成立！已经收录的同学，可以添加微信：**CV
 
 <a name="DA"></a>
 
-# 数据增广(Data Augmentation)
+# データ拡張(Data Augmentation)
 
 **Scale-aware Automatic Augmentation for Object Detection**
 
@@ -521,7 +521,7 @@ CVPR 2021 中奖群已成立！已经收录的同学，可以添加微信：**CV
 
 <a name="Un/Self-Supervised"></a>
 
-# 无监督/自监督(Un/Self-Supervised)
+# 教師なし/自己教師(Un/Self-Supervised)
 
 **Self-supervised Video Representation Learning by Context and Motion Decoupling**
 
@@ -556,7 +556,7 @@ CVPR 2021 中奖群已成立！已经收录的同学，可以添加微信：**CV
 
 <a name="Semi-Supervised"></a>
 
-# 半监督学习(Semi-Supervised )
+# 半教師(Semi-Supervised )
 
 **Instant-Teaching: An End-to-End Semi-Supervised Object Detection Framework**
 
@@ -570,7 +570,7 @@ CVPR 2021 中奖群已成立！已经收录的同学，可以添加微信：**CV
 
 <a name="Capsule-Network"></a>
 
-# 胶囊网络(Capsule Network)
+# カプセルネットワーク(Capsule Network)
 
 **Capsule Network is Not More Robust than Convolutional Network**
 
