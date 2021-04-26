@@ -1,2081 +1,2326 @@
-# CVPR2020-Code
+# CVPR 2021 論文和开源项目合集(Papers with Code)
 
-[CVPR 2020](https://openaccess.thecvf.com/CVPR2020) 論文开源项目合集，同时欢迎各位大佬提交issue，分享CVPR 2020开源项目
+[CVPR 2021](http://cvpr2021.thecvf.com/) 論文和开源项目合集(papers with code)！
 
-**【推荐阅读】**
+CVPR 2021 收录列表：http://cvpr2021.thecvf.com/sites/default/files/2021-03/accepted_paper_ids.txt
 
-- [CVPR 2020 virtual](http://cvpr20.com/)
-- ECCV 2020 論文开源项目合集来了：https://github.com/amusi/ECCV2020-Code
+> 注1：欢迎各位大佬提交issue，分享CVPR 2021論文和开源项目！
+>
+> 注2：关于往年CV顶会論文以及その他优质CV論文和大盘点，详见： https://github.com/amusi/daily-paper-computer-vision
 
-- 关于往年CV顶会論文（如ECCV 2020、CVPR 2019、ICCV 2019）以及その他优质CV論文和大盘点，详见： https://github.com/amusi/daily-paper-computer-vision
+CVPR 2021 中奖群已成立！已经收录的同学，可以添加微信：**CVer9999**，请备注：**CVPR2021已收录+姓名+学校/公司名称**！一定要根据格式申请，可以拉你进群沟通开会等事宜。
 
-**【CVPR 2020 論文开源目录】**
+## 【CVPR 2021 論文开源目录】
 
-- [CNN](#CNN)
-- [画像分類](#Image-Classification)
-- [動画分類](#Video-Classification)
-- [物体検出](#Object-Detection)
-- [3D物体検出](#3D-Object-Detection)
-- [動画物体検出](#Video-Object-Detection)
-- [物体追跡](#Object-Tracking)
-- [セマンティックセグメンテーション](#Semantic-Segmentation)
-- [インスタンスセグメンテーション](#Instance-Segmentation)
-- [全景分割](#Panoptic-Segmentation)
-- [動画物体分割](#VOS)
-- [スーパーピクセルセグメンテーション](#Superpixel)
-- [交互式画像分割](#IIS)
+- [Backbone](#Backbone)
 - [NAS](#NAS)
 - [GAN](#GAN)
-- [Re-ID](#Re-ID)
-- [3D点群（分類/分割/レジストレーション/追跡等）](#3D-PointCloud)
-- [顔（識別/検出/重建等）](#Face)
-- [人体姿勢推定(2D/3D)](#Human-Pose-Estimation)
-- [人体解析](#Human-Parsing)
-- [シーンテキスト検出](#Scene-Text-Detection)
-- [シーンテキスト識別](#Scene-Text-Recognition)
-- [特征(点)検出和描述](#Feature)
-- [超解像](#Super-Resolution)
-- [モデル圧縮/枝刈り](#Model-Compression)
-- [動画理解/行動識別](#Action-Recognition)
-- [群衆カウント](#Crowd-Counting)
-- [深度推定](#Depth-Estimation)
-- [6D物体姿勢推定](#6DOF)
-- [手姿勢推定](#Hand-Pose)
-- [显著性検出](#Saliency)
-- [画像修復](#Denoising)
-- [去雨](#Deraining)
-- [デブラー](#Deblurring)
-- [去雾](#Dehazing)
-- [特徴点検出・記述](#Feature)
-- [VQA(VQA)](#VQA)
-- [動画问答(VideoQA)](#VideoQA)
-- [視覚言語ナビゲーション](#VLN)
-- [動画圧縮](#Video-Compression)
-- [動画插帧](#Video-Frame-Interpolation)
-- [スタイル変換](#Style-Transfer)
-- [车道线検出](#Lane-Detection)
+- [VAE](#VAE)
+- [Visual Transformer](#Visual-Transformer)
+- [Regularization](#Regularization)
+- [SLAM](#SLAM)
+- [长尾分布(Long-Tailed)](#Long-Tailed)
+- [数据增广(Data Augmentation)](#DA)
+- [无监督/自监督(Self-Supervised)](#Un/Self-Supervised)
+- [半监督(Semi-Supervised)](#Semi-Supervised)
+- [胶囊网络(Capsule Network)](#Capsule-Network)
+- [2D物体検出(Object Detection)](#Object-Detection)
+- [单/多物体追跡(Object Tracking)](#Object-Tracking)
+- [セマンティックセグメンテーション(Semantic Segmentation)](#Semantic-Segmentation)
+- [インスタンスセグメンテーション(Instance Segmentation)](#Instance-Segmentation)
+- [全景分割(Panoptic Segmentation)](#Panoptic-Segmentation)
+- [医学画像分割(Medical Image Segmentation)](#Medical-Image-Segmentation)
+- [動画物体分割(Video-Object-Segmentation)](#VOS)
+- [交互式動画物体分割(Interactive-Video-Object-Segmentation)](#IVOS)
+- [显著性検出(Saliency Detection)](#Saliency-Detection)
+- [伪装物体検出(Camouflaged Object Detection)](#Camouflaged-Object-Detection)
+- [协同显著性検出(Co-Salient Object Detection)](#CoSOD)
+- [画像抠图(Image Matting)](#Matting)
+- [歩行者重識別(Person Re-identification)](#Re-ID)
+- [歩行者搜索(Person Search)](#Person-Search)
+- [動画理解/行動識別(Video Understanding)](#Video-Understanding)
+- [顔識別(Face Recognition)](#Face-Recognition)
+- [顔検出(Face Detection)](#Face-Detection)
+- [Face Anti-spoofing(Face Anti-Spoofing)](#Face-Anti-Spoofing)
+- [Deepfake検出(Deepfake Detection)](#Deepfake-Detection)
+- [顔年龄推定(Age-Estimation)](#Age-Estimation)
+- [顔表情識別(Facial-Expression-Recognition)](#FER)
+- [Deepfakes](#Deepfakes)
+- [人体解析(Human Parsing)](#Human-Parsing)
+- [2D/3D人体姿勢推定(2D/3D Human Pose Estimation)](#Human-Pose-Estimation)
+- [动物姿勢推定(Animal Pose Estimation)](#Animal-Pose-Estimation)
+- [Human Volumetric Capture](#Human-Volumetric-Capture)
+- [シーンテキスト識別(Scene Text Recognition)](#Scene-Text-Recognition)
+- [画像圧縮(Image Compression)](#Image-Compression)
+- [モデル圧縮/枝刈り/量化](#Model-Compression)
+- [知识蒸馏(Knowledge Distillation)](#KD)
+- [超解像(Super-Resolution)](#Super-Resolution)
+- [去雾(Dehazing)](#Dehazing)
+- [画像恢复(Image Restoration)](#Image-Restoration)
+- [画像补全(Image Inpainting)](#Image-Inpainting)
+- [画像编辑(Image Editing)](#Image-Editing)
+- [画像匹配(Image Matching)](#Image-Matching)
+- [画像融合(Image Blending)](#Image-Blending)
+- [反光去除(Reflection Removal)](#Reflection-Removal)
+- [3D点群分類(3D Point Clouds Classification)](#3D-C)
+- [3D物体検出(3D Object Detection)](#3D-Object-Detection)
+- [3Dセマンティックセグメンテーション(3D Semantic Segmentation)](#3D-Semantic-Segmentation)
+- [3D全景分割(3D Panoptic Segmentation)](#3D-Panoptic-Segmentation)
+- [3D物体追跡(3D Object Tracking)](#3D-Object-Tracking)
+- [3D点群レジストレーション(3D Point Cloud Registration)](#3D-PointCloud-Registration)
+- [3D点群补全(3D-Point-Cloud-Completion)](#3D-Point-Cloud-Completion)
+- [3D重建(3D Reconstruction)](#3D-Reconstruction)
+- [6D位姿推定(6D Pose Estimation)](#6D-Pose-Estimation)
+- [相机姿勢推定(Camera Pose Estimation)](#Camera-Pose-Estimation)
+- [深度推定(Depth Estimation)](#Depth-Estimation)
+- [立体匹配(Stereo Matching)](#Stereo Matching)
+- [光流推定(Flow Estimation)](#Flow-Estimation)
+- [軌跡予測(Trajectory Prediction)](#Trajectory-Prediction)
+- [对抗样本(Adversarial-Examples)](#AE)
+- [画像检索(Image Retrieval)](#Image-Retrieval)
+- [動画检索(Video Retrieval)](#Video-Retrieval)
+- [跨模态检索(Cross-modal Retrieval)](#Cross-modal-Retrieval) 
+- [Zero-Shot Learning](#Zero-Shot-Learning)
+- [联邦学习(Federated Learning)](#Federated-Learning)
+- [動画插帧(Video Frame Interpolation)](#Video-Frame-Interpolation)
+- [视觉推理(Visual Reasoning)](#Visual-Reasoning)
+- [视图合成(Visual Synthesis)](#Visual-Synthesis)
+- [スタイル変換(Style Transfer)](#Style-Transfer)
+- [布局生成(Layout Generation)](#Layout-Generation)
+- [Domain Generalization](#Domain-Generalization)
+- [Domain Adaptation](#Domain-Adaptation)
+- [Open-Set Recognition](#Open-Set-Recognition)
+- [Adversarial Attack](#Adversarial-Attack)
 - [Human-Object Interaction (HOI)検出](#HOI)
-- [軌跡予測](#TP)
-- [モーション予測](#Motion-Predication)
-- [光流推定](#OF)
-- [画像检索](#IR)
+- [阴影去除(Shadow Removal)](#Shadow-Removal)
 - [虚拟试衣](#Virtual-Try-On)
-- [HDR](#HDR)
-- [对抗样本](#AE)
-- [三维重建](#3D-Reconstructing)
-- [深度补全](#DC)
-- [セマンティックシーン补全](#SSC)
-- [画像/動画描述](#Captioning)
-- [线框解析](#WP)
-- [データセット](#Datasets)
-- [その他](#Others)
-- [採択されたか不明](#Not-Sure)
+- [データセット(Datasets)](#Datasets)
+- [その他(Others)](#Others)
+- [待添加(TODO)](#TO-DO)
+- [採択されたか不明(Not Sure)](#Not-Sure)
 
-<a name="CNN"></a>
+<a name="Backbone"></a>
 
-# CNN
+# Backbone
 
-**Exploring Self-attention for Image Recognition**
+**Lite-HRNet: A Lightweight High-Resolution Network**
 
-- 論文：https://hszhao.github.io/papers/cvpr20_san.pdf
+- Paper: https://arxiv.org/abs/2104.06403
+- https://github.com/HRNet/Lite-HRNet
 
-- コード：https://github.com/hszhao/SAN
+**CondenseNet V2: Sparse Feature Reactivation for Deep Networks**
 
-**Improving Convolutional Networks with Self-Calibrated Convolutions**
+- Paper: https://arxiv.org/abs/2104.04382
 
-- ホームページ：https://mmcheng.net/scconv/
+- Code: https://github.com/jianghaojun/CondenseNetV2
 
-- 論文：http://mftp.mmcheng.net/Papers/20cvprSCNet.pdf
-- コード：https://github.com/backseason/SCNet
+**Diverse Branch Block: Building a Convolution as an Inception-like Unit**
 
-**Rethinking Depthwise Separable Convolutions: How Intra-Kernel Correlations Lead to Improved MobileNets**
+- Paper: https://arxiv.org/abs/2103.13425
 
-- 論文：https://arxiv.org/abs/2003.13549
-- コード：https://github.com/zeiss-microscopy/BSConv
+- Code: https://github.com/DingXiaoH/DiverseBranchBlock
 
-<a name="Image-Classification"></a>
+**Scaling Local Self-Attention For Parameter Efficient Visual Backbones**
 
-# 画像分類
+- Paper(Oral): https://arxiv.org/abs/2103.12731
 
-**Interpretable and Accurate Fine-grained Recognition via Region Grouping**
+- Code: None
 
-- 論文：https://arxiv.org/abs/2005.10411
+**ReXNet: Diminishing Representational Bottleneck on Convolutional Neural Network**
 
-- コード：https://github.com/zxhuang1698/interpretability-by-parts
+- Paper: https://arxiv.org/abs/2007.00992
+- Code:  https://github.com/clovaai/rexnet
 
-**Compositional Convolutional Neural Networks: A Deep Architecture with Innate Robustness to Partial Occlusion**
+**Involution: Inverting the Inherence of Convolution for Visual Recognition**
 
-- 論文：https://arxiv.org/abs/2003.04490
+- Paper: https://github.com/d-li14/involution
+- Code: https://arxiv.org/abs/2103.06255
 
-- コード：https://github.com/AdamKortylewski/CompositionalNets
+**Coordinate Attention for Efficient Mobile Network Design**
 
-**Spatially Attentive Output Layer for Image Classification**
+- Paper:  https://arxiv.org/abs/2103.02907
+- Code: https://github.com/Andrew-Qibin/CoordAttention
 
-- 論文：https://arxiv.org/abs/2004.07570 
-- コード（好像被原作者删除了）：https://github.com/ildoonet/spatially-attentive-output-layer 
+**Inception Convolution with Efficient Dilation Search**
 
-<a name="Video-Classification"></a>
+- Paper:  https://arxiv.org/abs/2012.13587 
+- Code: https://github.com/yifan123/IC-Conv
 
-# 動画分類
+**RepVGG: Making VGG-style ConvNets Great Again**
 
-**SmallBigNet: Integrating Core and Contextual Views for Video Classification**
-
-- 論文：https://arxiv.org/abs/2006.14582
-- コード：https://github.com/xhl-video/SmallBigNet
-
-<a name="Object-Detection"></a>
-
-# 物体検出
-
-**Overcoming Classifier Imbalance for Long-tail Object Detection with Balanced Group Softmax**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Overcoming_Classifier_Imbalance_for_Long-Tail_Object_Detection_With_Balanced_Group_CVPR_2020_paper.pdf
-- コード：https://github.com/FishYuLi/BalancedGroupSoftmax
-
-**AugFPN: Improving Multi-scale Feature Learning for Object Detection**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_AugFPN_Improving_Multi-Scale_Feature_Learning_for_Object_Detection_CVPR_2020_paper.pdf 
-- コード：https://github.com/Gus-Guo/AugFPN
-
-**Noise-Aware Fully Webly Supervised Object Detection**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Noise-Aware_Fully_Webly_Supervised_Object_Detection_CVPR_2020_paper.html
-- コード：https://github.com/shenyunhang/NA-fWebSOD/
-
-**Learning a Unified Sample Weighting Network for Object Detection**
-
-- 論文：https://arxiv.org/abs/2006.06568
-- コード：https://github.com/caiqi/sample-weighting-network
-
-**D2Det: Towards High Quality Object Detection and Instance Segmentation**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Cao_D2Det_Towards_High_Quality_Object_Detection_and_Instance_Segmentation_CVPR_2020_paper.pdf
-
-- コード：https://github.com/JialeCao001/D2Det
-
-**Dynamic Refinement Network for Oriented and Densely Packed Object Detection**
-
-- 論文下载链接：https://arxiv.org/abs/2005.09973
-
-- コードとデータセット：https://github.com/Anymake/DRN_CVPR2020
-
-**Scale-Equalizing Pyramid Convolution for Object Detection**
-
-論文：https://arxiv.org/abs/2005.03101
-
-コード：https://github.com/jshilong/SEPC
-
-**Revisiting the Sibling Head in Object Detector**
-
-- 論文：https://arxiv.org/abs/2003.07540
-
-- コード：https://github.com/Sense-X/TSD 
-
-**Scale-equalizing Pyramid Convolution for Object Detection**
-
-- 論文：なし
-- コード：https://github.com/jshilong/SEPC 
-
-**Detection in Crowded Scenes: One Proposal, Multiple Predictions**
-
-- 論文：https://arxiv.org/abs/2003.09163
-- コード：https://github.com/megvii-model/CrowdDetection
-
-**Instance-aware, Context-focused, and Memory-efficient Weakly Supervised Object Detection**
-
-- 論文：https://arxiv.org/abs/2004.04725
-- コード：https://github.com/NVlabs/wetectron
-
-**Bridging the Gap Between Anchor-based and Anchor-free Detection via Adaptive Training Sample Selection**
-
-- 論文：https://arxiv.org/abs/1912.02424 
-- コード：https://github.com/sfzhang15/ATSS
-
-**BiDet: An Efficient Binarized Object Detector**
-
-- 論文：https://arxiv.org/abs/2003.03961 
-- コード：https://github.com/ZiweiWangTHU/BiDet
-
-**Harmonizing Transferability and Discriminability for Adapting Object Detectors**
-
-- 論文：https://arxiv.org/abs/2003.06297
-- コード：https://github.com/chaoqichen/HTCN
-
-**CentripetalNet: Pursuing High-quality Keypoint Pairs for Object Detection**
-
-- 論文：https://arxiv.org/abs/2003.09119
-- コード：https://github.com/KiveeDong/CentripetalNet
-
-**Hit-Detector: Hierarchical Trinity Architecture Search for Object Detection**
-
-- 論文：https://arxiv.org/abs/2003.11818
-- コード：https://github.com/ggjy/HitDet.pytorch
-
-**EfficientDet: Scalable and Efficient Object Detection**
-
-- 論文：https://arxiv.org/abs/1911.09070
-- コード：https://github.com/google/automl/tree/master/efficientdet 
-
-<a name="3D-Object-Detection"></a>
-
-# 3D物体検出
-
-**SESS: Self-Ensembling Semi-Supervised 3D Object Detection**
-
-- 論文： https://arxiv.org/abs/1912.11803
-
-- コード：https://github.com/Na-Z/sess
-
-**Associate-3Ddet: Perceptual-to-Conceptual Association for 3D Point Cloud Object Detection**
-
-- 論文： https://arxiv.org/abs/2006.04356
-
-- コード：https://github.com/dleam/Associate-3Ddet
-
-**What You See is What You Get: Exploiting Visibility for 3D Object Detection**
-
-- ホームページ：https://www.cs.cmu.edu/~peiyunh/wysiwyg/
-
-- 論文：https://arxiv.org/abs/1912.04986
-- コード：https://github.com/peiyunh/wysiwyg
-
-**Learning Depth-Guided Convolutions for Monocular 3D Object Detection**
-
-- 論文：https://arxiv.org/abs/1912.04799
-- コード：https://github.com/dingmyu/D4LCN
-
-**Structure Aware Single-stage 3D Object Detection from Point Cloud**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/He_Structure_Aware_Single-Stage_3D_Object_Detection_From_Point_Cloud_CVPR_2020_paper.html
-
-- コード：https://github.com/skyhehe123/SA-SSD
-
-**IDA-3D: Instance-Depth-Aware 3D Object Detection from Stereo Vision for Autonomous Driving**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Peng_IDA-3D_Instance-Depth-Aware_3D_Object_Detection_From_Stereo_Vision_for_Autonomous_CVPR_2020_paper.pdf
-
-- コード：https://github.com/swords123/IDA-3D
-
-**Train in Germany, Test in The USA: Making 3D Object Detectors Generalize**
-
-- 論文：https://arxiv.org/abs/2005.08139
-
-- コード：https://github.com/cxy1997/3D_adapt_auto_driving
-
-**MLCVNet: Multi-Level Context VoteNet for 3D Object Detection**
-
-- 論文：https://arxiv.org/abs/2004.05679
-- コード：https://github.com/NUAAXQ/MLCVNet
-
-**3DSSD: Point-based 3D Single Stage Object Detector**
-
-- CVPR 2020 Oral
-
-- 論文：https://arxiv.org/abs/2002.10187
-
-- コード：https://github.com/tomztyang/3DSSD
-
-**Disp R-CNN: Stereo 3D Object Detection via Shape Prior Guided Instance Disparity Estimation**
-
-- 論文：https://arxiv.org/abs/2004.03572
-
-- コード：https://github.com/zju3dv/disprcn
-
-**End-to-End Pseudo-LiDAR for Image-Based 3D Object Detection**
-
-- 論文：https://arxiv.org/abs/2004.03080
-
-- コード：https://github.com/mileyan/pseudo-LiDAR_e2e
-
-**DSGN: Deep Stereo Geometry Network for 3D Object Detection**
-
-- 論文：https://arxiv.org/abs/2001.03398
-- コード：https://github.com/chenyilun95/DSGN
-
-**LiDAR-based Online 3D Video Object Detection with Graph-based Message Passing and Spatiotemporal Transformer Attention**
-
-- 論文：https://arxiv.org/abs/2004.01389
-- コード：https://github.com/yinjunbo/3DVID
-
-**PV-RCNN: Point-Voxel Feature Set Abstraction for 3D Object Detection**
-
-- 論文：https://arxiv.org/abs/1912.13192
-
-- コード：https://github.com/sshaoshuai/PV-RCNN
-
-**Point-GNN: Graph Neural Network for 3D Object Detection in a Point Cloud**
-
-- 論文：https://arxiv.org/abs/2003.01251 
-- コード：https://github.com/WeijingShi/Point-GNN 
-
-<a name="Video-Object-Detection"></a>
-
-# 動画物体検出
-
-**Memory Enhanced Global-Local Aggregation for Video Object Detection**
-
-論文：https://arxiv.org/abs/2003.12063
-
-コード：https://github.com/Scalsol/mega.pytorch
-
-<a name="Object-Tracking"></a>
-
-# 物体追跡
-
-**SiamCAR: Siamese Fully Convolutional Classification and Regression for Visual Tracking**
-
-- 論文：https://arxiv.org/abs/1911.07241
-- コード：https://github.com/ohhhyeahhh/SiamCAR
-
-**D3S -- A Discriminative Single Shot Segmentation Tracker**
-
-- 論文：https://arxiv.org/abs/1911.08862
-- コード：https://github.com/alanlukezic/d3s
-
-**ROAM: Recurrently Optimizing Tracking Model**
-
-- 論文：https://arxiv.org/abs/1907.12006
-
-- コード：https://github.com/skyoung/ROAM
-
-**Siam R-CNN: Visual Tracking by Re-Detection**
-
-- ホームページ：https://www.vision.rwth-aachen.de/page/siamrcnn
-- 論文：https://arxiv.org/abs/1911.12836
-- 論文2：https://www.vision.rwth-aachen.de/media/papers/192/siamrcnn.pdf
-- コード：https://github.com/VisualComputingInstitute/SiamR-CNN
-
-**Cooling-Shrinking Attack: Blinding the Tracker with Imperceptible Noises**
-
-- 論文：https://arxiv.org/abs/2003.09595 
-- コード：https://github.com/MasterBin-IIAU/CSA 
-
-**High-Performance Long-Term Tracking with Meta-Updater**
-
-- 論文：https://arxiv.org/abs/2004.00305
-
-- コード：https://github.com/Daikenan/LTMU
-
-**AutoTrack: Towards High-Performance Visual Tracking for UAV with Automatic Spatio-Temporal Regularization**
-
-- 論文：https://arxiv.org/abs/2003.12949
-
-- コード：https://github.com/vision4robotics/AutoTrack
-
-**Probabilistic Regression for Visual Tracking**
-
-- 論文：https://arxiv.org/abs/2003.12565
-- コード：https://github.com/visionml/pytracking
-
-**MAST: A Memory-Augmented Self-supervised Tracker**
-
-- 論文：https://arxiv.org/abs/2002.07793
-- コード：https://github.com/zlai0/MAST
-
-**Siamese Box Adaptive Network for Visual Tracking**
-
-- 論文：https://arxiv.org/abs/2003.06761
-- コード：https://github.com/hqucv/siamban
-
-## 多物体追跡
-
-**3D-ZeF: A 3D Zebrafish Tracking Benchmark Dataset**
-
-- ホームページ：https://vap.aau.dk/3d-zef/
-- 論文：https://arxiv.org/abs/2006.08466
-- コード：https://bitbucket.org/aauvap/3d-zef/src/master/
-- データセット：https://motchallenge.net/data/3D-ZeF20
-
-<a name="Semantic-Segmentation"></a>
-
-# セマンティックセグメンテーション
-
-**FDA: Fourier Domain Adaptation for Semantic Segmentation**
-
-- 論文：https://arxiv.org/abs/2004.05498
-
-- コード：https://github.com/YanchaoYang/FDA
-
-**Super-BPD: Super Boundary-to-Pixel Direction for Fast Image Segmentation**
-
-- 論文：なし
-
-- コード：https://github.com/JianqiangWan/Super-BPD
-
-**Single-Stage Semantic Segmentation from Image Labels**
-
-- 論文：https://arxiv.org/abs/2005.08104
-
-- コード：https://github.com/visinf/1-stage-wseg
-
-**Learning Texture Invariant Representation for Domain Adaptation of Semantic Segmentation**
-
-- 論文：https://arxiv.org/abs/2003.00867
-- コード：https://github.com/MyeongJin-Kim/Learning-Texture-Invariant-Representation
-
-**MSeg: A Composite Dataset for Multi-domain Semantic Segmentation**
-
-- 論文：http://vladlen.info/papers/MSeg.pdf
-- コード：https://github.com/mseg-dataset/mseg-api
-
-**CascadePSP: Toward Class-Agnostic and Very High-Resolution Segmentation via Global and Local Refinement**
-
-- 論文：https://arxiv.org/abs/2005.02551
-- コード：https://github.com/hkchengrex/CascadePSP
-
-**Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision**
-
-- Oral
-- 論文：https://arxiv.org/abs/2004.07703
-- コード：https://github.com/feipan664/IntraDA
-
-**Self-supervised Equivariant Attention Mechanism for Weakly Supervised Semantic Segmentation**
-
-- 論文：https://arxiv.org/abs/2004.04581
-- コード：https://github.com/YudeWang/SEAM
-
-**Temporally Distributed Networks for Fast Video Segmentation**
-
-- 論文：https://arxiv.org/abs/2004.01800
-
-- コード：https://github.com/feinanshan/TDNet
-
-**Context Prior for Scene Segmentation**
-
-- 論文：https://arxiv.org/abs/2004.01547
-
-- コード：https://git.io/ContextPrior
-
-**Strip Pooling: Rethinking Spatial Pooling for Scene Parsing**
-
-- 論文：https://arxiv.org/abs/2003.13328
-
-- コード：https://github.com/Andrew-Qibin/SPNet
-
-**Cars Can't Fly up in the Sky: Improving Urban-Scene Segmentation via Height-driven Attention Networks**
-
-- 論文：https://arxiv.org/abs/2003.05128
-- コード：https://github.com/shachoi/HANet
-
-**Learning Dynamic Routing for Semantic Segmentation**
-
-- 論文：https://arxiv.org/abs/2003.10401
-
-- コード：https://github.com/yanwei-li/DynamicRouting
-
-<a name="Instance-Segmentation"></a>
-
-# インスタンスセグメンテーション
-
-**D2Det: Towards High Quality Object Detection and Instance Segmentation**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Cao_D2Det_Towards_High_Quality_Object_Detection_and_Instance_Segmentation_CVPR_2020_paper.pdf
-
-- コード：https://github.com/JialeCao001/D2Det
-
-**PolarMask: Single Shot Instance Segmentation with Polar Representation**
-
-- 論文：https://arxiv.org/abs/1909.13226 
-- コード：https://github.com/xieenze/PolarMask 
-- 解説：https://zhuanlan.zhihu.com/p/84890413 
-
-**CenterMask : Real-Time Anchor-Free Instance Segmentation**
-
-- 論文：https://arxiv.org/abs/1911.06667 
-- コード：https://github.com/youngwanLEE/CenterMask 
-
-**BlendMask: Top-Down Meets Bottom-Up for Instance Segmentation**
-
-- 論文：https://arxiv.org/abs/2001.00309
-- コード：https://github.com/aim-uofa/AdelaiDet
-
-**Deep Snake for Real-Time Instance Segmentation**
-
-- 論文：https://arxiv.org/abs/2001.01629
-- コード：https://github.com/zju3dv/snake
-
-**Mask Encoding for Single Shot Instance Segmentation**
-
-- 論文：https://arxiv.org/abs/2003.11712
-
-- コード：https://github.com/aim-uofa/AdelaiDet
-
-<a name="Panoptic-Segmentation"></a>
-
-# 全景分割
-
-**Video Panoptic Segmentation**
-
-- 論文：https://arxiv.org/abs/2006.11339
-- コード：https://github.com/mcahny/vps
-- データセット：https://www.dropbox.com/s/ecem4kq0fdkver4/cityscapes-vps-dataset-1.0.zip?dl=0
-
-**Pixel Consensus Voting for Panoptic Segmentation**
-
-- 論文：https://arxiv.org/abs/2004.01849
-- コード：还未公布
-
-**BANet: Bidirectional Aggregation Network with Occlusion Handling for Panoptic Segmentation**
-
-論文：https://arxiv.org/abs/2003.14031
-
-コード：https://github.com/Mooonside/BANet
-
-<a name="VOS"></a>
-
-# 動画物体分割
-
-**A Transductive Approach for Video Object Segmentation**
-
-- 論文：https://arxiv.org/abs/2004.07193
-
-- コード：https://github.com/microsoft/transductive-vos.pytorch
-
-**State-Aware Tracker for Real-Time Video Object Segmentation**
-
-- 論文：https://arxiv.org/abs/2003.00482
-
-- コード：https://github.com/MegviiDetection/video_analyst
-
-**Learning Fast and Robust Target Models for Video Object Segmentation**
-
-- 論文：https://arxiv.org/abs/2003.00908 
-- コード：https://github.com/andr345/frtm-vos
-
-**Learning Video Object Segmentation from Unlabeled Videos**
-
-- 論文：https://arxiv.org/abs/2003.05020
-- コード：https://github.com/carrierlxk/MuG
-
-<a name="Superpixel"></a>
-
-# スーパーピクセルセグメンテーション
-
-**Superpixel Segmentation with Fully Convolutional Networks**
-
-- 論文：https://arxiv.org/abs/2003.12929
-- コード：https://github.com/fuy34/superpixel_fcn
-
-<a name="IIS"></a>
-
-# 交互式画像分割
-
-**Interactive Object Segmentation with Inside-Outside Guidance**
-
-- 論文下载链接：http://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Interactive_Object_Segmentation_With_Inside-Outside_Guidance_CVPR_2020_paper.pdf
-- コード：https://github.com/shiyinzhang/Inside-Outside-Guidance
-- データセット：https://github.com/shiyinzhang/Pixel-ImageNet
+- Paper: https://arxiv.org/abs/2101.03697
+- Code: https://github.com/DingXiaoH/RepVGG
 
 <a name="NAS"></a>
 
 # NAS
 
-**AOWS: Adaptive and optimal network width search with latency constraints**
+**Combined Depth Space based Architecture Search For Person Re-identification**
 
-- 論文：https://arxiv.org/abs/2005.10481
-- コード：https://github.com/bermanmaxim/AOWS
+- Paper: https://arxiv.org/abs/2104.04163
+- Code: None
 
-**Densely Connected Search Space for More Flexible Neural Architecture Search**
+**DiNTS: Differentiable Neural Network Topology Search for 3D Medical Image Segmentation**
 
-- 論文：https://arxiv.org/abs/1906.09607
+- Paper(Oral): https://arxiv.org/abs/2103.15954
+- Code: None
 
-- コード：https://github.com/JaminFong/DenseNAS
+**HR-NAS: Searching Efficient High-Resolution Neural Architectures with Transformers**
 
-**MTL-NAS: Task-Agnostic Neural Architecture Search towards General-Purpose Multi-Task Learning**
+- Paper(Oral): None
+- Code: https://github.com/dingmyu/HR-NAS
 
-- 論文：https://arxiv.org/abs/2003.14058
+**Neural Architecture Search with Random Labels**
 
-- コード：https://github.com/bhpfelix/MTLNAS
+- Paper: https://arxiv.org/abs/2101.11834
+- Code: None
 
-**FBNetV2: Differentiable Neural Architecture Search for Spatial and Channel Dimensions**
+**Towards Improving the Consistency, Efficiency, and Flexibility of Differentiable Neural Architecture Search**
 
-- 論文下载链接：https://arxiv.org/abs/2004.05565
+- Paper: https://arxiv.org/abs/2101.11342
+- Code: None
 
-- コード：https://github.com/facebookresearch/mobile-vision
+**Joint-DetNAS: Upgrade Your Detector with NAS, Pruning and Dynamic Distillation**
 
-**Neural Architecture Search for Lightweight Non-Local Networks**
+- Paper: None
+- Code: None
 
-- 論文：https://arxiv.org/abs/2004.01961
-- コード：https://github.com/LiYingwei/AutoNL
+**Prioritized Architecture Sampling with Monto-Carlo Tree Search**
 
-**Rethinking Performance Estimation in Neural Architecture Search**
+- Paper: https://arxiv.org/abs/2103.11922
+- Code: https://github.com/xiusu/NAS-Bench-Macro
 
-- 論文：https://arxiv.org/abs/2005.09917
-- コード：https://github.com/zhengxiawu/rethinking_performance_estimation_in_NAS
-- 解説1：https://www.zhihu.com/question/372070853/answer/1035234510
-- 解説2：https://zhuanlan.zhihu.com/p/111167409
+**Contrastive Neural Architecture Search with Neural Architecture Comparators**
 
-**CARS: Continuous Evolution for Efficient Neural Architecture Search**
+- Paper: https://arxiv.org/abs/2103.05471
+- Code: https://github.com/chenyaofo/CTNAS
 
-- 論文：https://arxiv.org/abs/1909.04977 
-- コード（公開前）：https://github.com/huawei-noah/CARS 
+**AttentiveNAS: Improving Neural Architecture Search via Attentive** 
+
+- Paper: https://arxiv.org/abs/2011.09011
+- Code: None
+
+**ReNAS: Relativistic Evaluation of Neural Architecture Search**
+
+- Paper: https://arxiv.org/abs/1910.01523
+- Code: None
+
+**HourNAS: Extremely Fast Neural Architecture**
+
+- Paper: https://arxiv.org/abs/2005.14446
+- Code: None
+
+**Searching by Generating: Flexible and Efficient One-Shot NAS with Architecture Generator**
+
+- Paper: https://arxiv.org/abs/2103.07289
+- Code: https://github.com/eric8607242/SGNAS
+
+**OPANAS: One-Shot Path Aggregation Network Architecture Search for Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.04507
+- Code: https://github.com/VDIGPKU/OPANAS
+
+**Inception Convolution with Efficient Dilation Search**
+
+- Paper:  https://arxiv.org/abs/2012.13587 
+- Code: None
 
 <a name="GAN"></a>
 
 # GAN
 
-**SEAN: Image Synthesis with Semantic Region-Adaptive Normalization**
+**Drafting and Revision: Laplacian Pyramid Network for Fast High-Quality Artistic Style Transfer**
 
-- 論文：https://arxiv.org/abs/1911.12861
-- コード：https://github.com/ZPdesu/SEAN
+- Paper: https://arxiv.org/abs/2104.05376
+- Code: https://github.com/PaddlePaddle/PaddleGAN/
 
-**Reusing Discriminators for Encoding: Towards Unsupervised Image-to-Image Translation**
+**Regularizing Generative Adversarial Networks under Limited Data**
 
-- 論文地址：http://openaccess.thecvf.com/content_CVPR_2020/html/Chen_Reusing_Discriminators_for_Encoding_Towards_Unsupervised_Image-to-Image_Translation_CVPR_2020_paper.html
-- コード地址：https://github.com/alpc91/NICE-GAN-pytorch 
+- Homepage: https://hytseng0509.github.io/lecam-gan/
+- Paper: https://faculty.ucmerced.edu/mhyang/papers/cvpr2021_gan_limited_data.pdf
+- Code: https://github.com/google/lecam-gan
 
-**Distribution-induced Bidirectional Generative Adversarial Network for Graph Representation Learning**
+**Towards Real-World Blind Face Restoration with Generative Facial Prior**
 
-- 論文：https://arxiv.org/abs/1912.01899
-- コード：https://github.com/SsGood/DBGAN 
+- Paper: https://arxiv.org/abs/2101.04061
+- Code: None
 
-**PSGAN: Pose and Expression Robust Spatial-Aware GAN for Customizable Makeup Transfer**
+**TediGAN: Text-Guided Diverse Image Generation and Manipulation**
 
-- 論文：https://arxiv.org/abs/1909.06956
-- コード：https://github.com/wtjiang98/PSGAN
+- Homepage: https://xiaweihao.com/projects/tedigan/
 
-**Semantically Mutil-modal Image Synthesis**
+- Paper: https://arxiv.org/abs/2012.03308
+- Code: https://github.com/weihaox/TediGAN
 
-- ホームページ：http://seanseattle.github.io/SMIS
-- 論文：https://arxiv.org/abs/2003.12697
-- コード：https://github.com/Seanseattle/SMIS
+**Generative Hierarchical Features from Synthesizing Image**
 
-**Unpaired Portrait Drawing Generation via Asymmetric Cycle Mapping**
+- Homepage: https://genforce.github.io/ghfeat/
 
-- 論文：https://yiranran.github.io/files/CVPR2020_Unpaired%20Portrait%20Drawing%20Generation%20via%20Asymmetric%20Cycle%20Mapping.pdf
-- コード：https://github.com/yiranran/Unpaired-Portrait-Drawing
+- Paper(Oral): https://arxiv.org/abs/2007.10379
+- Code: https://github.com/genforce/ghfeat
 
-**Learning to Cartoonize Using White-box Cartoon Representations**
+**Teachers Do More Than Teach: Compressing Image-to-Image Models**
 
-- 論文：https://github.com/SystemErrorWang/White-box-Cartoonization/blob/master/paper/06791.pdf
+- Paper: https://arxiv.org/abs/2103.03467
+- Code: https://github.com/snap-research/CAT
 
-- ホームページ：https://systemerrorwang.github.io/White-box-Cartoonization/
-- コード：https://github.com/SystemErrorWang/White-box-Cartoonization
-- 解説：https://zhuanlan.zhihu.com/p/117422157
-- Demo動画：https://www.bilibili.com/video/av56708333
+**HistoGAN: Controlling Colors of GAN-Generated and Real Images via Color Histograms**
 
-**GAN Compression: Efficient Architectures for Interactive Conditional GANs**
+- Paper: https://arxiv.org/abs/2011.11731
+- Code: https://github.com/mahmoudnafifi/HistoGAN
 
-- 論文：https://arxiv.org/abs/2003.08936
+**pi-GAN: Periodic Implicit Generative Adversarial Networks for 3D-Aware Image Synthesis**
 
-- コード：https://github.com/mit-han-lab/gan-compression
+- Homepage: https://marcoamonteiro.github.io/pi-GAN-website/
 
-**Watch your Up-Convolution: CNN Based Generative Deep Neural Networks are Failing to Reproduce Spectral Distributions**
+- Paper(Oral): https://arxiv.org/abs/2012.00926
+- Code: None
 
-- 論文：https://arxiv.org/abs/2003.01826 
-- コード：https://github.com/cc-hpc-itwm/UpConv 
+**DivCo: Diverse Conditional Image Synthesis via Contrastive Generative Adversarial Network**
+
+- Paper: https://arxiv.org/abs/2103.07893
+- Code: None
+
+**Diverse Semantic Image Synthesis via Probability Distribution Modeling**
+
+- Paper: https://arxiv.org/abs/2103.06878
+- Code: https://github.com/tzt101/INADE.git
+
+**LOHO: Latent Optimization of Hairstyles via Orthogonalization**
+
+- Paper: https://arxiv.org/abs/2103.03891
+- Code: None
+
+**PISE: Person Image Synthesis and Editing with Decoupled GAN**
+
+- Paper: https://arxiv.org/abs/2103.04023
+- Code: https://github.com/Zhangjinso/PISE
+
+**DeFLOCNet: Deep Image Editing via Flexible Low-level Controls**
+
+- Paper: http://raywzy.com/
+- Code: http://raywzy.com/
+
+**PD-GAN: Probabilistic Diverse GAN for Image Inpainting**
+
+- Paper: http://raywzy.com/
+- Code: http://raywzy.com/
+
+**Efficient Conditional GAN Transfer with Knowledge Propagation across Classes**
+
+- Paper: https://www.researchgate.net/publication/349309756_Efficient_Conditional_GAN_Transfer_with_Knowledge_Propagation_across_Classes
+- Code: http://github.com/mshahbazi72/cGANTransfer
+
+**Exploiting Spatial Dimensions of Latent in GAN for Real-time Image Editing**
+
+- Paper: None
+- Code: None
+
+**Hijack-GAN: Unintended-Use of Pretrained, Black-Box GANs**
+
+- Paper: https://arxiv.org/abs/2011.14107
+- Code: None
+
+**Encoding in Style: a StyleGAN Encoder for Image-to-Image Translation**
+
+- Homepage: https://eladrich.github.io/pixel2style2pixel/
+- Paper: https://arxiv.org/abs/2008.00951
+- Code: https://github.com/eladrich/pixel2style2pixel
+
+**A 3D GAN for Improved Large-pose Facial Recognition**
+
+- Paper: https://arxiv.org/abs/2012.10545
+- Code: None
+
+**HumanGAN: A Generative Model of Humans Images**
+
+- Paper: https://arxiv.org/abs/2103.06902
+- Code: None
+
+**ID-Unet: Iterative Soft and Hard Deformation for View Synthesis**
+
+- Paper: https://arxiv.org/abs/2103.02264
+- Code: https://github.com/MingyuY/Iterative-view-synthesis
+
+**CoMoGAN: continuous model-guided image-to-image translation**
+
+- Paper(Oral): https://arxiv.org/abs/2103.06879
+- Code: https://github.com/cv-rits/CoMoGAN
+
+**Training Generative Adversarial Networks in One Stage**
+
+- Paper: https://arxiv.org/abs/2103.00430
+- Code: None
+
+**Closed-Form Factorization of Latent Semantics in GANs**
+
+- Homepage: https://genforce.github.io/sefa/
+- Paper(Oral): https://arxiv.org/abs/2007.06600
+- Code: https://github.com/genforce/sefa
+
+**Anycost GANs for Interactive Image Synthesis and Editing**
+
+- Paper: https://arxiv.org/abs/2103.03243
+- Code: https://github.com/mit-han-lab/anycost-gan
+
+**Image-to-image Translation via Hierarchical Style Disentanglement**
+
+- Paper: https://arxiv.org/abs/2103.01456
+- Code: https://github.com/imlixinyang/HiSD
+
+<a name="VAE"></a>
+
+# VAE
+
+**Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders**
+
+- Homepage: https://taldatech.github.io/soft-intro-vae-web/
+
+- Paper: https://arxiv.org/abs/2012.13253
+- Code: https://github.com/taldatech/soft-intro-vae-pytorch
+
+<a name="Visual Transformer"></a>
+
+# Visual Transformer
+
+**Multi-Modal Fusion Transformer for End-to-End Autonomous Driving**
+
+- Paper: https://arxiv.org/abs/2104.09224
+- Code: https://github.com/autonomousvision/transfuser
+
+**Pose Recognition with Cascade Transformers**
+
+- Paper: https://arxiv.org/abs/2104.06976
+
+- Code: https://github.com/mlpc-ucsd/PRTR
+
+**Variational Transformer Networks for Layout Generation**
+
+- Paper: https://arxiv.org/abs/2104.02416
+- Code: None
+
+**LoFTR: Detector-Free Local Feature Matching with Transformers**
+
+- Homepage: https://zju3dv.github.io/loftr/
+- Paper: https://arxiv.org/abs/2104.00680
+- Code: https://github.com/zju3dv/LoFTR
+
+**Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers**
+
+- Paper: https://arxiv.org/abs/2012.15840
+- Code: https://github.com/fudan-zvg/SETR
+
+**Thinking Fast and Slow: Efficient Text-to-Visual Retrieval with Transformers**
+
+- Paper: https://arxiv.org/abs/2103.16553
+- Code: None
+
+**Transformer Tracking**
+
+- Paper: https://arxiv.org/abs/2103.15436
+- Code: https://github.com/chenxin-dlut/TransT
+
+**HR-NAS: Searching Efficient High-Resolution Neural Architectures with Transformers**
+
+- Paper(Oral): None
+- Code: https://github.com/dingmyu/HR-NAS
+
+**MIST: Multiple Instance Spatial Transformer Network**
+
+- Paper: https://arxiv.org/abs/1811.10725
+- Code: None
+
+**Multimodal Motion Prediction with Stacked Transformers**
+
+- Paper: https://arxiv.org/abs/2103.11624
+- Code: https://decisionforce.github.io/mmTransformer
+
+**Revamping cross-modal recipe retrieval with hierarchical Transformers and self-supervised learning**
+
+- Paper: https://www.amazon.science/publications/revamping-cross-modal-recipe-retrieval-with-hierarchical-transformers-and-self-supervised-learning
+
+- Code: https://github.com/amzn/image-to-recipe-transformers
+
+**Transformer Meets Tracker: Exploiting Temporal Context for Robust Visual Tracking**
+
+- Paper(Oral): https://arxiv.org/abs/2103.11681
+
+- Code: https://github.com/594422814/TransformerTrack
+
+**Pre-Trained Image Processing Transformer**
+
+- Paper:  https://arxiv.org/abs/2012.00364 
+- Code: None
+
+**End-to-End Video Instance Segmentation with Transformers**
+
+- Paper(Oral): https://arxiv.org/abs/2011.14503
+- Code: https://github.com/Epiphqny/VisTR
+
+**UP-DETR: Unsupervised Pre-training for Object Detection with Transformers**
+
+- Paper(Oral): https://arxiv.org/abs/2011.09094
+- Code: https://github.com/dddzg/up-detr
+
+**End-to-End Human Object Interaction Detection with HOI Transformer**
+
+- Paper: https://arxiv.org/abs/2103.04503
+- Code: https://github.com/bbepoch/HoiTransformer
+
+**Transformer Interpretability Beyond Attention Visualization** 
+
+- Paper: https://arxiv.org/abs/2012.09838
+- Code: https://github.com/hila-chefer/Transformer-Explainability 
+
+<a name="Regularization"></a>
+
+# Regularization
+
+**Regularizing Neural Networks via Adversarial Model Perturbation**
+
+- Paper: https://arxiv.org/abs/2010.04925
+- Code: https://github.com/hiyouga/AMP-Regularizer
+
+<a name="SLAM"></a>
+
+# SLAM
+
+**Generalizing to the Open World: Deep Visual Odometry with Online Adaptation**
+
+- Paper: https://arxiv.org/abs/2103.15279
+- Code: https://arxiv.org/abs/2103.15279
+
+<a name="Long-Tailed"></a>
+
+# 长尾分布(Long-Tailed)
+
+**Distribution Alignment: A Unified Framework for Long-tail Visual Recognition**
+
+- Paper: https://arxiv.org/abs/2103.16370
+- Code: https://github.com/Megvii-BaseDetection/DisAlign
+
+**Adaptive Class Suppression Loss for Long-Tail Object Detection**
+
+- Paper: https://arxiv.org/abs/2104.00885
+- Code: https://github.com/CASIA-IVA-Lab/ACSL
+
+**Contrastive Learning based Hybrid Networks for Long-Tailed Image Classification**
+
+- Paper: https://arxiv.org/abs/2103.14267
+- Code: None
+
+<a name="DA"></a>
+
+# 数据增广(Data Augmentation)
+
+**Scale-aware Automatic Augmentation for Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.17220
+
+- Code: https://github.com/Jia-Research-Lab/SA-AutoAug
+
+<a name="Un/Self-Supervised"></a>
+
+# 无监督/自监督(Un/Self-Supervised)
+
+**Self-supervised Video Representation Learning by Context and Motion Decoupling**
+
+- Paper: https://arxiv.org/abs/2104.00862
+- Code: None
+
+**Removing the Background by Adding the Background: Towards Background Robust Self-supervised Video Representation Learning**
+
+- Homepage: https://fingerrec.github.io/index_files/jinpeng/papers/CVPR2021/project_website.html
+- Paper: https://arxiv.org/abs/2009.05769
+- Code: https://github.com/FingerRec/BE
+
+**Spatially Consistent Representation Learning**
+
+- Paper: https://arxiv.org/abs/2103.06122
+- Code: None
+
+**VideoMoCo: Contrastive Video Representation Learning with Temporally Adversarial Examples**
+
+- Paper: https://arxiv.org/abs/2103.05905
+- Code: https://github.com/tinapan-pt/VideoMoCo
+
+**Exploring Simple Siamese Representation Learning**
+
+- Paper(Oral): https://arxiv.org/abs/2011.10566
+- Code: None
+
+**Dense Contrastive Learning for Self-Supervised Visual Pre-Training**
+
+- Paper(Oral): https://arxiv.org/abs/2011.09157
+- Code: https://github.com/WXinlong/DenseCL
+
+<a name="Semi-Supervised"></a>
+
+# 半监督学习(Semi-Supervised )
+
+**Instant-Teaching: An End-to-End Semi-Supervised Object Detection Framework**
+
+- Paper: https://arxiv.org/abs/2103.11402
+- Code: None
+
+**Adaptive Consistency Regularization for Semi-Supervised Transfer Learning**
+
+- Paper: https://arxiv.org/abs/2103.02193
+- Code: https://github.com/SHI-Labs/Semi-Supervised-Transfer-Learning
+
+<a name="Capsule-Network"></a>
+
+# 胶囊网络(Capsule Network)
+
+**Capsule Network is Not More Robust than Convolutional Network**
+
+- Paper: https://arxiv.org/abs/2103.15459
+- Code: None
+
+<a name="Object-Detection"></a>
+
+# 2D物体検出(Object Detection)
+
+## 2D物体検出
+
+**IQDet: Instance-wise Quality Distribution Sampling for Object Detection**
+
+- Paper: https://arxiv.org/abs/2104.06936
+- Code: None
+
+**Multi-Scale Aligned Distillation for Low-Resolution Detection**
+
+- Paper: https://jiaya.me/papers/ms_align_distill_cvpr21.pdf
+
+- Code: https://github.com/Jia-Research-Lab/MSAD
+
+**Adaptive Class Suppression Loss for Long-Tail Object Detection**
+
+- Paper: https://arxiv.org/abs/2104.00885
+- Code: https://github.com/CASIA-IVA-Lab/ACSL
+
+**VarifocalNet: An IoU-aware Dense Object Detector**
+
+- Paper(Oral): https://arxiv.org/abs/2008.13367
+
+- Code: https://github.com/hyz-xmaster/VarifocalNet
+
+**Scale-aware Automatic Augmentation for Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.17220
+
+- Code: https://github.com/Jia-Research-Lab/SA-AutoAug
+
+**OTA: Optimal Transport Assignment for Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.14259
+- Code: https://github.com/Megvii-BaseDetection/OTA
+
+**Distilling Object Detectors via Decoupled Features**
+
+- Paper: https://arxiv.org/abs/2103.14475
+- Code: https://github.com/ggjy/DeFeat.pytorch
+
+**Sparse R-CNN: End-to-End Object Detection with Learnable Proposals**
+
+- Paper: https://arxiv.org/abs/2011.12450
+- Code: https://github.com/PeizeSun/SparseR-CNN
+
+**There is More than Meets the Eye: Self-Supervised Multi-Object Detection and Tracking with Sound by Distilling Multimodal Knowledge**
+
+- Homepage: https://rl.uni-freiburg.de/
+- Paper: https://arxiv.org/abs/2103.01353
+- Code: None
+
+**Positive-Unlabeled Data Purification in the Wild for Object Detection**
+
+- Paper: None
+- Code: None
+
+**Instance Localization for Self-supervised Detection Pretraining**
+
+- Paper: https://arxiv.org/abs/2102.08318
+- Code: https://github.com/limbo0000/InstanceLoc
+
+**MeGA-CDA: Memory Guided Attention for Category-Aware Unsupervised Domain Adaptive Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.04224
+- Code: None
+
+**End-to-End Object Detection with Fully Convolutional Network**
+
+- Paper: https://arxiv.org/abs/2012.03544
+- Code: https://github.com/Megvii-BaseDetection/DeFCN
+
+**Robust and Accurate Object Detection via Adversarial Learning**
+
+- Paper: https://arxiv.org/abs/2103.13886
+
+- Code: None
+
+**I^3Net: Implicit Instance-Invariant Network for Adapting One-Stage Object Detectors**
+
+- Paper: https://arxiv.org/abs/2103.13757
+- Code: None 
+
+**Instant-Teaching: An End-to-End Semi-Supervised Object Detection Framework**
+
+- Paper: https://arxiv.org/abs/2103.11402
+- Code: None
+
+**OPANAS: One-Shot Path Aggregation Network Architecture Search for Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.04507
+- Code: https://github.com/VDIGPKU/OPANAS
+
+**YOLOF：You Only Look One-level Feature**
+
+- Paper: https://arxiv.org/abs/2103.09460
+- Code: https://github.com/megvii-model/YOLOF
+
+**UP-DETR: Unsupervised Pre-training for Object Detection with Transformers**
+
+- Paper(Oral): https://arxiv.org/abs/2011.09094
+- Code: https://github.com/dddzg/up-detr
+
+**General Instance Distillation for Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.02340
+- Code: None
+
+**There is More than Meets the Eye: Self-Supervised Multi-Object Detection and Tracking with Sound by Distilling Multimodal Knowledge**
+
+- Homepage: http://rl.uni-freiburg.de/research/multimodal-distill
+- Paper: https://arxiv.org/abs/2103.01353
+- Code: http://rl.uni-freiburg.de/research/multimodal-distill
+
+**Generalized Focal Loss V2: Learning Reliable Localization Quality Estimation for Dense Object Detection**
+
+- Paper: https://arxiv.org/abs/2011.12885
+- Code: https://github.com/implus/GFocalV2
+
+**Multiple Instance Active Learning for Object Detection**
+
+- Paper: https://github.com/yuantn/MIAL/raw/master/paper.pdf
+- Code: https://github.com/yuantn/MIAL
+
+**Towards Open World Object Detection**
+
+- Paper(Oral): https://arxiv.org/abs/2103.02603
+- Code: https://github.com/JosephKJ/OWOD
+
+## Few-Shot物体検出
+
+**Dense Relation Distillation with Context-aware Aggregation for Few-Shot Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.17115
+- Code: https://github.com/hzhupku/DCNet 
+
+**Semantic Relation Reasoning for Shot-Stable Few-Shot Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.01903
+- Code: None
+
+**Few-Shot Object Detection via Contrastive Proposal Encoding**
+
+- Paper: https://arxiv.org/abs/2103.05950
+- Code: https://github.com/MegviiDetection/FSCE 
+
+## 旋转物体検出
+
+**ReDet: A Rotation-equivariant Detector for Aerial Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.07733
+
+- Code: https://github.com/csuhan/ReDet
+
+<a name="Object-Tracking"></a>
+
+# 单/多物体追跡(Object Tracking)
+
+## 单物体追跡
+
+**Towards More Flexible and Accurate Object Tracking with Natural Language: Algorithms and Benchmark**
+
+- Homepage: https://sites.google.com/view/langtrackbenchmark/
+
+- Paper: https://arxiv.org/abs/2103.16746
+- Evaluation Toolkit: https://github.com/wangxiao5791509/TNL2K_evaluation_toolkit
+- Demo video: https://www.youtube.com/watch?v=7lvVDlkkff0&ab_channel=XiaoWang 
+
+**IoU Attack: Towards Temporally Coherent Black-Box Adversarial Attack for Visual Object Tracking**
+
+- Paper: https://arxiv.org/abs/2103.14938
+- Code: https://github.com/VISION-SJTU/IoUattack
+
+**Graph Attention Tracking**
+
+- Paper: https://arxiv.org/abs/2011.11204
+- Code: https://github.com/ohhhyeahhh/SiamGAT
+
+**Rotation Equivariant Siamese Networks for Tracking**
+
+- Paper: https://arxiv.org/abs/2012.13078
+- Code: None
+
+**Track to Detect and Segment: An Online Multi-Object Tracker**
+
+- Homepage: https://jialianwu.com/projects/TraDeS.html
+- Paper: None
+- Code: None
+
+**Transformer Meets Tracker: Exploiting Temporal Context for Robust Visual Tracking**
+
+- Paper(Oral): https://arxiv.org/abs/2103.11681
+
+- Code: https://github.com/594422814/TransformerTrack
+
+**Transformer Tracking**
+
+- Paper: https://arxiv.org/abs/2103.15436
+- Code: https://github.com/chenxin-dlut/TransT
+
+## 多物体追跡
+
+**Multiple Object Tracking with Correlation Learning**
+
+- Paper: https://arxiv.org/abs/2104.03541
+- Code: None
+
+**Probabilistic Tracklet Scoring and Inpainting for Multiple Object Tracking**
+
+- Paper: https://arxiv.org/abs/2012.02337
+- Code: None
+
+**Learning a Proposal Classifier for Multiple Object Tracking**
+
+- Paper: https://arxiv.org/abs/2103.07889
+- Code: https://github.com/daip13/LPC_MOT.git
+
+**Track to Detect and Segment: An Online Multi-Object Tracker**
+
+- Homepage: https://jialianwu.com/projects/TraDeS.html
+- Paper: https://arxiv.org/abs/2103.08808
+- Code: https://github.com/JialianW/TraDeS
+
+<a name="Semantic-Segmentation"></a>
+
+# セマンティックセグメンテーション(Semantic Segmentation)
+
+**Progressive Semantic Segmentation**
+
+- Paper: https://arxiv.org/abs/2104.03778
+- Code: https://github.com/VinAIResearch/MagNet
+
+**Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers**
+
+- Paper: https://arxiv.org/abs/2012.15840
+- Code: https://github.com/fudan-zvg/SETR
+
+**Bidirectional Projection Network for Cross Dimension Scene Understanding**
+
+- Paper(Oral): https://arxiv.org/abs/2103.14326
+- Code: https://github.com/wbhu/BPNet
+
+**Cross-Dataset Collaborative Learning for Semantic Segmentation**
+
+- Paper: https://arxiv.org/abs/2103.11351
+- Code: None
+
+**Continual Semantic Segmentation via Repulsion-Attraction of Sparse and Disentangled Latent Representations**
+
+- Paper: https://arxiv.org/abs/2103.06342
+- Code: None
+
+**Capturing Omni-Range Context for Omnidirectional Segmentation**
+
+- Paper: https://arxiv.org/abs/2103.05687
+- Code: None
+
+**Learning Statistical Texture for Semantic Segmentation**
+
+- Paper: https://arxiv.org/abs/2103.04133
+- Code: None
+
+**PLOP: Learning without Forgetting for Continual Semantic Segmentation**
+
+- Paper: https://arxiv.org/abs/2011.11390
+- Code: None
+
+## 弱监督セマンティックセグメンテーション
+
+**Background-Aware Pooling and Noise-Aware Loss for Weakly-Supervised Semantic Segmentation**
+
+- Homepage:  https://cvlab.yonsei.ac.kr/projects/BANA/ 
+
+- Paper: https://arxiv.org/abs/2104.00905
+- Code: None
+
+**Non-Salient Region Object Mining for Weakly Supervised Semantic Segmentation**
+
+- Paper: https://arxiv.org/abs/2103.14581
+- Code: None
+
+**BBAM: Bounding Box Attribution Map for Weakly Supervised Semantic and Instance Segmentation**
+
+- Paper: https://arxiv.org/abs/2103.08907
+- Code: None
+
+## 半监督セマンティックセグメンテーション
+
+**Semi-supervised Domain Adaptation based on Dual-level Domain Mixing for Semantic Segmentation**
+
+- Paper: https://arxiv.org/abs/2103.04705
+
+## 域自适应セマンティックセグメンテーション
+
+**RobustNet: Improving Domain Generalization in Urban-Scene Segmentation via Instance Selective Whitening**
+
+- Paper: https://arxiv.org/abs/2103.15597
+- Code: https://github.com/shachoi/RobustNet
+
+**Coarse-to-Fine Domain Adaptive Semantic Segmentation with Photometric Alignment and Category-Center Regularization**
+
+- Paper: https://arxiv.org/abs/2103.13041
+- Code: None
+
+**MetaCorrection: Domain-aware Meta Loss Correction for Unsupervised Domain Adaptation in Semantic Segmentation**
+
+- Paper: https://arxiv.org/abs/2103.05254
+- Code: None
+
+**Multi-Source Domain Adaptation with Collaborative Learning for Semantic Segmentation**
+
+- Paper: https://arxiv.org/abs/2103.04717
+- Code: None
+
+**Prototypical Pseudo Label Denoising and Target Structure Learning for Domain Adaptive Semantic Segmentation**
+
+- Paper: https://arxiv.org/abs/2101.10979
+- Code: https://github.com/microsoft/ProDA
+
+## 動画セマンティックセグメンテーション
+
+**VSPW: A Large-scale Dataset for Video Scene Parsing in the Wild**
+
+- Homepage: https://www.vspwdataset.com/
+- Paper: https://www.vspwdataset.com/CVPR2021__miao.pdf
+- GitHub: https://github.com/sssdddwww2/vspw_dataset_download
+
+<a name="Instance-Segmentation"></a>
+
+# インスタンスセグメンテーション(Instance Segmentation)
+
+**RefineMask: Towards High-Quality Instance Segmentation with Fine-Grained Features**
+
+- Paper: https://arxiv.org/abs/2104.08569
+- Code: https://github.com/zhanggang001/RefineMask/
+
+**Look Closer to Segment Better: Boundary Patch Refinement for Instance Segmentation**
+
+- Paper: https://arxiv.org/abs/2104.05239
+- Code:  https://github.com/tinyalpha/BPR 
+
+**Multi-Scale Aligned Distillation for Low-Resolution Detection**
+
+- Paper: https://jiaya.me/papers/ms_align_distill_cvpr21.pdf
+
+- Code: https://github.com/Jia-Research-Lab/MSAD
+
+**Boundary IoU: Improving Object-Centric Image Segmentation Evaluation**
+
+- Homepage: https://bowenc0221.github.io/boundary-iou/
+- Paper: https://arxiv.org/abs/2103.16562
+
+- Code: https://github.com/bowenc0221/boundary-iou-api
+
+**Deep Occlusion-Aware Instance Segmentation with Overlapping BiLayers**
+
+- Paper: https://arxiv.org/abs/2103.12340
+
+- Code: https://github.com/lkeab/BCNet 
+
+**Zero-shot instance segmentation（Not Sure）**
+
+- Paper: None
+- Code: https://github.com/CVPR2021-pape-id-1395/CVPR2021-paper-id-1395
+
+## 動画インスタンスセグメンテーション
+
+**STMask: Spatial Feature Calibration and Temporal Fusion for Effective One-stage Video Instance Segmentation**
+
+- Paper: http://www4.comp.polyu.edu.hk/~cslzhang/papers.htm
+- Code: https://github.com/MinghanLi/STMask
+
+**End-to-End Video Instance Segmentation with Transformers**
+
+- Paper(Oral): https://arxiv.org/abs/2011.14503
+- Code: https://github.com/Epiphqny/VisTR
+
+<a name="Panoptic-Segmentation"></a>
+
+# 全景分割(Panoptic Segmentation)
+
+**Panoptic Segmentation Forecasting**
+
+- Paper: https://arxiv.org/abs/2104.03962
+- Code: https://github.com/nianticlabs/panoptic-forecasting
+
+**Fully Convolutional Networks for Panoptic Segmentation**
+
+- Paper: https://arxiv.org/abs/2012.00720
+
+- Code: https://github.com/yanwei-li/PanopticFCN
+
+**Cross-View Regularization for Domain Adaptive Panoptic Segmentation**
+
+- Paper: https://arxiv.org/abs/2103.02584
+- Code: None
+
+<a name="Medical-Image-Segmentation"></a>
+
+# 医学画像分割
+
+**FedDG: Federated Domain Generalization on Medical Image Segmentation via Episodic Learning in Continuous Frequency Space**
+
+- Paper: https://arxiv.org/abs/2103.06030
+- Code: https://github.com/liuquande/FedDG-ELCFS
+
+## 3D医学画像分割
+
+**DiNTS: Differentiable Neural Network Topology Search for 3D Medical Image Segmentation**
+
+- Paper(Oral): https://arxiv.org/abs/2103.15954
+- Code: None
+
+<a name="VOS"></a>
+
+# 動画物体分割(Video-Object-Segmentation)
+
+**Learning Position and Target Consistency for Memory-based Video Object Segmentation**
+
+- Paper: https://arxiv.org/abs/2104.04329
+- Code: None
+
+<a name="IVOS"></a>
+
+# 交互式動画物体分割(Interactive-Video-Object-Segmentation)
+
+**Modular Interactive Video Object Segmentation: Interaction-to-Mask, Propagation and Difference-Aware Fusion**
+
+- Homepage: https://hkchengrex.github.io/MiVOS/
+
+- Paper: https://arxiv.org/abs/2103.07941
+
+- Code: https://github.com/hkchengrex/MiVOS
+- Demo: https://hkchengrex.github.io/MiVOS/video.html#partb
+
+**Learning to Recommend Frame for Interactive Video Object Segmentation in the Wild**
+
+- Paper: https://arxiv.org/abs/2103.10391
+
+- Code: https://github.com/svip-lab/IVOS-W
+
+<a name="Saliency-Detection"></a>
+
+# 显著性検出(Saliency Detection)
+
+**Uncertainty-aware Joint Salient Object and Camouflaged Object Detection**
+
+- Paper: https://arxiv.org/abs/2104.02628
+
+- Code: https://github.com/JingZhang617/Joint_COD_SOD
+
+**Deep RGB-D Saliency Detection with Depth-Sensitive Attention and Automatic Multi-Modal Fusion**
+
+- Paper(Oral): https://arxiv.org/abs/2103.11832
+- Code: https://github.com/sunpeng1996/DSA2F
+
+<a name="Camouflaged-Object-Detection"></a>
+
+# 伪装物体検出(Camouflaged Object Detection)
+
+**Uncertainty-aware Joint Salient Object and Camouflaged Object Detection**
+
+- Paper: https://arxiv.org/abs/2104.02628
+
+- Code: https://github.com/JingZhang617/Joint_COD_SOD
+
+<a name="CoSOD"></a>
+
+# 协同显著性検出(Co-Salient Object Detection)
+
+**Group Collaborative Learning for Co-Salient Object Detection**
+
+- Paper: https://arxiv.org/abs/2104.01108
+- Code: https://github.com/fanq15/GCoNet
+
+<a name="Matting"></a>
+
+# 协同显著性検出(Image Matting)
+
+**Semantic Image Matting**
+
+- Paper: https://arxiv.org/abs/2104.08201
+- Code: https://github.com/nowsyn/SIM
+- Dataset: https://github.com/nowsyn/SIM
 
 <a name="Re-ID"></a>
 
-# Re-ID
+# 歩行者重識別(Person Re-identification)
 
- **High-Order Information Matters: Learning Relation and Topology for Occluded Person Re-Identification**
+**Combined Depth Space based Architecture Search For Person Re-identification**
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_High-Order_Information_Matters_Learning_Relation_and_Topology_for_Occluded_Person_CVPR_2020_paper.html
-- コード：https://github.com/wangguanan/HOReID 
+- Paper: https://arxiv.org/abs/2104.04163
+- Code: None
 
-**COCAS: A Large-Scale Clothes Changing Person Dataset for Re-identification**
+<a name="Person-Search"></a>
 
-- 論文：https://arxiv.org/abs/2005.07862
+# 歩行者搜索(Person Search)
 
-- データセット：なし
+**Anchor-Free Person Search**
 
-**Transferable, Controllable, and Inconspicuous Adversarial Attacks on Person Re-identification With Deep Mis-Ranking**
+- Paper: https://arxiv.org/abs/2103.11617
+- Code: https://github.com/daodaofr/AlignPS
+- Interpretation: [首个无需锚框（Anchor-Free）的歩行者搜索框架 | CVPR 2021](https://mp.weixin.qq.com/s/iqJkgp0JBanmeBPyHUkb-A)
 
-- 論文：https://arxiv.org/abs/2004.04199
+<a name="Video-Understanding"></a>
 
-- コード：https://github.com/whj363636/Adversarial-attack-on-Person-ReID-With-Deep-Mis-Ranking
+# 動画理解/行動識別(Video Understanding)
 
-**Pose-guided Visible Part Matching for Occluded Person ReID**
+**No frame left behind: Full Video Action Recognition**
 
-- 論文：https://arxiv.org/abs/2004.00230
-- コード：https://github.com/hh23333/PVPM
+- Paper: https://arxiv.org/abs/2103.15395
+- Code: None
 
-**Weakly supervised discriminative feature learning with state information for person identification**
+**Learning Salient Boundary Feature for Anchor-free Temporal Action Localization**
 
-- 論文：https://arxiv.org/abs/2002.11939 
-- コード：https://github.com/KovenYu/state-information 
+- Paper: https://arxiv.org/abs/2103.13137
+- Code: None
 
-<a name="3D-PointCloud"></a>
+**Temporal Context Aggregation Network for Temporal Action Proposal Refinement**
 
-# 3D点群（分類/分割/レジストレーション等）
+- Paper: https://arxiv.org/abs/2103.13141
+- Code: None
+- Interpretation: [CVPR 2021 | TCANet：最强时序动作提名修正网络](https://mp.weixin.qq.com/s/UOWMfpTljkyZznHtpkQBhA)
 
-## 3D点群畳み込み
+**ACTION-Net: Multipath Excitation for Action Recognition**
 
-**PointASNL: Robust Point Clouds Processing using Nonlocal Neural Networks with Adaptive Sampling**
+- Paper: https://arxiv.org/abs/2103.07372
+- Code: https://github.com/V-Sense/ACTION-Net
 
-- 論文：https://arxiv.org/abs/2003.00492
-- コード：https://github.com/yanx27/PointASNL 
+**Removing the Background by Adding the Background: Towards Background Robust Self-supervised Video Representation Learning**
 
-**Global-Local Bidirectional Reasoning for Unsupervised Representation Learning of 3D Point Clouds**
+- Homepage: https://fingerrec.github.io/index_files/jinpeng/papers/CVPR2021/project_website.html
+- Paper: https://arxiv.org/abs/2009.05769
+- Code: https://github.com/FingerRec/BE
 
-- 論文下载链接：https://arxiv.org/abs/2003.12971
+**TDN: Temporal Difference Networks for Efficient Action Recognition**
 
-- コード：https://github.com/raoyongming/PointGLR
+- Paper: https://arxiv.org/abs/2012.10071
+- Code: https://github.com/MCG-NJU/TDN
 
-**Grid-GCN for Fast and Scalable Point Cloud Learning**
+<a name="Face-Recognition"></a>
 
-- 論文：https://arxiv.org/abs/1912.02984
+# 顔識別(Face Recognition)
 
-- コード：https://github.com/Xharlie/Grid-GCN
+**A 3D GAN for Improved Large-pose Facial Recognition**
 
-**FPConv: Learning Local Flattening for Point Convolution**
+- Paper: https://arxiv.org/abs/2012.10545
+- Code: None
 
-- 論文：https://arxiv.org/abs/2002.10701
-- コード：https://github.com/lyqun/FPConv
+**MagFace: A Universal Representation for Face Recognition and Quality Assessment**
 
-## 3D点群分類
+- Paper(Oral): https://arxiv.org/abs/2103.06627
+- Code: https://github.com/IrvingMeng/MagFace
 
-**PointAugment: an Auto-Augmentation Framework for Point Cloud Classification**
+**WebFace260M: A Benchmark Unveiling the Power of Million-Scale Deep Face Recognition**
 
-- 論文：https://arxiv.org/abs/2002.10876 
-- コード（公開前）： https://github.com/liruihui/PointAugment/ 
+- Homepage: https://www.face-benchmark.org/
+- Paper: https://arxiv.org/abs/2103.04098 
+- Dataset: https://www.face-benchmark.org/
 
-## 3D点群セマンティックセグメンテーション
+**When Age-Invariant Face Recognition Meets Face Age Synthesis: A Multi-Task Learning Framework**
 
-**RandLA-Net: Efficient Semantic Segmentation of Large-Scale Point Clouds**
+- Paper(Oral): https://arxiv.org/abs/2103.01520
+- Code: https://github.com/Hzzone/MTLFace
+- Dataset: https://github.com/Hzzone/MTLFace
 
-- 論文：https://arxiv.org/abs/1911.11236
-- コード：https://github.com/QingyongHu/RandLA-Net
+<a name="Face-Detection"></a>
 
-- 解説：https://zhuanlan.zhihu.com/p/105433460
+# 顔検出(Face Detection)
 
-**Weakly Supervised Semantic Point Cloud Segmentation:Towards 10X Fewer Labels**
+**HLA-Face: Joint High-Low Adaptation for Low Light Face Detection**
 
-- 論文：https://arxiv.org/abs/2004.0409
+- Homepage: https://daooshee.github.io/HLA-Face-Website/
+- Paper: https://arxiv.org/abs/2104.01984
+- Code: https://github.com/daooshee/HLA-Face-Code
 
-- コード：https://github.com/alex-xun-xu/WeakSupPointCloudSeg
+**CRFace: Confidence Ranker for Model-Agnostic Face Detection Refinement**
 
-**PolarNet: An Improved Grid Representation for Online LiDAR Point Clouds Semantic Segmentation**
+- Paper: https://arxiv.org/abs/2103.07017
+- Code: None
 
-- 論文：https://arxiv.org/abs/2003.14032
-- コード：https://github.com/edwardzhou130/PolarSeg
+<a name="Face-Anti-Spoofing"></a>
 
-**Learning to Segment 3D Point Clouds in 2D Image Space**
+# Face Anti-spoofing(Face Anti-Spoofing)
 
-- 論文：https://arxiv.org/abs/2003.05593
+**Cross Modal Focal Loss for RGBD Face Anti-Spoofing**
 
-- コード：https://github.com/WPI-VISLab/Learning-to-Segment-3D-Point-Clouds-in-2D-Image-Space
+- Paper: https://arxiv.org/abs/2103.00948
+- Code: None
 
-## 3D点群インスタンスセグメンテーション
+<a name="Deepfake-Detection"></a>
 
-PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
+# Deepfake検出(Deepfake Detection)
 
-- 論文：https://arxiv.org/abs/2004.01658
-- コード：https://github.com/Jia-Research-Lab/PointGroup
+**Spatial-Phase Shallow Learning: Rethinking Face Forgery Detection in Frequency Domain**
 
-## 3D点群レジストレーション
+- Paper：https://arxiv.org/abs/2103.01856
+- Code: None
 
-**Feature-metric Registration: A Fast Semi-supervised Approach for Robust Point Cloud Registration without Correspondences**
+**Multi-attentional Deepfake Detection**
 
-- 論文：https://arxiv.org/abs/2005.01014
-- コード：https://github.com/XiaoshuiHuang/fmr 
+- Paper：https://arxiv.org/abs/2103.02406
+- Code: None
 
-**D3Feat: Joint Learning of Dense Detection and Description of 3D Local Features**
+<a name="Age-Estimation"></a>
 
-- 論文：https://arxiv.org/abs/2003.03164
-- コード：https://github.com/XuyangBai/D3Feat
+# 顔年龄推定(Age Estimation)
 
-**RPM-Net: Robust Point Matching using Learned Features**
+**PML: Progressive Margin Loss for Long-tailed Age Classification**
 
-- 論文：https://arxiv.org/abs/2003.13479
-- コード：https://github.com/yewzijian/RPMNet 
+- Paper: https://arxiv.org/abs/2103.02140
+- Code: None
 
-## 3D点群补全
+<a name="FER"></a>
 
-**Cascaded Refinement Network for Point Cloud Completion**
+# 顔表情識別(Facial Expression Recognition)
 
-- 論文：https://arxiv.org/abs/2004.03327
-- コード：https://github.com/xiaogangw/cascaded-point-completion
+**Affective Processes: stochastic modelling of temporal context for emotion and facial expression recognition**
 
-## 3D点群物体追跡
+- Paper: https://arxiv.org/abs/2103.13372
+- Code: None
 
-**P2B: Point-to-Box Network for 3D Object Tracking in Point Clouds**
+<a name="Deepfakes"></a>
 
-- 論文：https://arxiv.org/abs/2005.13888
-- コード：https://github.com/HaozheQi/P2B
+# Deepfakes
 
-## その他
+**MagDR: Mask-guided Detection and Reconstruction for Defending Deepfakes**
 
-**An Efficient PointLSTM for Point Clouds Based Gesture Recognition**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Min_An_Efficient_PointLSTM_for_Point_Clouds_Based_Gesture_Recognition_CVPR_2020_paper.html
-- コード：https://github.com/Blueprintf/pointlstm-gesture-recognition-pytorch
-
-<a name="Face"></a>
-
-# 顔
-
-## 顔識別
-
-**CurricularFace: Adaptive Curriculum Learning Loss for Deep Face Recognition**
-
-- 論文：https://arxiv.org/abs/2004.00288
-
-- コード：https://github.com/HuangYG123/CurricularFace
-
-**Learning Meta Face Recognition in Unseen Domains**
-
-- 論文：https://arxiv.org/abs/2003.07733
-- コード：https://github.com/cleardusk/MFR
-- 解説：https://mp.weixin.qq.com/s/YZoEnjpnlvb90qSI3xdJqQ 
-
-## 顔検出
-
-## Face Anti-spoofing
-
-**Searching Central Difference Convolutional Networks for Face Anti-Spoofing**
-
-- 論文：https://arxiv.org/abs/2003.04092
-
-- コード：https://github.com/ZitongYu/CDCN
-
-## 顔表情識別
-
-**Suppressing Uncertainties for Large-Scale Facial Expression Recognition**
-
-- 論文：https://arxiv.org/abs/2002.10392 
-
-- コード（公開前）：https://github.com/kaiwang960112/Self-Cure-Network 
-
-## Face Rotation
-
-**Rotate-and-Render: Unsupervised Photorealistic Face Rotation from Single-View Images**
-
-- 論文：https://arxiv.org/abs/2003.08124
-- コード：https://github.com/Hangz-nju-cuhk/Rotate-and-Render
-
-## 顔3D重建
-
-**AvatarMe: Realistically Renderable 3D Facial Reconstruction "in-the-wild"**
-
-- 論文：https://arxiv.org/abs/2003.13845
-- データセット：https://github.com/lattas/AvatarMe
-
-**FaceScape: a Large-scale High Quality 3D Face Dataset and Detailed Riggable 3D Face Prediction**
-
-- 論文：https://arxiv.org/abs/2003.13989
-- コード：https://github.com/zhuhao-nju/facescape
-
-<a name="Human-Pose-Estimation"></a>
-
-# 人体姿勢推定(2D/3D)
-
-## 2D人体姿勢推定
-
-**TransMoMo: Invariance-Driven Unsupervised Video Motion Retargeting**
-
-- ホームページ：https://yzhq97.github.io/transmomo/
-
-- 論文：https://arxiv.org/abs/2003.14401
-- コード：https://github.com/yzhq97/transmomo.pytorch
-
-**HigherHRNet: Scale-Aware Representation Learning for Bottom-Up Human Pose Estimation**
-
-- 論文：https://arxiv.org/abs/1908.10357
-- コード：https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation
-
-**The Devil is in the Details: Delving into Unbiased Data Processing for Human Pose Estimation**
-
-- 論文：https://arxiv.org/abs/1911.07524 
-- コード：https://github.com/HuangJunJie2017/UDP-Pose
-- 解説：https://zhuanlan.zhihu.com/p/92525039
-
-**Distribution-Aware Coordinate Representation for Human Pose Estimation**
-
-- ホームページ：https://ilovepose.github.io/coco/ 
-
-- 論文：https://arxiv.org/abs/1910.06278 
-
-- コード：https://github.com/ilovepose/DarkPose 
-
-## 3D人体姿勢推定
-
- **Cascaded Deep Monocular 3D Human Pose Estimation With Evolutionary Training Data**
-
-- 論文：https://arxiv.org/abs/2006.07778
-- コード：https://github.com/Nicholasli1995/EvoSkeleton 
-
-**Fusing Wearable IMUs with Multi-View Images for Human Pose Estimation: A Geometric Approach**
-
-- ホームページ：https://www.zhe-zhang.com/cvpr2020
-- 論文：https://arxiv.org/abs/2003.11163
-
-- コード：https://github.com/CHUNYUWANG/imu-human-pose-pytorch
-
-**Bodies at Rest: 3D Human Pose and Shape Estimation from a Pressure Image using Synthetic Data**
-
-- 論文下载链接：https://arxiv.org/abs/2004.01166
-
-- コード：https://github.com/Healthcare-Robotics/bodies-at-rest
-- データセット：https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KOA4ML
-
-**Self-Supervised 3D Human Pose Estimation via Part Guided Novel Image Synthesis**
-
-- ホームページ：http://val.cds.iisc.ac.in/pgp-human/
-- 論文：https://arxiv.org/abs/2004.04400
-
-**Compressed Volumetric Heatmaps for Multi-Person 3D Pose Estimation**
-
-- 論文：https://arxiv.org/abs/2004.00329
-- コード：https://github.com/fabbrimatteo/LoCO
-
-**VIBE: Video Inference for Human Body Pose and Shape Estimation**
-
-- 論文：https://arxiv.org/abs/1912.05656 
-- コード：https://github.com/mkocabas/VIBE
-
-**Back to the Future: Joint Aware Temporal Deep Learning 3D Human Pose Estimation**
-
-- 論文：https://arxiv.org/abs/2002.11251 
-- コード：https://github.com/vnmr/JointVideoPose3D
-
-**Cross-View Tracking for Multi-Human 3D Pose Estimation at over 100 FPS**
-
-- 論文：https://arxiv.org/abs/2003.03972
-- データセット：なし
+- Paper: https://arxiv.org/abs/2103.14211
+- Code: None
 
 <a name="Human-Parsing"></a>
 
-# 人体解析
+# 人体解析(Human Parsing)
 
-**Correlating Edge, Pose with Parsing**
+**Differentiable Multi-Granularity Human Representation Learning for Instance-Aware Human Semantic Parsing**
 
-- 論文：https://arxiv.org/abs/2005.01431
+- Paper: https://arxiv.org/abs/2103.04570
+- Code: https://github.com/tfzhou/MG-HumanParsing
 
-- コード：https://github.com/ziwei-zh/CorrPM
+<a name="Human-Pose-Estimation"></a>
 
-<a name="Scene-Text-Detection"></a>
+# 2D/3D人体姿勢推定(2D/3D Human Pose Estimation)
 
-# シーンテキスト検出
+## 2D 人体姿勢推定
 
-**STEFANN: Scene Text Editor using Font Adaptive Neural Network**
+**Pose Recognition with Cascade Transformers**
 
-- ホームページ：https://prasunroy.github.io/stefann/
+- Paper: https://arxiv.org/abs/2104.06976
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Roy_STEFANN_Scene_Text_Editor_Using_Font_Adaptive_Neural_Network_CVPR_2020_paper.html
-- コード：https://github.com/prasunroy/stefann
-- データセット：https://drive.google.com/open?id=1sEDiX_jORh2X-HSzUnjIyZr-G9LJIw1k
+- Code: https://github.com/mlpc-ucsd/PRTR
 
-**ContourNet: Taking a Further Step Toward Accurate Arbitrary-Shaped Scene Text Detection**
+**DCPose: Deep Dual Consecutive Network for Human Pose Estimation**
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_ContourNet_Taking_a_Further_Step_Toward_Accurate_Arbitrary-Shaped_Scene_Text_CVPR_2020_paper.pdf
-- コード：https://github.com/wangyuxin87/ContourNet 
+-  Paper: https://arxiv.org/abs/2103.07254
+- Code: https://github.com/Pose-Group/DCPose 
 
-**UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
+## 3D 人体姿勢推定
 
-- 論文：https://arxiv.org/abs/2003.10608
-- コードとデータセット：https://github.com/Jyouhou/UnrealText/
+**Camera-Space Hand Mesh Recovery via Semantic Aggregation and Adaptive 2D-1D Registration**
 
-**ABCNet: Real-time Scene Text Spotting with Adaptive Bezier-Curve Network**
+- Paper: https://arxiv.org/abs/2103.02845
+- Code: https://github.com/SeanChenxy/HandMesh
 
-- 論文：https://arxiv.org/abs/2002.10200 
-- コード（公開前）：https://github.com/Yuliang-Liu/bezier_curve_text_spotting
-- コード（公開前）：https://github.com/aim-uofa/adet
+**Monocular 3D Multi-Person Pose Estimation by Integrating Top-Down and Bottom-Up Networks**
 
-**Deep Relational Reasoning Graph Network for Arbitrary Shape Text Detection**
+- Paper: https://arxiv.org/abs/2104.01797
+- https://github.com/3dpose/3D-Multi-Person-Pose
 
-- 論文：https://arxiv.org/abs/2003.07493
+**HybrIK: A Hybrid Analytical-Neural Inverse Kinematics Solution for 3D Human Pose and Shape Estimation**
 
-- コード：https://github.com/GXYM/DRRG
+- Homepage: https://jeffli.site/HybrIK/ 
+- Paper: https://arxiv.org/abs/2011.14672
+- Code: https://github.com/Jeff-sjtu/HybrIK
+
+<a name="Animal-Pose-Estimation"></a>
+
+# 动物姿勢推定(Animal Pose Estimation)
+
+**From Synthetic to Real: Unsupervised Domain Adaptation for Animal Pose Estimation**
+
+- Paper: https://arxiv.org/abs/2103.14843
+- Code: None
+
+<a name="Human-Volumetric-Capture"></a>
+
+# Human Volumetric Capture
+
+**POSEFusion: Pose-guided Selective Fusion for Single-view Human Volumetric Capture**
+
+- Homepage: http://www.liuyebin.com/posefusion/posefusion.html
+
+- Paper(Oral): https://arxiv.org/abs/2103.15331
+- Code: None
 
 <a name="Scene-Text-Recognition"></a>
 
-# シーンテキスト識別
+# シーンテキスト検出(Scene Text Detection)
 
-**SEED: Semantics Enhanced Encoder-Decoder Framework for Scene Text Recognition**
+**Fourier Contour Embedding for Arbitrary-Shaped Text Detection**
 
-- 論文：https://arxiv.org/abs/2005.10977
-- コード：https://github.com/Pay20Y/SEED
+- Paper: https://arxiv.org/abs/2104.10442
+- Code: None
 
-**UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
+<a name="Scene-Text-Recognition"></a>
 
-- 論文：https://arxiv.org/abs/2003.10608
-- コードとデータセット：https://github.com/Jyouhou/UnrealText/
+# シーンテキスト識別(Scene Text Recognition)
 
-**ABCNet: Real-time Scene Text Spotting with Adaptive Bezier-Curve Network**
+**Read Like Humans: Autonomous, Bidirectional and Iterative Language Modeling for Scene Text Recognition**
 
-- 論文：https://arxiv.org/abs/2002.10200 
-- コード（公開前）：https://github.com/aim-uofa/adet
+- Paper: https://arxiv.org/abs/2103.06495
+- Code: https://github.com/FangShancheng/ABINet
 
-**Learn to Augment: Joint Data Augmentation and Network Optimization for Text Recognition**
+<a name="Image-Compression"></a>
 
-- 論文：https://arxiv.org/abs/2003.06606
+# 画像圧縮
 
-- コード：https://github.com/Canjie-Luo/Text-Image-Augmentation
+**Checkerboard Context Model for Efficient Learned Image Compression**
 
-<a name="Feature"></a>
+- Paper: https://arxiv.org/abs/2103.15306
+- Code: None
 
-# 特征(点)検出和描述
+**Slimmable Compressive Autoencoders for Practical Neural Image Compression**
 
-**SuperGlue: Learning Feature Matching with Graph Neural Networks**
+- Paper: https://arxiv.org/abs/2103.15726
+- Code: None
 
-- 論文：https://arxiv.org/abs/1911.11763
-- コード：https://github.com/magicleap/SuperGluePretrainedNetwork
+**Attention-guided Image Compression by Deep Reconstruction of Compressive Sensed Saliency Skeleton**
 
-<a name="Super-Resolution"></a>
-
-# 超解像
-
-## 画像超解像
-
-**Closed-Loop Matters: Dual Regression Networks for Single Image Super-Resolution**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Guo_Closed-Loop_Matters_Dual_Regression_Networks_for_Single_Image_Super-Resolution_CVPR_2020_paper.html
-- コード：https://github.com/guoyongcs/DRN
-
-**Learning Texture Transformer Network for Image Super-Resolution**
-
-- 論文：https://arxiv.org/abs/2006.04139
-
-- コード：https://github.com/FuzhiYang/TTSR
-
-**Image Super-Resolution with Cross-Scale Non-Local Attention and Exhaustive Self-Exemplars Mining**
-
-- 論文：https://arxiv.org/abs/2006.01424
-- コード：https://github.com/SHI-Labs/Cross-Scale-Non-Local-Attention
-
-**Structure-Preserving Super Resolution with Gradient Guidance**
-
-- 論文：https://arxiv.org/abs/2003.13081
-
-- コード：https://github.com/Maclory/SPSR
-
-**Rethinking Data Augmentation for Image Super-resolution: A Comprehensive Analysis and a New Strategy**
-
-論文：https://arxiv.org/abs/2004.00448
-
-コード：https://github.com/clovaai/cutblur
-
-## 動画超解像
-
-**TDAN: Temporally-Deformable Alignment Network for Video Super-Resolution**
-
-- 論文：https://arxiv.org/abs/1812.02898
-- コード：https://github.com/YapengTian/TDAN-VSR-CVPR-2020
-
-**Space-Time-Aware Multi-Resolution Video Enhancement**
-
-- ホームページ：https://alterzero.github.io/projects/STAR.html
-- 論文：http://arxiv.org/abs/2003.13170
-- コード：https://github.com/alterzero/STARnet
-
-**Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution**
-
-- 論文：https://arxiv.org/abs/2002.11616 
-- コード：https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020 
+- Paper: https://arxiv.org/abs/2103.15368
+- Code: None
 
 <a name="Model-Compression"></a>
 
-# モデル圧縮/枝刈り
+# モデル圧縮/枝刈り/量化
 
-**DMCP: Differentiable Markov Channel Pruning for Neural Networks**
+**Teachers Do More Than Teach: Compressing Image-to-Image Models**
 
-- 論文：https://arxiv.org/abs/2005.03354
-- コード：https://github.com/zx55/dmcp
+- Paper: https://arxiv.org/abs/2103.03467
+- Code: https://github.com/snap-research/CAT
 
-**Forward and Backward Information Retention for Accurate Binary Neural Networks**
+## モデル枝刈り
 
-- 論文：https://arxiv.org/abs/1909.10788
+**Dynamic Slimmable Network**
 
-- コード：https://github.com/htqin/IR-Net
+- Paper: https://arxiv.org/abs/2103.13258
+- Code: https://github.com/changlin31/DS-Net
 
-**Towards Efficient Model Compression via Learned Global Ranking**
+## モデル量化
 
-- 論文：https://arxiv.org/abs/1904.12368
-- コード：https://github.com/cmu-enyac/LeGR
+**Network Quantization with Element-wise Gradient Scaling**
 
-**HRank: Filter Pruning using High-Rank Feature Map**
+- Paper: https://arxiv.org/abs/2104.00903
+- Code: None
 
-- 論文：http://arxiv.org/abs/2002.10179
-- コード：https://github.com/lmbxmu/HRank 
+**Zero-shot Adversarial Quantization**
 
-**GAN Compression: Efficient Architectures for Interactive Conditional GANs**
+- Paper(Oral): https://arxiv.org/abs/2103.15263
+- Code: https://git.io/Jqc0y
 
-- 論文：https://arxiv.org/abs/2003.08936
+**Learnable Companding Quantization for Accurate Low-bit Neural Networks**
 
-- コード：https://github.com/mit-han-lab/gan-compression
+- Paper: https://arxiv.org/abs/2103.07156
+- Code: None
 
-**Group Sparsity: The Hinge Between Filter Pruning and Decomposition for Network Compression**
+<a name="KD"></a>
 
-- 論文：https://arxiv.org/abs/2003.08935
+# 知识蒸馏(Knowledge Distillation)
 
-- コード：https://github.com/ofsoundof/group_sparsity
+**Distilling Knowledge via Knowledge Review**
 
-<a name="Action-Recognition"></a>
+- Paper: https://arxiv.org/abs/2104.09044
+- Code: https://github.com/Jia-Research-Lab/ReviewKD
 
-# 動画理解/行動識別
+**Distilling Object Detectors via Decoupled Features**
 
-**Oops! Predicting Unintentional Action in Video**
+- Paper: https://arxiv.org/abs/2103.14475
+- Code: https://github.com/ggjy/DeFeat.pytorch
 
-- ホームページ：https://oops.cs.columbia.edu/
+<a name="Super-Resolution"></a>
 
-- 論文：https://arxiv.org/abs/1911.11206
-- コード：https://github.com/cvlab-columbia/oops
-- データセット：https://oops.cs.columbia.edu/data
+# 超解像(Super-Resolution)
 
-**PREDICT & CLUSTER: Unsupervised Skeleton Based Action Recognition**
+**Towards Fast and Accurate Real-World Depth Super-Resolution: Benchmark Dataset and Baseline**
 
-- 論文：https://arxiv.org/abs/1911.12409
-- コード：https://github.com/shlizee/Predict-Cluster 
+- Homepage: http://mepro.bjtu.edu.cn/resource.html
+- Paper: https://arxiv.org/abs/2104.06174
+- Code: None
 
-**Intra- and Inter-Action Understanding via Temporal Action Parsing**
+**ClassSR: A General Framework to Accelerate Super-Resolution Networks by Data Characteristic**
 
-- 論文：https://arxiv.org/abs/2005.10229
-- ホームページ和データセット：https://sdolivia.github.io/TAPOS/
+- Paper: https://arxiv.org/abs/2103.04039
+- Code: https://github.com/Xiangtaokong/ClassSR
 
-**3DV: 3D Dynamic Voxel for Action Recognition in Depth Video**
+**AdderSR: Towards Energy Efficient Image Super-Resolution**
 
-- 論文：https://arxiv.org/abs/2005.05501
-- コード：https://github.com/3huo/3DV-Action
-
-**FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding**
-
-- ホームページ：https://sdolivia.github.io/FineGym/
-- 論文：https://arxiv.org/abs/2004.06704
-
-**TEA: Temporal Excitation and Aggregation for Action Recognition**
-
-- 論文：https://arxiv.org/abs/2004.01398
-
-- コード：https://github.com/Phoenix1327/tea-action-recognition
-
-**X3D: Expanding Architectures for Efficient Video Recognition**
-
-- 論文：https://arxiv.org/abs/2004.04730
-
-- コード：https://github.com/facebookresearch/SlowFast
-
-**Temporal Pyramid Network for Action Recognition**
-
-- ホームページ：https://decisionforce.github.io/TPN
-
-- 論文：https://arxiv.org/abs/2004.03548 
-- コード：https://github.com/decisionforce/TPN 
-
-## 基于骨架的动作識別
-
-**Disentangling and Unifying Graph Convolutions for Skeleton-Based Action Recognition**
-
-- 論文：https://arxiv.org/abs/2003.14111
-- コード：https://github.com/kenziyuliu/ms-g3d
-
-<a name="Crowd-Counting"></a>
-
-# 群衆カウント
-
-<a name="Depth-Estimation"></a>
-
-# 深度推定
-
-**BiFuse: Monocular 360◦ Depth Estimation via Bi-Projection Fusion**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_BiFuse_Monocular_360_Depth_Estimation_via_Bi-Projection_Fusion_CVPR_2020_paper.pdf
-- コード：https://github.com/Yeh-yu-hsuan/BiFuse
-
-**Focus on defocus: bridging the synthetic to real domain gap for depth estimation**
-
-- 論文：https://arxiv.org/abs/2005.09623
-- コード：https://github.com/dvl-tum/defocus-net
-
-**Bi3D: Stereo Depth Estimation via Binary Classifications**
-
-- 論文：https://arxiv.org/abs/2005.07274
-
-- コード：https://github.com/NVlabs/Bi3D
-
-**AANet: Adaptive Aggregation Network for Efficient Stereo Matching**
-
-- 論文：https://arxiv.org/abs/2004.09548
-- コード：https://github.com/haofeixu/aanet
-
-**Towards Better Generalization: Joint Depth-Pose Learning without PoseNet**
-
-- 論文：https://github.com/B1ueber2y/TrianFlow
-
-- コード：https://github.com/B1ueber2y/TrianFlow
-
-## 単眼深度推定
-
-**On the uncertainty of self-supervised monocular depth estimation**
-
-- 論文：https://arxiv.org/abs/2005.06209
-- コード：https://github.com/mattpoggi/mono-uncertainty
-
-**3D Packing for Self-Supervised Monocular Depth Estimation**
-
-- 論文：https://arxiv.org/abs/1905.02693
-- コード：https://github.com/TRI-ML/packnet-sfm
-- Demo動画：https://www.bilibili.com/video/av70562892/
-
-**Domain Decluttering: Simplifying Images to Mitigate Synthetic-Real Domain Shift and Improve Depth Estimation**
-
-- 論文：https://arxiv.org/abs/2002.12114
-- コード：https://github.com/yzhao520/ARC
-
-<a name="6DOF"></a>
-
-# 6D物体姿勢推定
-
- **PVN3D: A Deep Point-wise 3D Keypoints Voting Network for 6DoF Pose Estimation**
-
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/He_PVN3D_A_Deep_Point-Wise_3D_Keypoints_Voting_Network_for_6DoF_CVPR_2020_paper.pdf
-- コード：https://github.com/ethnhe/PVN3D
-
-**MoreFusion: Multi-object Reasoning for 6D Pose Estimation from Volumetric Fusion**
-
-- 論文：https://arxiv.org/abs/2004.04336
-- コード：https://github.com/wkentaro/morefusion
-
-**EPOS: Estimating 6D Pose of Objects with Symmetries**
-
-ホームページ：http://cmp.felk.cvut.cz/epos
-
-論文：https://arxiv.org/abs/2004.00605
-
-**G2L-Net: Global to Local Network for Real-time 6D Pose Estimation with Embedding Vector Features**
-
-- 論文：https://arxiv.org/abs/2003.11089
-
-- コード：https://github.com/DC1991/G2L_Net
-
-<a name="Hand-Pose"></a>
-
-# 手姿勢推定
-
-**HOPE-Net: A Graph-based Model for Hand-Object Pose Estimation**
-
-- 論文：https://arxiv.org/abs/2004.00060
-
-- ホームページ：http://vision.sice.indiana.edu/projects/hopenet
-
-**Monocular Real-time Hand Shape and Motion Capture using Multi-modal Data**
-
-- 論文：https://arxiv.org/abs/2003.09572
-
-- コード：https://github.com/CalciferZh/minimal-hand
-
-<a name="Saliency"></a>
-
-# 显著性検出
-
-**JL-DCF: Joint Learning and Densely-Cooperative Fusion Framework for RGB-D Salient Object Detection**
-
-- 論文：https://arxiv.org/abs/2004.08515
-
-- コード：https://github.com/kerenfu/JLDCF/
-
-**UC-Net: Uncertainty Inspired RGB-D Saliency Detection via Conditional Variational Autoencoders**
-
-- ホームページ：http://dpfan.net/d3netbenchmark/
-
-- 論文：https://arxiv.org/abs/2004.05763
-- コード：https://github.com/JingZhang617/UCNet
-
-<a name="Denoising"></a>
-
-# 画像修復
-
-**A Physics-based Noise Formation Model for Extreme Low-light Raw Denoising**
-
-- 論文：https://arxiv.org/abs/2003.12751
-
-- コード：https://github.com/Vandermode/NoiseModel
-
-**CycleISP: Real Image Restoration via Improved Data Synthesis**
-
-- 論文：https://arxiv.org/abs/2003.07761
-
-- コード：https://github.com/swz30/CycleISP
-
-<a name="Deraining"></a>
-
-# 去雨
-
-**Multi-Scale Progressive Fusion Network for Single Image Deraining**
-
-- 論文：https://arxiv.org/abs/2003.10985
-- コード：https://github.com/kuihua/MSPFN
-
-**Detail-recovery Image Deraining via Context Aggregation Networks**
-
-- 論文：https://openaccess.thecvf.com/content_CVPR_2020/html/Deng_Detail-recovery_Image_Deraining_via_Context_Aggregation_Networks_CVPR_2020_paper.html
-- コード：https://github.com/Dengsgithub/DRD-Net
-
-<a name="Deblurring"></a>
-
-# デブラー
-
-## 動画デブラー
-
-**Cascaded Deep Video Deblurring Using Temporal Sharpness Prior**
-
-- ホームページ：https://csbhr.github.io/projects/cdvd-tsp/index.html 
-- 論文：https://arxiv.org/abs/2004.02501 
-- コード：https://github.com/csbhr/CDVD-TSP
+- Paper: https://arxiv.org/abs/2009.08891
+- Code: None
 
 <a name="Dehazing"></a>
 
-# 去雾
+# 去雾(Dehazing)
 
-**Domain Adaptation for Image Dehazing**
+**Contrastive Learning for Compact Single Image Dehazing**
 
-- 論文：https://arxiv.org/abs/2005.04668
+- Paper: https://arxiv.org/abs/2104.09367
+- Code: https://github.com/GlassyWu/AECR-Net
 
-- コード：https://github.com/HUSTSYJ/DA_dahazing
+## 動画超解像
 
-**Multi-Scale Boosted Dehazing Network with Dense Feature Fusion**
+**Temporal Modulation Network for Controllable Space-Time Video Super-Resolution**
 
-- 論文：https://arxiv.org/abs/2004.13388
+- Paper: None
+- Code: https://github.com/CS-GangXu/TMNet
 
-- コード：https://github.com/BookerDeWitt/MSBDN-DFF
+<a name="Image-Restoration"></a>
 
-<a name="Feature"></a>
+# 画像恢复(Image Restoration)
 
-# 特徴点検出・記述
+**Multi-Stage Progressive Image Restoration**
 
-**ASLFeat: Learning Local Features of Accurate Shape and Localization**
+- Paper: https://arxiv.org/abs/2102.02808
+- Code: https://github.com/swz30/MPRNet
 
-- 論文：https://arxiv.org/abs/2003.10071
+<a name="Image-Inpainting"></a>
 
-- コード：https://github.com/lzx551402/aslfeat
+# 画像补全(Image Inpainting)
 
-<a name="VQA"></a>
+**TransFill: Reference-guided Image Inpainting by Merging Multiple Color and Spatial Transformations**
 
-# VQA(VQA)
+- Homepage: https://yzhouas.github.io/projects/TransFill/index.html
+- Paper: https://arxiv.org/abs/2103.15982
+- Code: None
 
-**VC R-CNN：Visual Commonsense R-CNN** 
+**PD-GAN: Probabilistic Diverse GAN for Image Inpainting**
 
-- 論文：https://arxiv.org/abs/2002.12204
-- コード：https://github.com/Wangt-CN/VC-R-CNN
+- Paper: http://raywzy.com/
+- Code: http://raywzy.com/
 
-<a name="VideoQA"></a>
+<a name="Image-Editing"></a>
 
-# 動画问答(VideoQA)
+# 画像编辑(Image Editing)
 
-**Hierarchical Conditional Relation Networks for Video Question Answering**
+**High-Fidelity and Arbitrary Face Editing**
 
-- 論文：https://arxiv.org/abs/2002.10698
-- コード：https://github.com/thaolmk54/hcrn-videoqa
+- Paper: https://arxiv.org/abs/2103.15814
+- Code: None
 
-<a name="VLN"></a>
+**Anycost GANs for Interactive Image Synthesis and Editing**
 
-# 視覚言語ナビゲーション
+- Paper: https://arxiv.org/abs/2103.03243
+- Code: https://github.com/mit-han-lab/anycost-gan
 
-**Towards Learning a Generic Agent for Vision-and-Language Navigation via Pre-training**
+**PISE: Person Image Synthesis and Editing with Decoupled GAN**
 
-- 論文：https://arxiv.org/abs/2002.10638
-- コード（公開前）：https://github.com/weituo12321/PREVALENT
+- Paper: https://arxiv.org/abs/2103.04023
+- Code: https://github.com/Zhangjinso/PISE
 
-<a name="Video-Compression"></a>
+**DeFLOCNet: Deep Image Editing via Flexible Low-level Controls**
 
-# 動画圧縮
+- Paper: http://raywzy.com/
+- Code: http://raywzy.com/
 
-**Learning for Video Compression with Hierarchical Quality and Recurrent Enhancement**
+**Exploiting Spatial Dimensions of Latent in GAN for Real-time Image Editing**
 
-- 論文：https://arxiv.org/abs/2003.01966 
-- コード：https://github.com/RenYang-home/HLVC
+- Paper: None
+- Code: None
 
-<a name="Video-Frame-Interpolation"></a>
+<a name="Image-Matching"></a>
 
-# 動画插帧
+# 画像匹配(Image Matcing)
 
-**AdaCoF: Adaptive Collaboration of Flows for Video Frame Interpolation**
+**LoFTR: Detector-Free Local Feature Matching with Transformers**
 
-- 論文：https://arxiv.org/abs/1907.10244
-- コード：https://github.com/HyeongminLEE/AdaCoF-pytorch
+- Homepage: https://zju3dv.github.io/loftr/
+- Paper: https://arxiv.org/abs/2104.00680
+- Code: https://github.com/zju3dv/LoFTR
 
-**FeatureFlow: Robust Video Interpolation via Structure-to-Texture Generation**
+**Convolutional Hough Matching Networks**
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Gui_FeatureFlow_Robust_Video_Interpolation_via_Structure-to-Texture_Generation_CVPR_2020_paper.html
+- Homapage: http://cvlab.postech.ac.kr/research/CHM/
+- Paper(Oral): https://arxiv.org/abs/2103.16831
+- Code: None
 
-- コード：https://github.com/CM-BF/FeatureFlow
+<a name="Image-Blending"></a>
 
-**Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution**
+# 画像融合(Image Blending)
 
-- 論文：https://arxiv.org/abs/2002.11616
-- コード：https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020
+**Bridging the Visual Gap: Wide-Range Image Blending**
 
-**Space-Time-Aware Multi-Resolution Video Enhancement**
+- Paper: https://arxiv.org/abs/2103.15149
 
-- ホームページ：https://alterzero.github.io/projects/STAR.html
-- 論文：http://arxiv.org/abs/2003.13170
-- コード：https://github.com/alterzero/STARnet
+- Code: https://github.com/julia0607/Wide-Range-Image-Blending
 
-**Scene-Adaptive Video Frame Interpolation via Meta-Learning**
+<a name="Reflection-Removal"></a>
 
-- 論文：https://arxiv.org/abs/2004.00779
-- コード：https://github.com/myungsub/meta-interpolation
+# 反光去除(Reflection Removal)
 
-**Softmax Splatting for Video Frame Interpolation**
+**Robust Reflection Removal with Reflection-free Flash-only Cues**
 
-- ホームページ：http://sniklaus.com/papers/softsplat
-- 論文：https://arxiv.org/abs/2003.05534
-- コード：https://github.com/sniklaus/softmax-splatting
+- Paper: https://arxiv.org/abs/2103.04273
+- Code: https://github.com/ChenyangLEI/flash-reflection-removal
 
-<a name="Style-Transfer"></a>
+<a name="3D-C"></a>
 
-# スタイル変換
+# 3D点群分類(3D Point Clouds Classification)
 
-**Diversified Arbitrary Style Transfer via Deep Feature Perturbation**
+**Equivariant Point Network for 3D Point Cloud Analysis**
 
-- 論文：https://arxiv.org/abs/1909.08223
-- コード：https://github.com/EndyWon/Deep-Feature-Perturbation
+- Paper: https://arxiv.org/abs/2103.14147
+- Code: None
 
-**Collaborative Distillation for Ultra-Resolution Universal Style Transfer**
+**PAConv: Position Adaptive Convolution with Dynamic Kernel Assembling on Point Clouds**
 
-- 論文：https://arxiv.org/abs/2003.08436
+- Paper: https://arxiv.org/abs/2103.14635
+- Code: https://github.com/CVMI-Lab/PAConv
 
-- コード：https://github.com/mingsun-tse/collaborative-distillation
+<a name="3D-Object-Detection"></a>
 
-<a name="Lane-Detection"></a>
+# 3D物体検出(3D Object Detection)
 
-# 车道线検出
+**Back-tracing Representative Points for Voting-based 3D Object Detection in Point Clouds**
 
-**Inter-Region Affinity Distillation for Road Marking Segmentation**
+- Paper: https://arxiv.org/abs/2104.06114
+- Code: https://github.com/cheng052/BRNet
 
-- 論文：https://arxiv.org/abs/2004.05304
-- コード：https://github.com/cardwing/Codes-for-IntRA-KD
+**HVPR: Hybrid Voxel-Point Representation for Single-stage 3D Object Detection**
 
-<a name="HOI"></a>
+- Homepage:  https://cvlab.yonsei.ac.kr/projects/HVPR/ 
 
-# Human-Object Interaction (HOT)検出
+- Paper: https://arxiv.org/abs/2104.00902
+- Code:  https://github.com/cvlab-yonsei/HVPR 
 
-**PPDM: Parallel Point Detection and Matching for Real-time Human-Object Interaction Detection**
+**LiDAR R-CNN: An Efficient and Universal 3D Object Detector**
 
-- 論文：https://arxiv.org/abs/1912.12898
-- コード：https://github.com/YueLiao/PPDM
+- Paper: https://arxiv.org/abs/2103.15297
+- Code: https://github.com/tusimple/LiDAR_RCNN
 
-**Detailed 2D-3D Joint Representation for Human-Object Interaction**
+**M3DSSD: Monocular 3D Single Stage Object Detector**
 
-- 論文：https://arxiv.org/abs/2004.08154
+- Paper: https://arxiv.org/abs/2103.13164
 
-- コード：https://github.com/DirtyHarryLYL/DJ-RN
+- Code: https://github.com/mumianyuxin/M3DSSD
 
-**Cascaded Human-Object Interaction Recognition**
+**SE-SSD: Self-Ensembling Single-Stage Object Detector From Point Cloud**
 
-- 論文：https://arxiv.org/abs/2003.04262
+- Paper: None
+- Code: https://github.com/Vegeta2020/SE-SSD
 
-- コード：https://github.com/tfzhou/C-HOI
+**Center-based 3D Object Detection and Tracking**
 
-**VSGNet: Spatial Attention Network for Detecting Human Object Interactions Using Graph Convolutions**
+- Paper: https://arxiv.org/abs/2006.11275
+- Code: https://github.com/tianweiy/CenterPoint
 
-- 論文：https://arxiv.org/abs/2003.05541
-- コード：https://github.com/ASMIftekhar/VSGNet
+**Categorical Depth Distribution Network for Monocular 3D Object Detection**
 
-<a name="TP"></a>
+- Paper: https://arxiv.org/abs/2103.01100
+- Code: None
 
-# 軌跡予測
+<a name="3D-Semantic-Segmentation"></a>
 
-**The Garden of Forking Paths: Towards Multi-Future Trajectory Prediction**
+# 3Dセマンティックセグメンテーション(3D Semantic Segmentation)
 
-- 論文：https://arxiv.org/abs/1912.06445
-- コード：https://github.com/JunweiLiang/Multiverse
-- データセット：https://next.cs.cmu.edu/multiverse/
+**Bidirectional Projection Network for Cross Dimension Scene Understanding**
 
-**Social-STGCNN: A Social Spatio-Temporal Graph Convolutional Neural Network for Human Trajectory Prediction**
+- Paper(Oral): https://arxiv.org/abs/2103.14326
+- Code: https://github.com/wbhu/BPNet
 
-- 論文：https://arxiv.org/abs/2002.11927 
-- コード：https://github.com/abduallahmohamed/Social-STGCNN 
+**Semantic Segmentation for Real Point Cloud Scenes via Bilateral Augmentation and Adaptive Fusion**
 
-<a name="Motion-Predication"></a>
+- Paper: https://arxiv.org/abs/2103.07074
+- Code: https://github.com/ShiQiu0419/BAAF-Net
 
-# モーション予測
+**Cylindrical and Asymmetrical 3D Convolution Networks for LiDAR Segmentation**
 
-**Collaborative Motion Prediction via Neural Motion Message Passing**
+- Paper: https://arxiv.org/abs/2011.10033
+- Code:  https://github.com/xinge008/Cylinder3D 
 
-- 論文：https://arxiv.org/abs/2003.06594
-- コード：https://github.com/PhyllisH/NMMP
+ **Towards Semantic Segmentation of Urban-Scale 3D Point Clouds: A Dataset, Benchmarks and Challenges**
 
-**MotionNet: Joint Perception and Motion Prediction for Autonomous Driving Based on Bird's Eye View Maps**
+- Homepage: https://github.com/QingyongHu/SensatUrban
+- Paper: http://arxiv.org/abs/2009.03137
+- Code: https://github.com/QingyongHu/SensatUrban
+- Dataset: https://github.com/QingyongHu/SensatUrban
 
-- 論文：https://arxiv.org/abs/2003.06754
+<a name="3D-Panoptic-Segmentation"></a>
 
-- コード：https://github.com/pxiangwu/MotionNet
+# 3D全景分割(3D Panoptic Segmentation)
 
-<a name="OF"></a>
+**Panoptic-PolarNet: Proposal-free LiDAR Point Cloud Panoptic Segmentation**
 
-# 光流推定
+- Paper: https://arxiv.org/abs/2103.14962
+- Code: https://github.com/edwardzhou130/Panoptic-PolarNet
 
-**Learning by Analogy: Reliable Supervision from Transformations for Unsupervised Optical Flow Estimation**
+<a name="3D-Object-Tracking"></a>
 
-- 論文：https://arxiv.org/abs/2003.13045
-- コード：https://github.com/lliuz/ARFlow 
+# 3D物体追跡(3D Object Trancking)
 
-<a name="IR"></a>
+**Center-based 3D Object Detection and Tracking**
 
-# 画像检索
+- Paper: https://arxiv.org/abs/2006.11275
+- Code: https://github.com/tianweiy/CenterPoint
 
-**Evade Deep Image Retrieval by Stashing Private Images in the Hash Space**
+<a name="3D-PointCloud-Registration"></a>
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Xiao_Evade_Deep_Image_Retrieval_by_Stashing_Private_Images_in_the_CVPR_2020_paper.html
-- コード：https://github.com/sugarruy/hashstash
+# 3D点群レジストレーション(3D Point Cloud Registration)
 
-<a name="Virtual-Try-On"></a>
+**ReAgent: Point Cloud Registration using Imitation and Reinforcement Learning**
 
-# 虚拟试衣
+- Paper: https://arxiv.org/abs/2103.15231
+- Code: None
 
-**Towards Photo-Realistic Virtual Try-On by Adaptively Generating↔Preserving Image Content**
+**PointDSC: Robust Point Cloud Registration using Deep Spatial Consistency**
 
-- 論文：https://arxiv.org/abs/2003.05863
-- コード：https://github.com/switchablenorms/DeepFashion_Try_On
+- Paper: https://arxiv.org/abs/2103.05465
+- Code: https://github.com/XuyangBai/PointDSC 
 
-<a name="HDR"></a>
+**PREDATOR: Registration of 3D Point Clouds with Low Overlap**
 
-# HDR
+- Paper: https://arxiv.org/abs/2011.13005
+- Code: https://github.com/ShengyuH/OverlapPredator
 
-**Single-Image HDR Reconstruction by Learning to Reverse the Camera Pipeline**
+<a name="3D-Point-Cloud-Completion"></a>
 
-- ホームページ：https://www.cmlab.csie.ntu.edu.tw/~yulunliu/SingleHDR
+# 3D点群补全(3D Point Cloud Completion)
 
-- 論文下载链接：https://www.cmlab.csie.ntu.edu.tw/~yulunliu/SingleHDR_/00942.pdf
+**Variational Relational Point Completion Network**
 
-- コード：https://github.com/alex04072000/SingleHDR
+- Homepage:  https://paul007pl.github.io/projects/VRCNet 
+- Paper: https://arxiv.org/abs/2104.10154
+- Code: https://github.com/paul007pl/VRCNet
+
+**Style-based Point Generator with Adversarial Rendering for Point Cloud Completion**
+
+- Homepage: https://alphapav.github.io/SpareNet/
+
+- Paper: https://arxiv.org/abs/2103.02535
+- Code: https://github.com/microsoft/SpareNet
+
+<a name="3D-Reconstruction"></a>
+
+# 3D重建(3D Reconstruction)
+
+**Fully Understanding Generic Objects: Modeling, Segmentation, and Reconstruction**
+
+- Paper: https://arxiv.org/abs/2104.00858
+- Code: None
+
+**NeuralRecon: Real-Time Coherent 3D Reconstruction from Monocular Video**
+
+- Homepage: https://zju3dv.github.io/neuralrecon/
+
+- Paper(Oral): https://arxiv.org/abs/2104.00681
+- Code: https://github.com/zju3dv/NeuralRecon
+
+<a name="6D-Pose-Estimation"></a>
+
+# 6D位姿推定(6D Pose Estimation)
+
+**FS-Net: Fast Shape-based Network for Category-Level 6D Object Pose Estimation with Decoupled Rotation Mechanism**
+
+- Paper(Oral): https://arxiv.org/abs/2103.07054
+- Code: https://github.com/DC1991/FS-Net
+
+**GDR-Net: Geometry-Guided Direct Regression Network for Monocular 6D Object Pose Estimation**
+
+- Paper: http://arxiv.org/abs/2102.12145
+- code: https://git.io/GDR-Net
+
+**FFB6D: A Full Flow Bidirectional Fusion Network for 6D Pose Estimation**
+
+- Paper: https://arxiv.org/abs/2103.02242
+- Code: https://github.com/ethnhe/FFB6D
+
+<a name="Camera-Pose-Estimation"></a>
+
+# 相机姿勢推定
+
+**Back to the Feature: Learning Robust Camera Localization from Pixels to Pose**
+
+- Paper: https://arxiv.org/abs/2103.09213
+- Code: https://github.com/cvg/pixloc
+
+<a name="Depth-Estimation"></a>
+
+# 深度推定(Depth Estimation)
+
+**S2R-DepthNet: Learning a Generalizable Depth-specific Structural Representation**
+
+- Paper(Oral): https://arxiv.org/abs/2104.00877
+- Code: None
+
+**Beyond Image to Depth: Improving Depth Prediction using Echoes**
+
+- Homepage: https://krantiparida.github.io/projects/bimgdepth.html
+- Paper: https://arxiv.org/abs/2103.08468
+- Code: https://github.com/krantiparida/beyond-image-to-depth
+
+**S3: Learnable Sparse Signal Superdensity for Guided Depth Estimation**
+
+- Paper: https://arxiv.org/abs/2103.02396
+- Code: None
+
+**Depth from Camera Motion and Object Detection**
+
+- Paper: https://arxiv.org/abs/2103.01468
+- Code: https://github.com/griffbr/ODMD
+- Dataset: https://github.com/griffbr/ODMD
+
+<a name=" Stereo-Matching"></a>
+
+# 深度推定(Stereo Matching)
+
+**A Decomposition Model for Stereo Matching**
+
+- Paper: https://arxiv.org/abs/2104.07516
+- Code: None
+
+<a name="Flow-Estimation"></a>
+
+# 光流推定(Flow Estimation)
+
+**Learning Optical Flow From Still Images**
+
+- Homepage: https://mattpoggi.github.io/projects/cvpr2021aleotti/
+
+- Paper: https://mattpoggi.github.io/assets/papers/aleotti2021cvpr.pdf
+- Code: https://github.com/mattpoggi/depthstillation
+
+**FESTA: Flow Estimation via Spatial-Temporal Attention for Scene Point Clouds**
+
+- Paper: https://arxiv.org/abs/2104.00798
+- Code: None
+
+<a name="Trajectory-Prediction"></a>
+
+# 軌跡予測(Trajectory Prediction)
+
+**Divide-and-Conquer for Lane-Aware Diverse Trajectory Prediction**
+
+- Paper(Oral): https://arxiv.org/abs/2104.08277
+- Code: None
 
 <a name="AE"></a>
 
 # 对抗样本
 
-**Enhancing Cross-Task Black-Box Transferability of Adversarial Examples With Dispersion Reduction**
+**LiBRe: A Practical Bayesian Approach to Adversarial Detection**
 
-- 論文：https://openaccess.thecvf.com/content_CVPR_2020/papers/Lu_Enhancing_Cross-Task_Black-Box_Transferability_of_Adversarial_Examples_With_Dispersion_Reduction_CVPR_2020_paper.pdf
-- コード：https://github.com/erbloo/dr_cvpr20 
+- Paper: https://arxiv.org/abs/2103.14835
+- Code: None
 
-**Towards Large yet Imperceptible Adversarial Image Perturbations with Perceptual Color Distance**
+**Natural Adversarial Examples**
 
-- 論文：https://arxiv.org/abs/1911.02466
-- コード：https://github.com/ZhengyuZhao/PerC-Adversarial 
+- Paper: https://arxiv.org/abs/1907.07174
+- Code: https://github.com/hendrycks/natural-adv-examples
 
-<a name="3D-Reconstructing"></a>
+<a name="Image-Retrieval"></a>
 
-# 三维重建
+# 画像检索(Image Retrieval)
 
-**Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild**
+**StyleMeUp: Towards Style-Agnostic Sketch-Based Image Retrieval**
 
-- **CVPR 2020 Best Paper**
-- ホームページ：https://elliottwu.com/projects/unsup3d/
-- 論文：https://arxiv.org/abs/1911.11130
-- コード：https://github.com/elliottwu/unsup3d
+- Paper: https://arxiv.org/abs/2103.15706
+- COde: None
 
-**Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization**
+**QAIR: Practical Query-efficient Black-Box Attacks for Image Retrieval**
 
-- ホームページ：https://shunsukesaito.github.io/PIFuHD/
-- 論文：https://arxiv.org/abs/2004.00452
-- コード：https://github.com/facebookresearch/pifuhd
+- Paper: https://arxiv.org/abs/2103.02927
+- Code: None
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Patel_TailorNet_Predicting_Clothing_in_3D_as_a_Function_of_Human_CVPR_2020_paper.pdf
-- コード：https://github.com/chaitanya100100/TailorNet
-- データセット：https://github.com/zycliao/TailorNet_dataset
+<a name="Video-Retrieval"></a>
 
-**Implicit Functions in Feature Space for 3D Shape Reconstruction and Completion**
+# 動画检索(Video Retrieval)
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Chibane_Implicit_Functions_in_Feature_Space_for_3D_Shape_Reconstruction_and_CVPR_2020_paper.pdf
-- コード：https://github.com/jchibane/if-net
+**On Semantic Similarity in Video Retrieval**
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Mir_Learning_to_Transfer_Texture_From_Clothing_Images_to_3D_Humans_CVPR_2020_paper.pdf
-- コード：https://github.com/aymenmir1/pix2surf
+- Paper: https://arxiv.org/abs/2103.10095
 
-<a name="DC"></a>
+- Homepage: https://mwray.github.io/SSVR/
+- Code: https://github.com/mwray/Semantic-Video-Retrieval
 
-# 深度补全
+<a name="Cross-modal-Retrieval"></a>
 
-**Uncertainty-Aware CNNs for Depth Completion: Uncertainty from Beginning to End**
+# 跨模态检索(Cross-modal Retrieval)
 
-論文：https://arxiv.org/abs/2006.03349
+**Cross-Modal Center Loss for 3D Cross-Modal Retrieval**
 
-コード：https://github.com/abdo-eldesokey/pncnn
+- Paper: https://arxiv.org/abs/2008.03561
+- Code: https://github.com/LongLong-Jing/Cross-Modal-Center-Loss 
 
-<a name="SSC"></a>
+**Thinking Fast and Slow: Efficient Text-to-Visual Retrieval with Transformers**
 
-# セマンティックシーン补全
+- Paper: https://arxiv.org/abs/2103.16553
+- Code: None
 
-**3D Sketch-aware Semantic Scene Completion via Semi-supervised Structure Prior**
+**Revamping cross-modal recipe retrieval with hierarchical Transformers and self-supervised learning**
 
-- 論文：https://arxiv.org/abs/2003.14052
-- コード：https://github.com/charlesCXK/3D-SketchAware-SSC 
+- Paper: https://www.amazon.science/publications/revamping-cross-modal-recipe-retrieval-with-hierarchical-transformers-and-self-supervised-learning
 
-<a name="Captioning"></a>
+- Code: https://github.com/amzn/image-to-recipe-transformers
 
-# 画像/動画描述
+<a name="Zero-Shot-Learning"></a>
 
-**Syntax-Aware Action Targeting for Video Captioning**
+#  Zero-Shot Learning
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Zheng_Syntax-Aware_Action_Targeting_for_Video_Captioning_CVPR_2020_paper.pdf
-- コード：https://github.com/SydCaption/SAAT 
+**Counterfactual Zero-Shot and Open-Set Visual Recognition**
 
-<a name="WP"></a>
+- Paper: https://arxiv.org/abs/2103.00887
+- Code: https://github.com/yue-zhongqi/gcm-cf
 
-# 线框解析
+<a name="Federated-Learning"></a>
 
-**Holistically-Attracted Wireframe Parser**
+# 联邦学习(Federated Learning)
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Xue_Holistically-Attracted_Wireframe_Parsing_CVPR_2020_paper.html
+**FedDG: Federated Domain Generalization on Medical Image Segmentation via Episodic Learning in Continuous Frequency Space**
 
-- コード：https://github.com/cherubicXN/hawp
+- Paper: https://arxiv.org/abs/2103.06030
+- Code: https://github.com/liuquande/FedDG-ELCFS
+
+<a name="Video-Frame-Interpolation"></a>
+
+# 動画插帧(Video Frame Interpolation)
+
+**CDFI: Compression-Driven Network Design for Frame Interpolation**
+
+- Paper: None
+- Code: https://github.com/tding1/CDFI
+
+**FLAVR: Flow-Agnostic Video Representations for Fast Frame Interpolation**
+
+- Homepage: https://tarun005.github.io/FLAVR/
+
+- Paper: https://arxiv.org/abs/2012.08512
+- Code: https://github.com/tarun005/FLAVR
+
+<a name="Visual-Reasoning"></a>
+
+# 视觉推理(Visual Reasoning)
+
+**Transformation Driven Visual Reasoning**
+
+- homepage: https://hongxin2019.github.io/TVR/
+- Paper: https://arxiv.org/abs/2011.13160
+- Code: https://github.com/hughplay/TVR
+
+<a name="Visual-Synthesis"></a>
+
+# 视图合成(View Synthesis)
+
+**Stereo Radiance Fields (SRF): Learning View Synthesis for Sparse Views of Novel Scenes**
+
+- Homepage: https://virtualhumans.mpi-inf.mpg.de/srf/
+- Paper: https://arxiv.org/abs/2104.06935
+
+**Self-Supervised Visibility Learning for Novel View Synthesis**
+
+- Paper: https://arxiv.org/abs/2103.15407
+- Code: None
+
+**NeX: Real-time View Synthesis with Neural Basis Expansion**
+
+- Homepage: https://nex-mpi.github.io/
+- Paper(Oral): https://arxiv.org/abs/2103.05606
+
+<a name="Style-Transfer"></a>
+
+# スタイル変換(Style Transfer)
+
+**Drafting and Revision: Laplacian Pyramid Network for Fast High-Quality Artistic Style Transfer**
+
+- Paper: https://arxiv.org/abs/2104.05376
+- Code: https://github.com/PaddlePaddle/PaddleGAN/
+
+<a name="Layout-Generation"></a>
+
+# 布局生成(Layout Generation)
+
+**Variational Transformer Networks for Layout Generation**
+
+- Paper: https://arxiv.org/abs/2104.02416
+- Code: None
+
+<a name="Domain-Generalization"></a>
+
+# Domain Generalization
+
+**RobustNet: Improving Domain Generalization in Urban-Scene Segmentation via Instance Selective Whitening**
+
+- Paper: https://arxiv.org/abs/2103.15597
+- Code: https://github.com/shachoi/RobustNet
+
+**Adaptive Methods for Real-World Domain Generalization**
+
+- Paper: https://arxiv.org/abs/2103.15796
+- Code: None
+
+**FSDR: Frequency Space Domain Randomization for Domain Generalization**
+
+- Paper: https://arxiv.org/abs/2103.02370
+- Code: None
+
+<a name="Domain-Adaptation"></a>
+
+# Domain Adaptation
+
+**Curriculum Graph Co-Teaching for Multi-Target Domain Adaptation**
+
+- Paper: https://arxiv.org/abs/2104.00808
+- Code: None
+
+**Domain Consensus Clustering for Universal Domain Adaptation**
+
+- Paper: http://reler.net/papers/guangrui_cvpr2021.pdf
+- Code: https://github.com/Solacex/Domain-Consensus-Clustering 
+
+<a name="Open-Set-Recognition"></a>
+
+# Open-Set Recognition
+
+**Learning Placeholders for Open-Set Recognition**
+
+- Paper(Oral): https://arxiv.org/abs/2103.15086
+- Code: None
+
+<a name="Adversarial-Attack"></a>
+
+# Adversarial Attack
+
+**IoU Attack: Towards Temporally Coherent Black-Box Adversarial Attack for Visual Object Tracking**
+
+- Paper: https://arxiv.org/abs/2103.14938
+- Code: https://github.com/VISION-SJTU/IoUattack
+
+<a name="HOI"></a>
+
+# Human-Object Interaction (HOI)検出
+
+**Query-Based Pairwise Human-Object Interaction Detection with Image-Wide Contextual Information**
+
+- Paper: https://arxiv.org/abs/2103.05399
+- Code: https://github.com/hitachi-rd-cv/qpic
+
+**Reformulating HOI Detection as Adaptive Set Prediction**
+
+- Paper: https://arxiv.org/abs/2103.05983
+- Code: https://github.com/yoyomimi/AS-Net
+
+**Detecting Human-Object Interaction via Fabricated Compositional Learning**
+
+- Paper: https://arxiv.org/abs/2103.08214
+- Code: https://github.com/zhihou7/FCL
+
+**End-to-End Human Object Interaction Detection with HOI Transformer**
+
+- Paper: https://arxiv.org/abs/2103.04503
+- Code: https://github.com/bbepoch/HoiTransformer
+
+<a name="Shadow-Removal"></a>
+
+# 阴影去除(Shadow Removal)
+
+**Auto-Exposure Fusion for Single-Image Shadow Removal**
+
+- Paper: https://arxiv.org/abs/2103.01255
+- Code: https://github.com/tsingqguo/exposure-fusion-shadow-removal
+
+<a name="Virtual-Try-On"></a>
+
+# 虚拟换衣(Virtual Try-On)
+
+**Parser-Free Virtual Try-on via Distilling Appearance Flows**
+
+**基于外观流蒸馏的无需人体解析的虚拟换装**
+
+- Paper: https://arxiv.org/abs/2103.04559
+- Code: https://github.com/geyuying/PF-AFN 
 
 <a name="Datasets"></a>
 
-# データセット
+# データセット(Datasets)
 
-**OASIS: A Large-Scale Dataset for Single Image 3D in the Wild**
+**Learning To Count Everything**
 
-- 論文：https://arxiv.org/abs/2007.13215
-- データセット：https://oasis.cs.princeton.edu/
+- Paper: https://arxiv.org/abs/2104.08391
+- Code: https://github.com/cvlab-stonybrook/LearningToCountEverything
+- Dataset: https://github.com/cvlab-stonybrook/LearningToCountEverything
 
-**STEFANN: Scene Text Editor using Font Adaptive Neural Network**
+**Semantic Image Matting**
 
-- ホームページ：https://prasunroy.github.io/stefann/
+- Paper: https://arxiv.org/abs/2104.08201
+- Code: https://github.com/nowsyn/SIM
+- Dataset: https://github.com/nowsyn/SIM
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Roy_STEFANN_Scene_Text_Editor_Using_Font_Adaptive_Neural_Network_CVPR_2020_paper.html
-- コード：https://github.com/prasunroy/stefann
-- データセット：https://drive.google.com/open?id=1sEDiX_jORh2X-HSzUnjIyZr-G9LJIw1k
+**Towards Fast and Accurate Real-World Depth Super-Resolution: Benchmark Dataset and Baseline**
 
-**Interactive Object Segmentation with Inside-Outside Guidance**
+- Homepage: http://mepro.bjtu.edu.cn/resource.html
+- Paper: https://arxiv.org/abs/2104.06174
+- Code: None
 
-- 論文下载链接：http://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Interactive_Object_Segmentation_With_Inside-Outside_Guidance_CVPR_2020_paper.pdf
-- コード：https://github.com/shiyinzhang/Inside-Outside-Guidance
-- データセット：https://github.com/shiyinzhang/Pixel-ImageNet
+**Visual Semantic Role Labeling for Video Understanding**
 
-**Video Panoptic Segmentation**
+- Homepage: https://vidsitu.org/
 
-- 論文：https://arxiv.org/abs/2006.11339
-- コード：https://github.com/mcahny/vps
-- データセット：https://www.dropbox.com/s/ecem4kq0fdkver4/cityscapes-vps-dataset-1.0.zip?dl=0
+- Paper: https://arxiv.org/abs/2104.00990
+- Code: https://github.com/TheShadow29/VidSitu
+- Dataset: https://github.com/TheShadow29/VidSitu
 
-**FSS-1000: A 1000-Class Dataset for Few-Shot Segmentation**
+**VSPW: A Large-scale Dataset for Video Scene Parsing in the Wild**
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Li_FSS-1000_A_1000-Class_Dataset_for_Few-Shot_Segmentation_CVPR_2020_paper.html
+- Homepage: https://www.vspwdataset.com/
+- Paper: https://www.vspwdataset.com/CVPR2021__miao.pdf
+- GitHub: https://github.com/sssdddwww2/vspw_dataset_download
 
-- コード：https://github.com/HKUSTCV/FSS-1000
+**Sewer-ML: A Multi-Label Sewer Defect Classification Dataset and Benchmark**
 
-- データセット：https://github.com/HKUSTCV/FSS-1000
+- Homepage: https://vap.aau.dk/sewer-ml/
+- Paper: https://arxiv.org/abs/2103.10619
 
-**3D-ZeF: A 3D Zebrafish Tracking Benchmark Dataset**
+**Sewer-ML: A Multi-Label Sewer Defect Classification Dataset and Benchmark**
 
-- ホームページ：https://vap.aau.dk/3d-zef/
-- 論文：https://arxiv.org/abs/2006.08466
-- コード：https://bitbucket.org/aauvap/3d-zef/src/master/
-- データセット：https://motchallenge.net/data/3D-ZeF20
+- Homepage: https://vap.aau.dk/sewer-ml/
 
-**TailorNet: Predicting Clothing in 3D as a Function of Human Pose, Shape and Garment Style**
+- Paper: https://arxiv.org/abs/2103.10895
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/papers/Patel_TailorNet_Predicting_Clothing_in_3D_as_a_Function_of_Human_CVPR_2020_paper.pdf
-- コード：https://github.com/chaitanya100100/TailorNet
-- データセット：https://github.com/zycliao/TailorNet_dataset
+**Nutrition5k: Towards Automatic Nutritional Understanding of Generic Food**
 
-**Oops! Predicting Unintentional Action in Video**
+- Paper: https://arxiv.org/abs/2103.03375
+- Dataset: None
 
-- ホームページ：https://oops.cs.columbia.edu/
+ **Towards Semantic Segmentation of Urban-Scale 3D Point Clouds: A Dataset, Benchmarks and Challenges**
 
-- 論文：https://arxiv.org/abs/1911.11206
-- コード：https://github.com/cvlab-columbia/oops
-- データセット：https://oops.cs.columbia.edu/data
+- Homepage: https://github.com/QingyongHu/SensatUrban
+- Paper: http://arxiv.org/abs/2009.03137
+- Code: https://github.com/QingyongHu/SensatUrban
+- Dataset: https://github.com/QingyongHu/SensatUrban
 
-**The Garden of Forking Paths: Towards Multi-Future Trajectory Prediction**
+**When Age-Invariant Face Recognition Meets Face Age Synthesis: A Multi-Task Learning Framework**
 
-- 論文：https://arxiv.org/abs/1912.06445
-- コード：https://github.com/JunweiLiang/Multiverse
-- データセット：https://next.cs.cmu.edu/multiverse/
+- Paper(Oral): https://arxiv.org/abs/2103.01520
+- Code: https://github.com/Hzzone/MTLFace
+- Dataset: https://github.com/Hzzone/MTLFace
 
-**Open Compound Domain Adaptation**
+**Depth from Camera Motion and Object Detection**
 
-- ホームページ：https://liuziwei7.github.io/projects/CompoundDomain.html
-- データセット：https://drive.google.com/drive/folders/1_uNTF8RdvhS_sqVTnYx17hEOQpefmE2r?usp=sharing
-- 論文：https://arxiv.org/abs/1909.03403
-- コード：https://github.com/zhmiao/OpenCompoundDomainAdaptation-OCDA
+- Paper: https://arxiv.org/abs/2103.01468
+- Code: https://github.com/griffbr/ODMD
+- Dataset: https://github.com/griffbr/ODMD
 
-**Intra- and Inter-Action Understanding via Temporal Action Parsing**
+**There is More than Meets the Eye: Self-Supervised Multi-Object Detection and Tracking with Sound by Distilling Multimodal Knowledge**
 
-- 論文：https://arxiv.org/abs/2005.10229
-- ホームページ和データセット：https://sdolivia.github.io/TAPOS/
+- Homepage: http://rl.uni-freiburg.de/research/multimodal-distill
+- Paper: https://arxiv.org/abs/2103.01353
+- Code: http://rl.uni-freiburg.de/research/multimodal-distill
 
-**Dynamic Refinement Network for Oriented and Densely Packed Object Detection**
+**Scan2Cap: Context-aware Dense Captioning in RGB-D Scans**
 
-- 論文下载链接：https://arxiv.org/abs/2005.09973
+- Paper: https://arxiv.org/abs/2012.02206
+- Code: https://github.com/daveredrum/Scan2Cap
 
-- コードとデータセット：https://github.com/Anymake/DRN_CVPR2020
+- Dataset: https://github.com/daveredrum/ScanRefer
 
-**COCAS: A Large-Scale Clothes Changing Person Dataset for Re-identification**
+**There is More than Meets the Eye: Self-Supervised Multi-Object Detection and Tracking with Sound by Distilling Multimodal Knowledge**
 
-- 論文：https://arxiv.org/abs/2005.07862
-
-- データセット：なし
-
-**KeypointNet: A Large-scale 3D Keypoint Dataset Aggregated from Numerous Human Annotations**
-
-- 論文：https://arxiv.org/abs/2002.12687
-
-- データセット：https://github.com/qq456cvb/KeypointNet
-
-**MSeg: A Composite Dataset for Multi-domain Semantic Segmentation**
-
-- 論文：http://vladlen.info/papers/MSeg.pdf
-- コード：https://github.com/mseg-dataset/mseg-api
-- データセット：https://github.com/mseg-dataset/mseg-semantic
-
-**AvatarMe: Realistically Renderable 3D Facial Reconstruction "in-the-wild"**
-
-- 論文：https://arxiv.org/abs/2003.13845
-- データセット：https://github.com/lattas/AvatarMe
-
-**Learning to Autofocus**
-
-- 論文：https://arxiv.org/abs/2004.12260
-- データセット：なし
-
-**FaceScape: a Large-scale High Quality 3D Face Dataset and Detailed Riggable 3D Face Prediction**
-
-- 論文：https://arxiv.org/abs/2003.13989
-- コード：https://github.com/zhuhao-nju/facescape
-
-**Bodies at Rest: 3D Human Pose and Shape Estimation from a Pressure Image using Synthetic Data**
-
-- 論文下载链接：https://arxiv.org/abs/2004.01166
-
-- コード：https://github.com/Healthcare-Robotics/bodies-at-rest
-- データセット：https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KOA4ML
-
-**FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding**
-
-- ホームページ：https://sdolivia.github.io/FineGym/
-- 論文：https://arxiv.org/abs/2004.06704
-
-**A Local-to-Global Approach to Multi-modal Movie Scene Segmentation**
-
-- ホームページ：https://anyirao.com/projects/SceneSeg.html
-
-- 論文下载链接：https://arxiv.org/abs/2004.02678
-
-- コード：https://github.com/AnyiRao/SceneSeg
-
-**Deep Homography Estimation for Dynamic Scenes**
-
-- 論文：https://arxiv.org/abs/2004.02132
-
-- データセット：https://github.com/lcmhoang/hmg-dynamics
-
-**Assessing Image Quality Issues for Real-World Problems**
-
-- ホームページ：https://vizwiz.org/tasks-and-datasets/image-quality-issues/
-- 論文：https://arxiv.org/abs/2003.12511
-
-**UnrealText: Synthesizing Realistic Scene Text Images from the Unreal World**
-
-- 論文：https://arxiv.org/abs/2003.10608
-- コードとデータセット：https://github.com/Jyouhou/UnrealText/
-
-**PANDA: A Gigapixel-level Human-centric Video Dataset**
-
-- 論文：https://arxiv.org/abs/2003.04852
-
-- データセット：http://www.panda-dataset.com/
-
-**IntrA: 3D Intracranial Aneurysm Dataset for Deep Learning**
-
-- 論文：https://arxiv.org/abs/2003.02920
-- データセット：https://github.com/intra3d2019/IntrA
-
-**Cross-View Tracking for Multi-Human 3D Pose Estimation at over 100 FPS**
-
-- 論文：https://arxiv.org/abs/2003.03972
-- データセット：なし
+- Paper: https://arxiv.org/abs/2103.01353
+- Code: http://rl.uni-freiburg.de/research/multimodal-distill
+- Dataset: http://rl.uni-freiburg.de/research/multimodal-distill
 
 <a name="Others"></a>
 
-# その他
+# その他(Others)
 
-**CONSAC: Robust Multi-Model Fitting by Conditional Sample Consensus**
+**KeypointDeformer: Unsupervised 3D Keypoint Discovery for Shape Control**
 
-- 論文：http://openaccess.thecvf.com/content_CVPR_2020/html/Kluger_CONSAC_Robust_Multi-Model_Fitting_by_Conditional_Sample_Consensus_CVPR_2020_paper.html
-- コード：https://github.com/fkluger/consac
+- Homepage: http://tomasjakab.github.io/KeypointDeformer
 
-**Learning to Learn Single Domain Generalization**
+- Paper(Oral): https://arxiv.org/abs/2104.11224
+- Code: https://github.com/tomasjakab/keypoint_deformer/
 
-- 論文：https://arxiv.org/abs/2003.13216
-- コード：https://github.com/joffery/M-ADA
+**Learning To Count Everything**
 
-**Open Compound Domain Adaptation**
+- Paper: https://arxiv.org/abs/2104.08391
+- Code: https://github.com/cvlab-stonybrook/LearningToCountEverything
+- Dataset: https://github.com/cvlab-stonybrook/LearningToCountEverything
 
-- ホームページ：https://liuziwei7.github.io/projects/CompoundDomain.html
-- データセット：https://drive.google.com/drive/folders/1_uNTF8RdvhS_sqVTnYx17hEOQpefmE2r?usp=sharing
-- 論文：https://arxiv.org/abs/1909.03403
-- コード：https://github.com/zhmiao/OpenCompoundDomainAdaptation-OCDA
+**SOLD2: Self-supervised Occlusion-aware Line Description and Detection**
 
-**Differentiable Volumetric Rendering: Learning Implicit 3D Representations without 3D Supervision**
+- Paper(Oral): https://arxiv.org/abs/2104.03362
+- Code: https://github.com/cvg/SOLD2
 
-- 論文：http://www.cvlibs.net/publications/Niemeyer2020CVPR.pdf
+**Learning Probabilistic Ordinal Embeddings for Uncertainty-Aware Regression**
 
-- コード：https://github.com/autonomousvision/differentiable_volumetric_rendering
+- Homepage: https://li-wanhua.github.io/POEs/
+- Paper:  https://arxiv.org/abs/2103.13629
+- Code: https://github.com/Li-Wanhua/POEs
 
-**QEBA: Query-Efficient Boundary-Based Blackbox Attack**
+**LEAP: Learning Articulated Occupancy of People**
 
-- 論文：https://arxiv.org/abs/2005.14137
-- コード：https://github.com/AI-secure/QEBA
+- Paper: https://arxiv.org/abs/2104.06849
+- Code: None
 
-**Equalization Loss for Long-Tailed Object Recognition**
+**Visual Semantic Role Labeling for Video Understanding**
 
-- 論文：https://arxiv.org/abs/2003.05176
-- コード：https://github.com/tztztztztz/eql.detectron2
+- Homepage: https://vidsitu.org/
 
-**Instance-aware Image Colorization**
+- Paper: https://arxiv.org/abs/2104.00990
+- Code: https://github.com/TheShadow29/VidSitu
+- Dataset: https://github.com/TheShadow29/VidSitu
 
-- ホームページ：https://ericsujw.github.io/InstColorization/
-- 論文：https://arxiv.org/abs/2005.10825
-- コード：https://github.com/ericsujw/InstColorization
+**UAV-Human: A Large Benchmark for Human Behavior Understanding with Unmanned Aerial Vehicles**
 
-**Contextual Residual Aggregation for Ultra High-Resolution Image Inpainting**
+- Paper: https://arxiv.org/abs/2104.00946
+- Code: https://github.com/SUTDCV/UAV-Human 
 
-- 論文：https://arxiv.org/abs/2005.09704
+**Video Prediction Recalling Long-term Motion Context via Memory Alignment Learning**
 
-- コード：https://github.com/Atlas200dk/sample-imageinpainting-HiFill
+- Paper(Oral): https://arxiv.org/abs/2104.00924
+- Code: None
 
-**Where am I looking at? Joint Location and Orientation Estimation by Cross-View Matching**
+**Fully Understanding Generic Objects: Modeling, Segmentation, and Reconstruction**
 
-- 論文：https://arxiv.org/abs/2005.03860
-- コード：https://github.com/shiyujiao/cross_view_localization_DSM
+- Paper: https://arxiv.org/abs/2104.00858
+- Code: None
 
-**Epipolar Transformers**
+**Towards High Fidelity Face Relighting with Realistic Shadows**
 
-- 論文：https://arxiv.org/abs/2005.04551
+- Paper: https://arxiv.org/abs/2104.00825
+- Code: None
 
-- コード：https://github.com/yihui-he/epipolar-transformers 
+**BRepNet: A topological message passing system for solid models**
 
-**Bringing Old Photos Back to Life**
+- Paper(Oral): https://arxiv.org/abs/2104.00706
+- Code: None
 
-- ホームページ：http://raywzy.com/Old_Photo/
-- 論文：https://arxiv.org/abs/2004.09484
+**Visually Informed Binaural Audio Generation without Binaural Audios**
 
-**MaskFlownet: Asymmetric Feature Matching with Learnable Occlusion Mask**
+- Homepage: https://sheldontsui.github.io/projects/PseudoBinaural
+- Paper: None
 
-- 論文：https://arxiv.org/abs/2003.10955 
+- GitHub: https://github.com/SheldonTsui/PseudoBinaural_CVPR2021
+- Demo: https://www.youtube.com/watch?v=r-uC2MyAWQc
 
-- コード：https://github.com/microsoft/MaskFlownet 
+**Exploring intermediate representation for monocular vehicle pose estimation**
 
-**Self-Supervised Viewpoint Learning from Image Collections**
+- Paper: None
+- Code: https://github.com/Nicholasli1995/EgoNet
 
-- 論文：https://arxiv.org/abs/2004.01793
-- 論文2：https://research.nvidia.com/sites/default/files/pubs/2020-03_Self-Supervised-Viewpoint-Learning/SSV-CVPR2020.pdf 
-- コード：https://github.com/NVlabs/SSV 
+**Tuning IR-cut Filter for Illumination-aware Spectral Reconstruction from RGB**
 
-**Towards Discriminability and Diversity: Batch Nuclear-norm Maximization under Label Insufficient Situations**
+- Paper(Oral): https://arxiv.org/abs/2103.14708
+- Code: None
+
+**Invertible Image Signal Processing**
+
+- Paper: https://arxiv.org/abs/2103.15061
+- Code: https://github.com/yzxing87/Invertible-ISP
+
+**Video Rescaling Networks with Joint Optimization Strategies for Downscaling and Upscaling**
+
+- Paper: https://arxiv.org/abs/2103.14858
+- Code: None
+
+**SceneGraphFusion: Incremental 3D Scene Graph Prediction from RGB-D Sequences**
+
+- Paper: https://arxiv.org/abs/2103.14898
+- Code: None
+
+**Embedding Transfer with Label Relaxation for Improved Metric Learning**
+
+- Paper: https://arxiv.org/abs/2103.14908
+- Code: None
+
+**Picasso: A CUDA-based Library for Deep Learning over 3D Meshes**
+
+- Paper: https://arxiv.org/abs/2103.15076 
+- Code: https://github.com/hlei-ziyan/Picasso
+
+**Meta-Mining Discriminative Samples for Kinship Verification**
+
+- Paper: https://arxiv.org/abs/2103.15108
+- Code: None
+
+**Cloud2Curve: Generation and Vectorization of Parametric Sketches**
+
+- Paper: https://arxiv.org/abs/2103.15536
+- Code: None
+
+**TrafficQA: A Question Answering Benchmark and an Efficient Network for Video Reasoning over Traffic Events**
+
+- Paper: https://arxiv.org/abs/2103.15538
+- Code: https://github.com/SUTDCV/SUTD-TrafficQA
+
+**Abstract Spatial-Temporal Reasoning via Probabilistic Abduction and Execution**
+
+- Homepage: http://wellyzhang.github.io/project/prae.html
+
+- Paper: https://arxiv.org/abs/2103.14230
+- Code: None
+
+**ACRE: Abstract Causal REasoning Beyond Covariation**
+
+- Homepage: http://wellyzhang.github.io/project/acre.html
+
+- Paper: https://arxiv.org/abs/2103.14232
+- Code: None
+
+**Confluent Vessel Trees with Accurate Bifurcations**
+
+- Paper: https://arxiv.org/abs/2103.14268
+- Code: None
+
+**Few-Shot Human Motion Transfer by Personalized Geometry and Texture Modeling**
+
+- Paper: https://arxiv.org/abs/2103.14338
+- Code: https://github.com/HuangZhiChao95/FewShotMotionTransfer
+
+**Neural Parts: Learning Expressive 3D Shape Abstractions with Invertible Neural Networks**
+
+- Homepage: https://paschalidoud.github.io/neural_parts
+- Paper: None 
+- Code: https://github.com/paschalidoud/neural_parts 
+
+**Knowledge Evolution in Neural Networks**
+
+- Paper(Oral): https://arxiv.org/abs/2103.05152
+- Code: https://github.com/ahmdtaha/knowledge_evolution
+
+**Multi-institutional Collaborations for Improving Deep Learning-based Magnetic Resonance Image Reconstruction Using Federated Learning**
+
+- Paper: https://arxiv.org/abs/2103.02148
+- Code: https://github.com/guopengf/FLMRCM
+
+**SGP: Self-supervised Geometric Perception**
 
 - Oral
 
-- 論文：https://arxiv.org/abs/2003.12237 
-- コード：https://github.com/cuishuhao/BNM 
+- Paper: https://arxiv.org/abs/2103.03114
+- Code: https://github.com/theNded/SGP
 
-**Towards Learning Structure via Consensus for Face Segmentation and Parsing**
+**Multi-institutional Collaborations for Improving Deep Learning-based Magnetic Resonance Image Reconstruction Using Federated Learning**
 
-- 論文：https://arxiv.org/abs/1911.00957
-- コード：https://github.com/isi-vista/structure_via_consensus
+- Paper: https://arxiv.org/abs/2103.02148
+- Code: https://github.com/guopengf/FLMRCM
 
-**Plug-and-Play Algorithms for Large-scale Snapshot Compressive Imaging**
+**Diffusion Probabilistic Models for 3D Point Cloud Generation**
 
-- Oral
-- 論文：https://arxiv.org/abs/2003.13654
+- Paper: https://arxiv.org/abs/2103.01458
+- Code: https://github.com/luost26/diffusion-point-cloud
 
-- コード：https://github.com/liuyang12/PnP-SCI
+**Scan2Cap: Context-aware Dense Captioning in RGB-D Scans**
 
-**Lightweight Photometric Stereo for Facial Details Recovery**
+- Paper: https://arxiv.org/abs/2012.02206
+- Code: https://github.com/daveredrum/Scan2Cap
 
-- 論文：https://arxiv.org/abs/2003.12307
-- コード：https://github.com/Juyong/FacePSNet
+- Dataset: https://github.com/daveredrum/ScanRefer
 
-**Footprints and Free Space from a Single Color Image**
+**There is More than Meets the Eye: Self-Supervised Multi-Object Detection and Tracking with Sound by Distilling Multimodal Knowledge**
 
-- 論文：https://arxiv.org/abs/2004.06376
+- Paper: https://arxiv.org/abs/2103.01353
+- Code: http://rl.uni-freiburg.de/research/multimodal-distill
 
-- コード：https://github.com/nianticlabs/footprints
+- Dataset: http://rl.uni-freiburg.de/research/multimodal-distill
 
-**Self-Supervised Monocular Scene Flow Estimation**
+<a name="TO-DO"></a>
 
-- 論文：https://arxiv.org/abs/2004.04143
-- コード：https://github.com/visinf/self-mono-sf
+# 待添加(TODO)
 
-**Quasi-Newton Solver for Robust Non-Rigid Registration**
-
-- 論文：https://arxiv.org/abs/2004.04322
-- コード：https://github.com/Juyong/Fast_RNRR
-
-**A Local-to-Global Approach to Multi-modal Movie Scene Segmentation**
-
-- ホームページ：https://anyirao.com/projects/SceneSeg.html
-
-- 論文下载链接：https://arxiv.org/abs/2004.02678
-
-- コード：https://github.com/AnyiRao/SceneSeg
-
-**DeepFLASH: An Efficient Network for Learning-based Medical Image Registration**
-
-- 論文：https://arxiv.org/abs/2004.02097
-
-- コード：https://github.com/jw4hv/deepflash
-
-**Self-Supervised Scene De-occlusion**
-
-- ホームページ：https://xiaohangzhan.github.io/projects/deocclusion/
-- 論文：https://arxiv.org/abs/2004.02788
-- コード：https://github.com/XiaohangZhan/deocclusion
-
-**Polarized Reflection Removal with Perfect Alignment in the Wild** 
-
-- ホームページ：https://leichenyang.weebly.com/project-polarized.html
-- コード：https://github.com/ChenyangLEI/CVPR2020-Polarized-Reflection-Removal-with-Perfect-Alignment 
-
-**Background Matting: The World is Your Green Screen**
-
-- 論文：https://arxiv.org/abs/2004.00626
-- コード：http://github.com/senguptaumd/Background-Matting
-
-**What Deep CNNs Benefit from Global Covariance Pooling: An Optimization Perspective**
-
-- 論文：https://arxiv.org/abs/2003.11241
-
-- コード：https://github.com/ZhangLi-CS/GCP_Optimization
-
-**Look-into-Object: Self-supervised Structure Modeling for Object Recognition**
-
-- 論文：なし
-- コード：https://github.com/JDAI-CV/LIO 
-
- **Video Object Grounding using Semantic Roles in Language Description**
-
-- 論文：https://arxiv.org/abs/2003.10606
-- コード：https://github.com/TheShadow29/vognet-pytorch 
-
-**Dynamic Hierarchical Mimicking Towards Consistent Optimization Objectives**
-
-- 論文：https://arxiv.org/abs/2003.10739
-- コード：https://github.com/d-li14/DHM 
-
-**SDFDiff: Differentiable Rendering of Signed Distance Fields for 3D Shape Optimization**
-
-- 論文：http://www.cs.umd.edu/~yuejiang/papers/SDFDiff.pdf
-- コード：https://github.com/YueJiang-nj/CVPR2020-SDFDiff 
-
-**On Translation Invariance in CNNs: Convolutional Layers can Exploit Absolute Spatial Location**
-
-- 論文：https://arxiv.org/abs/2003.07064
-
-- コード：https://github.com/oskyhn/CNNs-Without-Borders
-
-**GhostNet: More Features from Cheap Operations**
-
-- 論文：https://arxiv.org/abs/1911.11907
-
-- コード：https://github.com/iamhankai/ghostnet
-
-**AdderNet: Do We Really Need Multiplications in Deep Learning?** 
-
-- 論文：https://arxiv.org/abs/1912.13200 
-- コード：https://github.com/huawei-noah/AdderNet
-
-**Deep Image Harmonization via Domain Verification** 
-
-- 論文：https://arxiv.org/abs/1911.13239 
-- コード：https://github.com/bcmi/Image_Harmonization_Datasets
-
-**Blurry Video Frame Interpolation**
-
-- 論文：https://arxiv.org/abs/2002.12259 
-- コード：https://github.com/laomao0/BIN
-
-**Extremely Dense Point Correspondences using a Learned Feature Descriptor**
-
-- 論文：https://arxiv.org/abs/2003.00619 
-- コード：https://github.com/lppllppl920/DenseDescriptorLearning-Pytorch
-
-**Filter Grafting for Deep Neural Networks**
-
-- 論文：https://arxiv.org/abs/2001.05868
-- コード：https://github.com/fxmeng/filter-grafting
-- 論文解説：https://www.zhihu.com/question/372070853/answer/1041569335
-
-**Action Segmentation with Joint Self-Supervised Temporal Domain Adaptation**
-
-- 論文：https://arxiv.org/abs/2003.02824 
-- コード：https://github.com/cmhungsteve/SSTDA
-
-**Detecting Attended Visual Targets in Video**
-
-- 論文：https://arxiv.org/abs/2003.02501 
-
-- コード：https://github.com/ejcgt/attention-target-detection
-
-**Deep Image Spatial Transformation for Person Image Generation**
-
-- 論文：https://arxiv.org/abs/2003.00696 
-- コード：https://github.com/RenYurui/Global-Flow-Local-Attention
-
- **Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications** 
-
-- 論文：https://arxiv.org/abs/2003.01455
-- コード：https://github.com/bbrattoli/ZeroShotVideoClassification
-
-https://github.com/charlesCXK/3D-SketchAware-SSC
-
-https://github.com/Anonymous20192020/Anonymous_CVPR5767
-
-https://github.com/avirambh/ScopeFlow
-
-https://github.com/csbhr/CDVD-TSP
-
-https://github.com/ymcidence/TBH
-
-https://github.com/yaoyao-liu/mnemonics
-
-https://github.com/meder411/Tangent-Images
-
-https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch
-
-https://github.com/sjmoran/deep_local_parametric_filters
-
-https://github.com/charlesCXK/3D-SketchAware-SSC
-
-https://github.com/bermanmaxim/AOWS
-
-https://github.com/dc3ea9f/look-into-object 
+- [重磅！腾讯优图20篇論文入选CVPR 2021](https://mp.weixin.qq.com/s/McAtOVh0osWZ3uppEoHC8A)
+- [MePro团队三篇論文被CVPR 2021接收](https://mp.weixin.qq.com/s/GD5Zb6u_MQ8GZIAGeCGo3Q)
 
 <a name="Not-Sure"></a>
 
-# 採択されたか不明
+# 採択されたか不明(Not Sure)
 
-**FADNet: A Fast and Accurate Network for Disparity Estimation**
+**CT Film Recovery via Disentangling Geometric Deformation and Photometric Degradation: Simulated Datasets and Deep Models**
 
-- 論文：未公開
-- コード：https://github.com/HKBU-HPML/FADNet
+- Paper: none
+- Code: https://github.com/transcendentsky/Film-Recovery
 
-https://github.com/rFID-submit/RandomFID
+**Toward Explainable Reflection Removal with Distilling and Model Uncertainty**
 
-https://github.com/JackSyu/AE-MSR
+- Paper: none
+- Code: https://github.com/ytpeng-aimlab/CVPR-2021-Toward-Explainable-Reflection-Removal-with-Distilling-and-Model-Uncertainty
 
-https://github.com/fastconvnets/cvpr2020
+**DeepOIS: Gyroscope-Guided Deep Optical Image Stabilizer Compensation**
 
-https://github.com/aimagelab/meshed-memory-transformer
+- Paper: none
+- Code: https://github.com/lhaippp/DeepOIS
 
-https://github.com/TWSFar/CRGNet
+**Exploring Adversarial Fake Images on Face Manifold**
 
-https://github.com/CVPR-2020/CDARTS
+- Paper: none
+- Code: https://github.com/ldz666666/Style-atk
 
-https://github.com/anucvml/ddn-cvprw2020
+**Uncertainty-Aware Semi-Supervised Crowd Counting via Consistency-Regularized Surrogate Task**
 
-https://github.com/dl-model-recommend/model-trust
+- Paper: none
+- Code: https://github.com/yandamengdanai/Uncertainty-Aware-Semi-Supervised-Crowd-Counting-via-Consistency-Regularized-Surrogate-Task
 
-https://github.com/apratimbhattacharyya18/CVPR-2020-Corr-Prior
+**Temporal Contrastive Graph for Self-supervised Video Representation Learning**
 
-https://github.com/onetcvpr/O-Net
+- Paper: none
+- Code: https://github.com/YangLiu9208/TCG
 
-https://github.com/502463708/Microcalcification_Detection
+**Boosting Monocular Depth Estimation Models to High-Resolution via Context-Aware Patching**
 
-https://github.com/anonymous-for-review/cvpr-2020-deep-smoke-machine
+- Paper: none
+- Code: https://github.com/ouranonymouscvpr/cvpr2021_ouranonymouscvpr
 
-https://github.com/anonymous-for-review/cvpr-2020-smoke-recognition-dataset
+**Fast and Memory-Efficient Compact Bilinear Pooling**
 
-https://github.com/cvpr-nonrigid/dataset
+- Paper: none
+- Code: https://github.com/cvpr2021kp2/cvpr2021kp2
 
-https://github.com/theFool32/PPBA
+**Identification of Empty Shelves in Supermarkets using Domain-inspired Features with Structural Support Vector Machine**
 
-https://github.com/Realtime-Action-Recognition/Realtime-Action-Recognition
+- Paper: none
+- Code: https://github.com/gapDetection/cvpr2021
+
+ **Estimating A Child's Growth Potential From Cephalometric X-Ray Image via Morphology-Aware Interactive Keypoint Estimation** 
+
+- Paper: none
+- Code: https://github.com/interactivekeypoint2020/Morph
+
+https://github.com/ShaoQiangShen/CVPR2021
+
+https://github.com/gillesflash/CVPR2021
+
+https://github.com/anonymous-submission1991/BaLeNAS
+
+https://github.com/cvpr2021dcb/cvpr2021dcb
+
+https://github.com/anonymousauthorCV/CVPR2021_PaperID_8578
+
+https://github.com/AldrichZeng/FreqPrune
+
+https://github.com/Anonymous-AdvCAM/Anonymous-AdvCAM
+
+https://github.com/ddfss/datadrive-fss
+
+
 
 ## 注意事項
 
